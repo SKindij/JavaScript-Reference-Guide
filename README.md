@@ -17,6 +17,18 @@ ___
 + ``console.error( object [, object, ...] );`` >> _Prints object to the Console, formats it as an error, and includes a stack trace._
 + ``console.clear();`` >> _Clears the console._
 ___
+## ⦁ String   ⦁ Number   ⦁ Boolean   ⦁ Null   ⦁ Undefine   ⦁ Object   ⦁ symbol   ⦁ bigint
+&ensp;Primitive data types - are the values of which can only be overwritten, but cannot be changed.
+
+&ensp; &ensp; ``Number.isFinite (constNum);`` <br>
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; => true &ensp; &ensp; &ensp; // _if a number was passed to it during the call_ <br>
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; => false &ensp; &ensp; &ensp; // _if a special value or non-numeric type is passed_ <br>
+
+
+
+
+
+
 
 
 
