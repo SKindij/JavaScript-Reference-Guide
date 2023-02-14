@@ -49,7 +49,17 @@ ___
 > * &ensp; ``Math.min(num1, num2, ...);`` - _returns the smallest number in the set_
 
 &ensp;A tag template is a loggerTag function that allows you to parse a template string.
-
+> > ```javascript
+> >    let phrase = 'It will be a victorious UA spring!';
+> >      phrase.toUpperCase(); // => 'IT WILL BE A VICTORIOUS UA SPRING!'
+> >      phrase.toLowerCase(); // => 'it will be a victorious ua spring!'
+> >      phrase.length; // => 34
+> >        phrase.includes("UA"); // => true
+> >        phrase.startsWith('It will be'); // => true
+> >        phrase.endsWith('UA spring!'); // => true
+> >        phrase.indexOf('victorious'); // => 13
+> >        phrase.substring(3, 10); // => 'will be'
+> > ```
 
 
 
