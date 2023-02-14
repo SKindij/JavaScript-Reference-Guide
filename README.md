@@ -59,7 +59,16 @@ ___
 > >        phrase.endsWith('UA spring!'); // => true
 > >        phrase.indexOf('victorious'); // => 13
 > >        phrase.substring(3, 10); // => 'will be'
+> >
+> >    const arrPhrase = phrase.split(' '); // => ['It', 'will', 'be', 'a', 'victorious', 'UA', 'spring!']
+> >    arrPhrase.join(' '); // => 'It will be a victorious UA spring!'
 > > ```
+
+
+
+
+
+
 
 
 
