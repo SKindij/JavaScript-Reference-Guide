@@ -64,8 +64,18 @@ ___
 > >    arrPhrase.join(' '); // => 'It will be a victorious UA spring!'
 > > ```
 
+&ensp;Let's consider a few more manipulations with the text.
+> > ```javascript
+> >    let stringo = 'A great man does great things on great days.';
+> >      stringo.replaceAll('great', 'small'); // => 'A small man does small things on small days.'
+> >      stringo.charAt(8); // => 'm'
+> >      stringo.slice(8, 23); // => 'man does great '
+> >     
+> > 
+> >
+> >
 
-
+> > ```
 
 
 
