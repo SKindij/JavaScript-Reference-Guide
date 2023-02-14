@@ -20,15 +20,24 @@ ___
 ## ⦁ String   ⦁ Number   ⦁ Boolean   ⦁ Null   ⦁ Undefine   ⦁ Object   ⦁ symbol   ⦁ bigint
 &ensp;Primitive data types - are the values of which can only be overwritten, but cannot be changed.
 
-&ensp; &ensp; ``Number.isFinite (constNum);`` <br>
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; => true &ensp; &ensp; &ensp; // _if a number was passed to it during the call_ <br>
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; => false &ensp; &ensp; &ensp; // _if a special value or non-numeric type is passed_ <br>
-
-
-
-
-
-
-
-
+> * &ensp; ``Number.isFinite (constNum);`` <br>
+> > ```javascript
+> >    Number.isFinite (17); // => true       if a number was passed to it during the call
+> >    Number.isFinite ('17'); // => false       if a special value or non-numeric type is passed
+> > ```
+> * &ensp; ``constNum.toString(2);`` - _converts a number to a string in the specified number system_ <br>
+> > ```javascript
+> >    let constNum = 29;
+> >    constNum.toString(2); // => '11101'
+> > ```
+> * &ensp; ``constNum.toFixed(2)`` - _converts a number to a string with the specified number of decimal places_  <br>
+> > ```javascript
+> >    let constNum = 16.5492;
+> >    constNum.toFixed(2) // => '16.55'
+> > ```
+> * &ensp; they convert the string character by character as long as possible
+> > ```javascript
+> >    Number.parseInt('123boxes', 10); // => 123
+> >    Number.parseFloat('27.16% market share'); // =>  27.16
+> > ```
 
