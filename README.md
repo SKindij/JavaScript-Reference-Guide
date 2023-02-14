@@ -70,15 +70,10 @@ ___
 > >      stringo.replaceAll('great', 'small'); // => 'A small man does small things on small days.'
 > >      stringo.charAt(8); // => 'm'
 > >      stringo.slice(8, 23); // => 'man does great '
-> >     
-> > 
-> >
-> >
-
 > > ```
 
-
-
+> * &ensp; ``const truthyValue = true;`` - 'text'
+> * &ensp; ``const falsyValue = false;`` - "...", (), 0, null, undefined, NaN, 0n
 
 
 
