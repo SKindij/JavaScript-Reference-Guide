@@ -124,10 +124,32 @@ In **ES-modules** (ES2015), the keyword ``export`` is used for export, and ``imp
 >    * includes;
 >    * exponentiation through **;
 
-ES2017:   
+**ES2017**:   
 >    * Object.values, 
 >    * Object.entries;    
 >    * async/await;
+
+**ES2018**:
+* finally for promises;
+* update in regular expressions;
+* spread operator for objects;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
