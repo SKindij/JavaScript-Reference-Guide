@@ -108,33 +108,35 @@ ___
 > * does not allow using the with construction in the code;
 > * cleans up variables created with eval;
 
-2009-2011 **ES5** added: ``Object.keys()``, ``filter()``, ``map()``, ``reduce()``, ``JSON`` support, etc.
+&ensp; 2009-2011 **ES5** added: ``Object.keys()``, ``filter()``, ``map()``, ``reduce()``, ``JSON`` support, etc.
 
-The ``let`` and ``const`` variables appeared in the 2015 **ES6** version, replacing the outdated ``var``.
+&ensp; The ``let`` and ``const`` variables appeared in the 2015 **ES6** version, replacing the outdated ``var``.
 > * arrow functions that preserve the context;
 > * syntactic sugar in the form of classes;
 > * default function arguments;
 > * promises;
 > * destruction of objects;
 
-In **ES-modules** (ES2015), the keyword ``export`` is used for export, and ``import`` is used for import. They can be perceived as parts of the constructor from which the program is assembled. (modules are always ``"use strict"`` / this is not window, but undefined)
+&ensp; In **ES-modules** (ES2015), the keyword ``export`` is used for export, and ``import`` is used for import. They can be perceived as parts of the constructor from which the program is assembled. (modules are always ``"use strict"`` / this is not window, but undefined)
 
-**ES2016**:
+&ensp; **ES2016**:
 >    * destruction of arrays;
 >    * includes;
 >    * exponentiation through **;
 
-**ES2017**:   
+&ensp; **ES2017**:   
 >    * Object.values, 
 >    * Object.entries;    
 >    * async/await;
 
-**ES2018**:
+&ensp; **ES2018**:
 * finally for promises;
 * update in regular expressions;
 * spread operator for objects;
 
-
+&ensp; **ES2019**:
+* flat, flatMap for arrays;
+* fromEntries for objects;
 
 
 
