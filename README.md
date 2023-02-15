@@ -100,6 +100,17 @@ _Clarify undefined and null conventions on the project. Often they are not recor
 The ``typeof()`` operator is used to get the type of a variable's value.
 ___
 
-&ensp;**ECMAScript** (or **ES**) is a specification. That is, a set of rules and guidelines that a language must follow in order to be considered compliant with this specification.
+&ensp; **ECMAScript** (or **ES**) is a specification. That is, a set of rules and guidelines that a language must follow in order to be considered compliant with this specification.
+&ensp; **Strict mode** (``'use strict'``) was introduced with the **ECMAScript 5** standard in 2009 because backward compatibility was broken in ES. **strict mode** provides more detailed error checking in the code and facilitates debugging.
+> * you cannot use variables without a declaration;
+> * function parameters cannot have the same names;
+> * this will not reference a global object by default;
+> * does not allow using the with construction in the code;
+> * cleans up variables created with eval;
+
+
+
+
+
 
 
