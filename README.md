@@ -108,7 +108,7 @@ ___
 > * does not allow using the with construction in the code;
 > * cleans up variables created with eval;
 
-
+2009-2011 **ES5** added: ``Object.keys()``, ``filter()``, ``map()``, ``reduce()``, ``JSON`` support, etc.
 
 
 
