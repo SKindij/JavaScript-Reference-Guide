@@ -119,7 +119,10 @@ The ``let`` and ``const`` variables appeared in the 2015 **ES6** version, replac
 
 In **ES-modules** (ES2015), the keyword ``export`` is used for export, and ``import`` is used for import. They can be perceived as parts of the constructor from which the program is assembled. (modules are always ``"use strict"`` / this is not window, but undefined)
 
-
+**ES2016**:
+>    * destruction of arrays;
+>    * includes;
+>    * exponentiation through **;
 
 
 
