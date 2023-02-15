@@ -96,3 +96,10 @@ _Clarify undefined and null conventions on the project. Often they are not recor
 > > let clone = Object.assign({}, usero); // clones all types of object properties;
 > > ```
 
+&ensp;It is recommended to declare variables with ``const`` by default and use ``let`` if you need to change or reassign it later. <br>
+The ``typeof()`` operator is used to get the type of a variable's value.
+___
+
+&ensp;**ECMAScript** (or **ES**) is a specification. That is, a set of rules and guidelines that a language must follow in order to be considered compliant with this specification.
+
+
