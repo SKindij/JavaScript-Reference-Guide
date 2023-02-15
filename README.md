@@ -110,6 +110,25 @@ ___
 
 2009-2011 **ES5** added: ``Object.keys()``, ``filter()``, ``map()``, ``reduce()``, ``JSON`` support, etc.
 
+The ``let`` and ``const`` variables appeared in the 2015 **ES6** version, replacing the outdated ``var``.
+> * arrow functions that preserve the context;
+> * syntactic sugar in the form of classes;
+> * default function arguments;
+> * promises;
+> * destruction of objects;
+
+In **ES-modules** (ES2015), the keyword ``export`` is used for export, and ``import`` is used for import. They can be perceived as parts of the constructor from which the program is assembled. (modules are always ``"use strict"`` / this is not window, but undefined)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
