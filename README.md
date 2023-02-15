@@ -81,6 +81,11 @@ _Clarify undefined and null conventions on the project. Often they are not recor
 > > &ensp;Operator ``||`` converts all operands to **boolean** and returns: **left operand** - if it can be converted to **true**, and the **right operand** - in other cases. That is, logical **OR** stops at truth and returns it or returns the last operand. <br>
 > > &ensp;Operator ``!`` converts the operand to **boolean** if necessary, and then inverts - changes true -> false or false -> true.
 
+&ensp;``Symbol`` is a unique identifier that is used as the name of properties in objects;
+> * &ensp; ``Symbol.iterator`` - allows in constructions using ``for..of`` and spread syntax ``...``;
+> * &ensp; ``Symbol.for(key)`` — returns the symbol stored by the key;
+
+
 
 
 
