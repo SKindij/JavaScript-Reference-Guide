@@ -130,15 +130,18 @@ ___
 >    * async/await;
 
 &ensp; **ES2018**:
-* finally for promises;
-* update in regular expressions;
-* spread operator for objects;
+>    * finally for promises;
+>    * update in regular expressions;
+>    * spread operator for objects;
 
 &ensp; **ES2019**:
-* flat, flatMap for arrays;
-* fromEntries for objects;
+>    * flat, flatMap for arrays;
+>    * fromEntries for objects;
 
-
+&ensp; **ES2020**: 
+>    * BigInt; 
+>    * Globalthis;  
+>    * ??; 
 
 
 
