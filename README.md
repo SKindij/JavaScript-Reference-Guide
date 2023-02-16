@@ -152,7 +152,17 @@ ___
 2. management of execution flow
 > > ```javascript
 > >    if (condition) { "perform certain actions";
-> >    } else { "an alternative scenario takes place"; }   
+> >    } else { "an alternative scenario takes place"; }
+> >
+> >    switch (expression) {
+> >      case value1: 
+> >        statement1
+> >        break;
+> >      case value2: 
+> >        statement2
+> >        break;
+> >      default: 
+> >        statements }
 > > ```
 
 
