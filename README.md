@@ -164,8 +164,14 @@ ___
 > >      default: 
 > >        statements }
 > > ```
-
-
+3. iterations
+> > ```javascript
+> >     while (condition) { statement };
+> > 
+> >     do { statement } while (condition);
+> >
+> >    for (initialization; condition; afterthought) { statement };
+> > ```
 
 
 
