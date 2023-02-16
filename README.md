@@ -181,6 +181,16 @@ ___
 2. by calling the method of the object (the function is stored in the object);
 3. through the constructor function (create new objects of the same type);
 4. indirect function call via .call() or .apply();
+___
+
+## Array prototype methods
+
+
+
+
+
+
+
 
 
 
