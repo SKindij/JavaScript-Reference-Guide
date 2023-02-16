@@ -145,7 +145,7 @@ ___
 >    * ??; 
 ___
 
-### A **statement** is a separate command in code that performs a specific action.
+### Statement is a separate command in code that performs a specific action.
 &ensp;In JavaScript, all instructions can be divided into several categories:
 1. declaration of values
 > > let and const never go out of scope where they were defined and are always initialized where specified;
@@ -172,13 +172,15 @@ ___
 > >
 > >    for (initialization; condition; afterthought) { statement };
 > > ```
+4. functions
+5. others ( debugger, import, export );
 
-
-
-
-
-
-
+### Expression is code that returns any value when executed.
+&ensp;There are 4 ways to execute something in JS:
+1. by calling the function;
+2. by calling the method of the object (the function is stored in the object);
+3. through the constructor function (create new objects of the same type);
+4. indirect function call via .call() or .apply();
 
 
 
