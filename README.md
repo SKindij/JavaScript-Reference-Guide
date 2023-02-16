@@ -17,6 +17,7 @@ ___
 + ``console.error( object [, object, ...] );`` >> _Prints object to the Console, formats it as an error, and includes a stack trace._
 + ``console.clear();`` >> _Clears the console._
 ___
+
 ## ⦁ String   ⦁ Number   ⦁ Boolean   ⦁ Null   ⦁ Undefine   ⦁ Object   ⦁ symbol   ⦁ bigint
 &ensp;Primitive data types - are the values of which can only be overwritten, but cannot be changed.
 
@@ -142,15 +143,17 @@ ___
 >    * BigInt; 
 >    * Globalthis;  
 >    * ??; 
+___
 
-
-
-
-
-
-
-
-
+### A **statement** is a separate command in code that performs a specific action.
+&ensp;In JavaScript, all instructions can be divided into several categories:
+1. declaration of values
+> > let and const never go out of scope where they were defined and are always initialized where specified;
+2. management of execution flow
+> > ```javascript
+> >    if (condition) { "perform certain actions";
+> >    } else { "an alternative scenario takes place"; }   
+> > ```
 
 
 
