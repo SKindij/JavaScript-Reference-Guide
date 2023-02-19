@@ -56,14 +56,27 @@
 >     banknotes.some( value => value % 20 === 0); // => true
 >  ```
 
+## Array processing methods
 
-
-
-
-
-
-
-
+>  ```javascript 
+>  let banknotes = [200, 100, undefined, 50, 50, 200, 50, 20, 500, 20, null, 1000, 100];
+>    banknotes.filter( item => item !== undefined && item !== null ); // => [200, 100, 50, 50, 200, 50, 20, 500, 20, 1000, 100]
+>    banknotes.filter( item => item >= 100 ); // => [200, 100, 200, 500, 1000, 100]
+>      banknotes; // => [200, 100, undefined, 50, 50, 200, 50, 20, 500, 20, null, 1000, 100]
+>
+>  let stringBirds = 'stork, crane, heron, duck', stringMammals = 'capybara, beaver, raccoon, skunk';
+>  let arrayBirds = stringBirds.split(", "), arrayMammals = stringMammals.split(", ");
+>    let arrayAnimals = arrayBirds.concat( arrayMammals );
+>      arrayAnimals; // => ['stork', 'crane', 'heron', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk']
+> ``` 
+> > ```javascript  
+> >    // .slice(begin, end) returns new array containing copy of part of the original array without changing it 
+> >    arrayAnimals.slice(1, 7);  // => ['crane', 'heron', 'duck', 'capybara', 'beaver', 'raccoon']
+> >    // to add several elements to the array: .splice(position, 0, new_element_1, new_element_2, ...)
+> >    arrayAnimals.splice( 3, 0, 'quail', 'platypus');
+> >      arrayAnimals; // => ['stork', 'crane', 'heron', 'quail', 'platypus', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk']
+> >      
+> >  ```
 
 
 
