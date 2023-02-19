@@ -183,8 +183,7 @@ ___
 4. indirect function call via .call() or .apply();
 ___
 
-## Array prototype methods
-
+&emsp;Read more [about Arrays](https://github.com/SKindij/JavaScript-reference-book/tree/main/arrays-section)...
 
 
 
