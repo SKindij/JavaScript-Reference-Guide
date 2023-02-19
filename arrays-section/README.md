@@ -35,15 +35,26 @@
 >    ourData.forEach( function(value, index, array) {array[index] = 2024 - value;} );
 >      ourData; // => [43, 40, 21, 1]
 >    // the following method returns a new array without modifying the original array
->    ourData.map(value => value + 10); // => [53, 50, 31, 11]
+>    ourData.map( value => value + 10 ); // => [53, 50, 31, 11]
+>    // Final result of running the reducer across all elements of the array is a single value.
+>    ourData.reduce( (accumulator, currentValue) => accumulator + currentValue, 0 ); // => 7991
+>    ourData.reduce( (accumulator, currentValue) => accumulator * currentValue, 1 ); // => 15925862998976
+>    ourData.reduce( (acc, value) => (acc > value) ? acc : value ); // => 2023
 > ```
-> > ```javascript 
-> >  let banknotes = [200, 100, 50, 50, 200, 50, 20, 500, 20, 1000, 100];
-> >
-> >
-> >
-> >
-> > ```
+
+## array search methods
+
+>  ```javascript 
+>   let banknotes = [200, 100, 50, 50, 200, 50, 20, 500, 20, 1000, 100];
+>     // find something in the array
+>     banknotes.indexOf(50); // => 2
+>     banknotes.includes(1000); // => true
+>       banknotes.find( value => value % 250 === 0 ); // => 500
+>       banknotes.findIndex( value => value === 500 ); // => 7
+>     // check a certain condition for the array
+>     banknotes.every( value => value % 20 === 0); // => false
+>     banknotes.some( value => value % 20 === 0); // => true
+>  ```
 
 
 
