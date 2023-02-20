@@ -183,9 +183,9 @@ ___
 4. indirect function call via .call() or .apply();
 ___
 
-&emsp;Read more [about Arrays](https://github.com/SKindij/JavaScript-reference-book/tree/main/arrays-section)...
+&emsp;Read more about [Arrays](https://github.com/SKindij/JavaScript-reference-book/tree/main/arrays-section)...
 
-
+&emsp;Read more about [Functions](https://github.com/SKindij/JavaScript-reference-book/tree/main/function-section)...
 
 
 
