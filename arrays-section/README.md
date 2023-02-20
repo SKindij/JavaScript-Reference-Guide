@@ -22,6 +22,14 @@
 > >    yourCopy.length = 4;
 > >      yourCopy; // => ['anything', 'dataA', 'dataB', 'dataC']
 > > ```
+> > > ```javascript 
+> > >  // To check if a value is an array, there is an Array.isArray() method.
+> > >  Array.isArray(yourData); // => true
+> > >    // to return the string from the specified array
+> > >    yourData.join(); // => 'dataA,dataB,dataC'
+> > >    yourData.join(" "); // => 'dataA dataB dataC'
+> > >    yourData.join("-"); // => 'dataA-dataB-dataC'
+> > > ```
 
 ## Array iteration methods
 
@@ -77,6 +85,20 @@
 > >      arrayAnimals; // => ['stork', 'crane', 'heron', 'quail', 'platypus', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk']
 > >      
 > >  ```
+
+## Array sorting methods.
+
+>  ```javascript 
+>  // The ourArray.reverse() method reverses the order of the elements in the array.
+> // This method modifies the array on which it was called and returns a reference to it.
+>  let arrayAnimals = ['stork', 'crane', 'heron', 'quail', 'platypus', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk'];
+>  arrayAnimals.reverse(); // => ['skunk', 'raccoon', 'beaver', 'capybara', 'duck', 'platypus', 'quail', 'heron', 'crane', 'stork']
+>
+>
+>  ```
+
+
+
 
 
 
