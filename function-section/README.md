@@ -43,9 +43,10 @@ Recursion is a pattern that is useful in situations where a task can be divided 
 > >    } else { return x * pow(x, n - 1); } 
 > >  }
 > > ```
-
-
-
+> In mathematics, you can write xn = x * xn-1. This is called a recursive step: we turn the task into a simpler action.
+> > ```javascript
+> >  function pow(x, n) { return (n == 1) ? x : (x * pow(x, n - 1)); }
+> > ```
 
 
 ## Callbacks
