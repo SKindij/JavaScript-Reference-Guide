@@ -26,7 +26,25 @@ The ``return`` statement is used to pass a value from the function body to exter
 > > > ```
 
 ## Recursion
-&emsp;A recursion is a structure in which a function calls itself.
+&emsp;A recursion is a structure in which a function calls itself.<br>
+Recursion is a pattern that is useful in situations where a task can be divided into several tasks of the same kind, but simpler. Or when a task can be simplified to a simple action plus a simpler version of the same task.
+
+> let's write a **function pow(x, n)** that brings x to the natural power of n
+> > ```javascript
+> > // iterative thinking:
+> >  function pow(x, n) {  
+> >    let result = 1;
+> >    for (let i = 0; i < n; i++) { result *= x; } 
+> >    return result;	};
+> >
+> > // recursive thinking:
+> >  function pow(x, n) {
+> >    if (n == 1) { return x;
+> >    } else { return x * pow(x, n - 1); } 
+> >  }
+> > ```
+
+
 
 
 
