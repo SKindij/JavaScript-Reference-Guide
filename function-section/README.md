@@ -48,8 +48,31 @@ Recursion is a pattern that is useful in situations where a task can be divided 
 > >  function pow(x, n) { return (n == 1) ? x : (x * pow(x, n - 1)); }
 > > ```
 
-
 ## Callbacks
 &emsp;It is a function that is an argument to another function and that is run after a certain action is completed.<br>
 Read more about this subject in a separate [article](https://github.com/SKindij/Asynchronous-JS-Nodejs/tree/main/codeApplication).
+
+## IIFE
+&emsp;Immediately Invoked Function Expression &emsp; ``(function foo(){ ... })()``
+
+
+## Closures
+&emsp;To use a closure, simply define a function inside another function. Closure is when a function knows how to remember and has access to its lexical scope even when that function is executed outside its lexical scope.
+>  ```javascript
+>  function foo() {
+>    let a = 17, b = 18;
+>    function bar() { console.log( a + b ); }
+>    return bar;
+>  }
+>  // The bar() function has lexical scope access to the inner scope of foo().
+>  let baz = foo();
+>  baz(); // => 35
+> ```
+&emsp; Most often, the object of the lexical environment exists as long as there is a function that will use it. And only when there are no such ones left, the environment is destroyed.
+
+
+
+
+
+
 
