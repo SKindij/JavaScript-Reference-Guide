@@ -70,8 +70,26 @@ Read more about this subject in a separate [article](https://github.com/SKindij/
 > ```
 &emsp; Most often, the object of the lexical environment exists as long as there is a function that will use it. And only when there are no such ones left, the environment is destroyed.
 
-
-
+> ```javascript
+>  function ClosureModule() {
+>  	  let something = "cool closure";
+>	    let another = [1, 2, 3];
+>	      function doSomething() { console.log( something );	}
+>	      function doAnother() { console.log( another.join( " !! " ) );	}
+>	        return {
+>		        doSomething: doSomething,
+>		       doAnother: doAnother
+>	        };
+>  };
+> let firstMod = ClosureModule();
+>   firstMod; 
+>       /* {
+>       *    doAnother: ƒ doAnother(),
+>       *    doSomething: ƒ doSomething()
+>       */ }
+>   firstMod.doSomething(); // cool closure
+>   firstMod.doAnother(); // 1 !! 2 !! 3
+> ```
 
 
 
