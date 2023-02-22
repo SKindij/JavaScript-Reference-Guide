@@ -94,3 +94,18 @@ Read more about this subject in a separate [article](https://github.com/SKindij/
 
 
 
+## this
+&emsp;this is a reference to a specific object whose properties can be accessed inside a function call.
+This **this** is the execution context.
+
+
+
+
+
+
+
+
+
+
+
+
