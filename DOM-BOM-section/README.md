@@ -110,14 +110,19 @@ To work with a collection of elements, we must convert the list to an array or "
   + save only HTML element nodes;
   + always remains relevant — JS will update it when new element appears;
   + method ``.getElementById('idName')`` is only in document object (_good for unique elements: title, form_);
-> > > ```javascript
-> > >  let divAll = document.getElementsByTagName("div");
-> > >    const newElement = document.createElement('div');
-> > >      document.body.appendChild(newElement);
-> > >  let myElement = document.querySelector("div");    
-> > >    const myNewTextNode = document.createTextNode('some text');
-> > >      myElement.appendChild(myNewTextNode);
-> > > ```
+    - ```javascript
+         let divAll = document.getElementsByTagName("div");
+           const newElement = document.createElement('div');
+             document.body.appendChild(newElement);
+         let myElement = document.querySelector("div");    
+           const myNewTextNode = document.createTextNode('some text');
+            myElement.appendChild(myNewTextNode);
+      ```
   + method ``.getElementsByClassName('class1 class2')`` defined for any HTML-Element of page;
+
+Take your time writing loops over HTMLCollection. Because the cycle can become infinite in those cases when searchable elements are added and removed from the page.
+---
+
+
 
 
