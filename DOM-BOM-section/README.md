@@ -121,7 +121,15 @@ To work with a collection of elements, we must convert the list to an array or "
   + method ``.getElementsByClassName('class1 class2')`` defined for any HTML-Element of page;
 
 Take your time writing loops over HTMLCollection. Because the cycle can become infinite in those cases when searchable elements are added and removed from the page.
----
+
+___
+
+HTML attribute values can be read and written using element properties.
+
+
+
+
+
 
 
 
