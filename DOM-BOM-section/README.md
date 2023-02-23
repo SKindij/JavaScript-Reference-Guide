@@ -84,6 +84,7 @@ A global storage event is fired, which can be used to track changes in storage. 
 
 ___
 ## Basics of DOM Manipulation in Vanilla JavaScript   
+
 * **NodeList**
   + stores any nodes (including comments and text);
   + can be both a "live" collection (``getElementsByName`` and ``childNodes``) and a static one (``querySelectorAll``);
@@ -99,14 +100,24 @@ ___
     - to search for all elements in general, you need to pass string ``'*'``, which is called a **wildcard**, as an argument.  
 
 To work with a collection of elements, we must convert the list to an array or "borrow" the array methods from the Array prototype.
-> ```javascript
->  Array.from(myElements).forEach(doSomethingWithEachElement);
->    Array.from(myElements).forEach((item) => {  item.classList.add('foo'); });
->  Array.prototype.forEach.call(myElements, doSomethingWithEachElement); 
-> ```
+> > > ```javascript
+> > >  Array.from(myElements).forEach(doSomethingWithEachElement);
+> > >    Array.from(myElements).forEach((item) => {  item.classList.add('foo'); });
+> > >  Array.prototype.forEach.call(myElements, doSomethingWithEachElement); 
+> > > ```
 
-
-
-
+* HTMLCollection
+  + save only HTML element nodes;
+  + always remains relevant — JS will update it when new element appears;
+  + method ``.getElementById('idName')`` is only in document object (_good for unique elements: title, form_);
+> > > ```javascript
+> > >  let divAll = document.getElementsByTagName("div");
+> > >    const newElement = document.createElement('div');
+> > >      document.body.appendChild(newElement);
+> > >  let myElement = document.querySelector("div");    
+> > >    const myNewTextNode = document.createTextNode('some text');
+> > >      myElement.appendChild(myNewTextNode);
+> > > ```
+  + method ``.getElementsByClassName('class1 class2')`` defined for any HTML-Element of page;
 
 
