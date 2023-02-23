@@ -28,6 +28,20 @@
   + clientYOffset
 
 ### Web Storage 
++ **Local Storage** (_for long-term data storage_) >>>
+  * we specify name of field in which data (_up to 5MB_) should be saved (values in form of strings), and then use this name to retrieve it;
+  * this object is one for all tabs and windows within the source (same domain/protocol/port);
+  * if we set data in one window, changes become visible in another;
+    - write: ``window.localStorage.setItem("name", "Doka SKj");``
+    - read: ``const name = window.localStorage.getItem("name");``
+    - remove: ``window.localStorage.removeItem("user");``
+    - clear: ``window.localStorage.clear();``
++ **Session Storage** (_data is stored only during the lifetime of the current session_) >>>
+
+
+
+
+
 
 
 
