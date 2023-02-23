@@ -41,6 +41,49 @@
 
 
 
+Use wrapper functions to prevent errors related to failed write attempts, missing localStorage in the browser, and code duplication.
+> ```javascript
+>  function setItem(key, value) {
+>    try { return window.localStorage.setItem(key, value) 
+>    } catch (e) { console.log(e) }
+>  } 
+> ```
+> > ```javascript
+> >  function getItem(key) {
+> >    try { return window.localStorage.getItem(key)
+> >    } catch (e) { console.log(e) }
+> >  }
+> > ```
+> ```javascript
+>  function setJSON(key, value) { 
+>    try {
+>      const json = JSON.stringify(value) 
+>      setItem(key, json)
+>    } catch (e) { console.error(e) }
+>  }
+> ```
+> > ```javascript
+> >  function getJSON(key) {
+> >    try {
+> >      const json = getItem(key)
+> >      return JSON.parse(json)
+> >    } catch (e) { console.error(e) }
+> >  }
+> > ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
