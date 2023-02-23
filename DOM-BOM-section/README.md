@@ -82,9 +82,28 @@ A global storage event is fired, which can be used to track changes in storage. 
 >    }
 > ```
 
+___
+## Basics of DOM Manipulation in Vanilla JavaScript   
+* **NodeList**
+  + stores any nodes (including comments and text);
+  + can be both a "live" collection (``getElementsByName`` and ``childNodes``) and a static one (``querySelectorAll``);
+    - ```javascript
+        let myElement = document.querySelector("#foo > div.bar"); 
+        //If there are no required elements, null will be returned.
+        const myChildElement = myElement.querySelector('input[type="submit"]');
+      ``` 
+  + method ``.querySelectorAll()`` returns an array-like static NodeList collection of found elements;
+    - ```javascript
+        let myElements = document.querySelectorAll("div>p");
+      ``` 
+    - to search for all elements in general, you need to pass string ``'*'``, which is called a **wildcard**, as an argument.  
 
-
-
+To work with a collection of elements, we must convert the list to an array or "borrow" the array methods from the Array prototype.
+> ```javascript
+>  Array.from(myElements).forEach(doSomethingWithEachElement);
+>    Array.from(myElements).forEach((item) => {  item.classList.add('foo'); });
+>  Array.prototype.forEach.call(myElements, doSomethingWithEachElement); 
+> ```
 
 
 
