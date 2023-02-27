@@ -17,6 +17,15 @@ Methods are actions that can be performed on objects. Methods are stored in prop
 > >  const copy = { ...user };
 > >    console.log(copy);  //=> {firstName: 'Maryna', username: 'wild princess'}
 > > ```
+> ``for...in`` allows to loop through enumerated properties (which developer adds to object, including the properties of the prototype).
+> > ```javascript
+> >  const developer = {  name: 'Serhio',  language: 'JavaScript',  company: 'Google'   };
+> >    for (const key in developer) {
+> >      console.log(`${key} – ${ developer[key]}`)
+> >   }; //     name – Serhio         language – JavaScript           company – Google
+> > ```
+
+
 
 
 
