@@ -42,8 +42,12 @@ There are 3 methods to iterate through the Map collection:
     - ``map.values()``
 > > > They can be sorted by the **for..of** loop.
 
-
-
+If we already have an ordinary object, and we would like to create a Map from it, then the built-in method **Object.entries(obj)** will help, which receives the object and returns an array of key-value pairs for it
+> ```javascript
+>  let obj = { name: "Piggy", age: 30 };
+>    let map = new Map(Object.entries(obj));
+>      console.log( map ); //=> Map(2) {'name' => 'Piggy', 'age' => 30}
+> ```
 
 
 
