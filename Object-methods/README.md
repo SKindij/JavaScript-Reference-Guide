@@ -53,9 +53,21 @@ We can use the **Object.fromEntries** method, which will perform the reverse act
 > ```javascript
 >  let prices = Object.fromEntries([ ['banana', 46], ['orange', 78], ['apple', 24] ]);
 >    console.log( prices ); //=> {banana: 46, orange: 78, apple: 24}
->
->
 > ```
+
+**Set** - a collection for storing unique values (without keys) of any type.
+(this is a non-indexed collection, you can put an element there, but you can't get it)
+> ``const uniqueValuesArr = [ ...new Set(nonUnique) ]``
+> > + ``uniqueIds.add("…");``
+> > + ``uniqueIds.size;``
+> > + ``uniqueIds.has('…');``
+> > + ``uniqueIds.delete('...');``
+> > > ``someSet.forEach(function(value) { expression +value}  )``
+
+
+
+
+
 
 
 
