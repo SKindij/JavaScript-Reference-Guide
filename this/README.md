@@ -4,7 +4,15 @@
 This ``this`` is the **execution context**.
 > _It is important to distinguish between a function call and a method call._
 > > + in a normal function call ``this = global object``; 
+> >   - If we run the JS code in the browser, it will be ``window``.
+> >   - If we run the code in the Node environment, then ``global``.
 > > + when calling the function in strict mode ``this = undefined``.
+
+
+
+
+
+
 
 
 
