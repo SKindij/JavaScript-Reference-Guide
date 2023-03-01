@@ -24,6 +24,17 @@ Methods are actions that can be performed on objects. Methods are stored in prop
 > >      console.log(`${key} – ${ developer[key]}`)
 > >   }; //     name – Serhio         language – JavaScript           company – Google
 > > ```
+> > > String property names will be listed in the order they were assigned to the object.<br>
+> > > Numerical properties will be listed in ascending order.
+
+**Map** - a collection for storing data of any type in the form of **[key, value]** pairs.
+> ``const map = new Map( [ ['js', 'JavaScript'], ['css', 'Cascading Style Sheets'] ] )``
+> > ``map.set(key, value)`` - sets the value;
+> > ``map.get(key)`` - returns the value;
+> > ``map.delete(key)`` - deletes a specific value;
+> > ``map.clear()`` – completely clears the collection;
+> > > ``someData.has(key)``
+> > > ``map.forEach(  (key, value) => { console.log(`${key} - ${value}`) }  )``
 
 
 
