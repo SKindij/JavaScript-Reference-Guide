@@ -29,12 +29,20 @@ Methods are actions that can be performed on objects. Methods are stored in prop
 
 **Map** - a collection for storing data of any type in the form of **[key, value]** pairs.
 > ``const map = new Map( [ ['js', 'JavaScript'], ['css', 'Cascading Style Sheets'] ] )``
-> > ``map.set(key, value)`` - sets the value;
-> > ``map.get(key)`` - returns the value;
-> > ``map.delete(key)`` - deletes a specific value;
-> > ``map.clear()`` – completely clears the collection;
-> > > ``someData.has(key)``
+> > ``map.set(key, value)`` - sets the value;<br>
+> > ``map.get(key)`` - returns the value;<br>
+> > ``map.delete(key)`` - deletes a specific value;<br>
+> > ``map.clear()`` – completely clears the collection;<br>
+> > > ``someData.has(key)``<br>
 > > > ``map.forEach(  (key, value) => { console.log(`${key} - ${value}`) }  )``
+
+There are 3 methods to iterate through the Map collection:
+    - ``map.entries()``
+    - ``map.keys()``
+    - ``map.values()``
+> > > They can be sorted by the **for..of** loop.
+
+
 
 
 
