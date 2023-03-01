@@ -49,6 +49,13 @@ If we already have an ordinary object, and we would like to create a Map from it
 >      console.log( map ); //=> Map(2) {'name' => 'Piggy', 'age' => 30}
 > ```
 
+We can use the **Object.fromEntries** method, which will perform the reverse action: transform the received array of [key, value] pairs into an object.
+> ```javascript
+>  let prices = Object.fromEntries([ ['banana', 46], ['orange', 78], ['apple', 24] ]);
+>    console.log( prices ); //=> {banana: 46, orange: 78, apple: 24}
+>
+>
+> ```
 
 
 
