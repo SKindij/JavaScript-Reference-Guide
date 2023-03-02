@@ -39,9 +39,18 @@ When a method (_belonging to an object_) is called, ``this`` becomes this **obje
 
 &emsp; A related function is a function associated with an object. It is usually created from a regular function using the ``Bind()`` method. The two functions have the same bodies and scopes, but different contexts.<br>
 &emsp; the .bind() method allows you to associate the execution context with the function in order to determine "in advance and exactly" which value will be in this;
-&emsp; The method ``.bind(thisArg[, arg1[, arg2[, ...]]])`` takes as the first argument **thisArg** the call context of the bound function, and the optional argument list **arg1, arg2, ...** is passed to the called function . It returns a new function associated with thisArg.
-
-
+> The method ``.bind(thisArg[, arg1[, arg2[, ...]]])`` takes as the first argument **thisArg** the call context of the bound function, and the optional argument list **arg1, arg2, ...** is passed to the called function . It returns a new function associated with thisArg.
+> > ```javascript
+> > function multiply(number) { 'use strict';
+> >   return this * number;
+> > } 												
+> > // create a bound function with context
+> > let double = multiply.bind(2); 				
+> > let trible = multiply.bind(3);
+> >   // invoke the bound function
+> >   console.log(double(5));  // => 10  			
+> > 	console.log(trible (5)); // => 15
+> >  ```
 
 
 
