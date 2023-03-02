@@ -26,7 +26,16 @@ When a method (_belonging to an object_) is called, ``this`` becomes this **obje
 > ``myFunction.call(thisValue, 'value1', 'value2')``
 * The ``.apply(thisArg, [args])`` method takes as the first argument **thisArg** the context of the call, and an array-like object **[args]** is passed to the called function as an argument.
 > ``myFunction.apply(thisValue, ['value1', 'value2'])``
-
+> > ```javascript
+> >  let rabbit = { name: 'White Rabbit' };
+> >    function concatName(string) {
+> >      console.log(this === rabbit); 					 // => true
+> >      return string + this.name;
+> >    };							
+> >  // Indirect invocations
+> >  console.log(concatName.call(rabbit, 'Hello ')); 					 // => 'Hello White Rabbit'
+> >  console.log(concatName.apply(rabbit, ['Bye '])); 				 // => 'Bye White Rabbit'
+> > ```
 
 
 
