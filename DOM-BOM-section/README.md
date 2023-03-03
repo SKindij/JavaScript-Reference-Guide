@@ -126,11 +126,17 @@ ___
 
 HTML attribute values can be read and written using element properties.
 > > * to set class:
-> >   + ``element.className = "hacked";``	
+> >   + ``element.className = "hacked";``
+> >     - ``element.className.add('hello');``
+> >     - ``element.className.remove('bye');``
+> > * add or remove multiple classes:
+> >   + ``button.classList.add('active', 'paralel');``
+> >   + ``button.classList.remove('active');``
 > > * to set styles:
 > >   + ``element.style.marginTop = "20px";``
 > >   + ``element.style.color = "gray";``
 > >   + ``element.style.backgroundColor = "beige";``
+> >   + ``elem.style.cssText = "color: blue; border: 1px solid black";``
 > > * get a child or parent element:
 > >   + ``myElement. children``
 > >   + ``myElement.firstChild`` or ``myElement.lastChild``<br>
@@ -142,6 +148,9 @@ HTML attribute values can be read and written using element properties.
 > >   + ``El.innerText`` _for working with text_
 > >   + ``El.textContent`` _returns the contents of hidden nested children as well (use to add text)_
 > >   + ``outerHTML`` _returns the HTML code of both this element and everything in it_
+> > * attribute management:
+> >   + ``element.setAttribute("style", "color: red; border: 1px solid blue;");``
+> >   + ``someElement.getAttribute('id' || 'class' || 'type');``
 
 
 
