@@ -125,18 +125,27 @@ Take your time writing loops over HTMLCollection. Because the cycle can become i
 ___
 
 HTML attribute values can be read and written using element properties.
-> * to set class:
-> > ``element.className = "hacked";``	
-> * to set styles:
-> > ``element.style.marginTop = "20px";``
-> > ``element.style.color = "gray";``
-> > ``element.style.backgroundColor = "beige";``
-> * get a child or parent element:
-> > ``myElement. children``
-> > ``myElement.firstChild`` or ``myElement.lastChild``<br>
-> > ``myElement.parentElement``
-> * get the next/previous neighbor node:
-> > ``myElement.nextElementSibling`` or ``myElement.previousElementSibling``
+> > * to set class:
+> >   + ``element.className = "hacked";``	
+> > * to set styles:
+> >   + ``element.style.marginTop = "20px";``
+> >   + ``element.style.color = "gray";``
+> >   + ``element.style.backgroundColor = "beige";``
+> > * get a child or parent element:
+> >   + ``myElement. children``
+> >   + ``myElement.firstChild`` or ``myElement.lastChild``<br>
+> >   + ``myElement.parentElement``
+> > * get the next/previous neighbor node:
+> >   + ``myElement.nextElementSibling`` or ``myElement.previousElementSibling``
+> > * internal content of elements:
+> >   + ``El.innerHTML`` _returns the HTML code of everything in the current element (the easiest way to see the HTML content of an element)_
+> >   + ``El.innerText`` _for working with text_
+> >   + ``El.textContent`` _returns the contents of hidden nested children as well (use to add text)_
+> >   + ``outerHTML`` _returns the HTML code of both this element and everything in it_
+
+
+
+
 
 
 
