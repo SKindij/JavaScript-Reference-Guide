@@ -52,5 +52,16 @@ When a method (_belonging to an object_) is called, ``this`` becomes this **obje
 > > 	console.log(trible (5)); // => 15
 > >  ```
 
+&emsp; The **arrow function** ``=>`` does not create its own execution context, but borrows **this** from the external function in which it is defined. The arrow function is anonymous, which means that its name property is the empty string **''**. Thus, it does not have a lexical name, which is needed for recursion and handling handlers.
+> > ```javascript
+> > let group = { title: "Our group:",  students: ["Ioahn", "Peter", "Mariah"],
+> >   showList() { this.students.forEach( student => console.log(this.title + ': ' + student) ); }
+> > };
+> > group.showList(); 		
+> > ```
+
+
+
+
 
 
