@@ -1,9 +1,9 @@
 const newSection = document.createElement('section');
-const newElementA = document.createElement('div');
-const newElementB = document.createElement('div');
+const newDiv = document.createElement('div');
 
-document.body.appendChild(newSection);
-
+document.body.appendChild(newSection); //=> <section> </section>
+  let mySection = document.querySelector("section"); 
+    mySection.appendChild(newDiv); //=> <div> </div>
 
 
 
