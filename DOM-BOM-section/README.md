@@ -112,10 +112,10 @@ To work with a collection of elements, we must convert the list to an array or "
   + method ``.getElementById('idName')`` is only in document object (_good for unique elements: title, form_);
     - ```javascript
          let divAll = document.getElementsByTagName("div");
-           const newElement = document.createElement('div');
+           const newElement = document.createElement('div'); //creates new element with given tag
              document.body.appendChild(newElement);
          let myElement = document.querySelector("div");    
-           const myNewTextNode = document.createTextNode('some text');
+           const myNewTextNode = document.createTextNode('some text'); // creates new text node with given text
             myElement.appendChild(myNewTextNode);
       ```
   + method ``.getElementsByClassName('class1 class2')`` defined for any HTML-Element of page;
@@ -157,6 +157,16 @@ _When the server compiles the starting HTML, it can put values in data attribute
 > > * ``elem.dataset.columns`` - the value of the data-columns attribute;
 
 To delete a node: ``element.remove();`` 
+
+
+___
+
+### insertAdjacentHTML/Text/Element
+
+
+
+
+
 
 
 
