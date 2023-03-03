@@ -139,7 +139,7 @@ HTML attribute values can be read and written using element properties.
 > >   + ``elem.style.cssText = "color: blue; border: 1px solid black";``
 > > * get a child or parent element:
 > >   + ``myElement. children``
-> >   + ``myElement.firstChild`` or ``myElement.lastChild``<br>
+> >   + ``myElement.firstChild`` or ``myElement.lastChild``
 > >   + ``myElement.parentElement``
 > > * get the next/previous neighbor node:
 > >   + ``myElement.nextElementSibling`` or ``myElement.previousElementSibling``
@@ -152,8 +152,9 @@ HTML attribute values can be read and written using element properties.
 > >   + ``element.setAttribute("style", "color: red; border: 1px solid blue;");``
 > >   + ``someElement.getAttribute('id' || 'class' || 'type');``
 
-
-
+**Date attributes** are used to store values on HTML elements.<br>
+_When the server compiles the starting HTML, it can put values in data attributes. The frontend can then use them instead of sending the request to the server._
+> > * ``elem.dataset.columns`` - the value of the data-columns attribute;
 
 
 
