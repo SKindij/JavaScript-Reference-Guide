@@ -125,10 +125,18 @@ Take your time writing loops over HTMLCollection. Because the cycle can become i
 ___
 
 HTML attribute values can be read and written using element properties.
-
-
-
-
+> * to set class:
+> > ``element.className = "hacked";``	
+> * to set styles:
+> > ``element.style.marginTop = "20px";``
+> > ``element.style.color = "gray";``
+> > ``element.style.backgroundColor = "beige";``
+> * get a child or parent element:
+> > ``myElement. children``
+> > ``myElement.firstChild`` or ``myElement.lastChild``<br>
+> > ``myElement.parentElement``
+> * get the next/previous neighbor node:
+> > ``myElement.nextElementSibling`` or ``myElement.previousElementSibling``
 
 
 
