@@ -52,9 +52,29 @@ Next, we listen to events on xhr to get the answer:
 > >   xhr.onerror = function() { alert("The request failed"); };
 > > ```
 
+___
+
+&emsp; **AJAX** (_Asynchronous JavaScript and XML_) allows us to access information from external pages even after our page has loaded.<br>
+**fetch function** allows us to send HTTP requests to the server. With its help, you can both receive and send data.<br>
+Result of the fetch call will be a **Promise** (a wrapper object for asynchronous code) - this is something that will happen between now and the final moment in time (something that will happen in the future, but probably not immediately).
+
+> If you are working with JSON API, you will need to check status and parse JSON for each response. _You can simplify your code by defining status parsing and JSON parsing as separate functions that return Promises._ You will only have to think about handling the data itself and, of course, exceptions.
+> > ```javascript
+> > function status(response) {  
+> >   if (response.status >= 200 && response.status < 300) {  
+> >     return Promise.resolve(response)  
+> >   } else { return Promise.reject(new Error(response.statusText)) }  
+> > };
+> > function json(response) { return response.json() }
+> > 
+> > fetch('users.json')  
+> >   .then(status)  
+> >   .then(json)  
+> >   .then(function(data) { console.log('Request succeeded with JSON response', data); })
+> >   .catch(function(error) { console.log('Request failed', error); });
+> > ```
+
 
 
 ___
-
-
 
