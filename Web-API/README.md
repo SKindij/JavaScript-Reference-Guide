@@ -32,9 +32,26 @@ To make a request, we need to complete three steps:
     + ``xhr.send([body]);``
 
 Next, we listen to events on xhr to get the answer:
-    + **load** – occurs when any response is received, including HTTP error responses such as 404.
-    + **error** – when the request cannot be fulfilled, for example, there is no connection or URL.
-    + **progress** - occurs periodically while loading a response, reports progress.
+  + **load** – occurs when any response is received, including HTTP error responses such as 404.
+  + **error** – when the request cannot be fulfilled, for example, there is no connection or URL.
+  + **progress** - occurs periodically while loading a response, reports progress.
+> Here is a complete example.
+> > ```javascript
+> > let xhr = new XMLHttpRequest();
+> > xhr.open('GET', '/article/example/load');
+> > xhr.send();
+> > 	xhr.onload = function() {
+> > 		if (xhr.status != 200) {  // analyze HTTP status of response
+> > 			alert(`Error ${xhr.status}: ${xhr.statusText}`);    // 404: Not Found
+> > 		} else { alert(`Done, received ${xhr.response.length} byte`);  // this is server response
+> >   } };
+> >   xhr.onprogress = function(event) { 
+> >     if (event.lengthComputable) { alert(`Received ${event.loaded} of ${event.total} byte`);
+> > 	  } else { alert(`Received ${event.loaded} byte`); 
+> >   } };
+> >   xhr.onerror = function() { alert("The request failed"); };
+> > ```
+
 
 
 ___
