@@ -6,16 +6,17 @@
 
 &emsp;**API** - structured form of communication between different applications.<br>
 **REST** (_Representational State Transfer_) - component communication style in which all required data is specified in request parameters.<br>
->   The interaction between the client and the server is reduced to 4 operations
-> >     |   C    |   R   |     U      |   D    |
-> >     |--------|-------|------------|--------|
-> >     | create | read  |   update   | delete |
-> >     |  POST  |  GET  | PUT, PATCH | DELETE |
+&emsp; The interaction between the client and the server is reduced to 4 operations
+   |   C    |   R   |     U      |   D    |
+   |--------|-------|------------|--------|
+   | create | read  |   update   | delete |
+   |  POST  |  GET  | PUT, PATCH | DELETE |
 
-
-
-
-
+&emsp; **RPC** (_Remote Procedure Call_) - is a style in which request message stores action to be performed and data required for that action.<br>
+&emsp; **JSON-RPC** must have the following fields:
+  |      method      |       params    |          id          |
+  |------------------|-----------------|----------------------|
+  | "name of method" | [array of data] | establish compliance |
 
 
 
