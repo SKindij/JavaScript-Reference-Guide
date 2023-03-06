@@ -17,6 +17,27 @@
   |      method      |       params    |          id          |
   |------------------|-----------------|----------------------|
   | "name of method" | [array of data] | establish compliance |
+___
+
+&emsp; **XMLHttpRequest** is a built-in browser object that allows you to make HTTP requests to the server without reloading the page. XMLHttpRequest has two modes of operation: synchronous and asynchronous.
+
+To make a request, we need to complete three steps:
+1. Create an XMLHttpRequest.
+    + ``let xhr = new XMLHttpRequest();`` 
+2. Initialize it.
+    + ``xhr.open(method, URL, async = true, user, password);``
+        - HTTP method(usually "GET" or "POST");
+        - URL where the request is sent;
+3. Send a request.
+    + ``xhr.send([body]);``
+
+Next, we listen to events on xhr to get the answer:
+    + **load** – occurs when any response is received, including HTTP error responses such as 404.
+    + **error** – when the request cannot be fulfilled, for example, there is no connection or URL.
+    + **progress** - occurs periodically while loading a response, reports progress.
+
+
+___
 
 
 
