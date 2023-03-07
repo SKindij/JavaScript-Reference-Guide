@@ -13,10 +13,8 @@ const results = answers.map( item => item.toLowerCase() );
 console.log(answers); // =>  ['VoltRon', 'OptiMus', 'MegAtron', 'GeneSius']
 console.log(results); // =>  ['voltron', 'optimus', 'megatron', 'genesius']
 
+// other
 answers.forEach( function(value, index, array) {array[index] = value + '-bot'} );
 console.log(answers); // => ['VoltRon-bot', 'OptiMus-bot', 'MegAtron-bot', 'GeneSius-bot']
 
-
-
-
-
+console.log(results.some(item => item.length === 7)); // => true
