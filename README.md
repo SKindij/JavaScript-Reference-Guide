@@ -18,8 +18,14 @@ ___
 + ``console.clear();`` >> _Clears the console._
 ___
 
-## ⦁ String   ⦁ Number   ⦁ Boolean   ⦁ Null   ⦁ Undefine   ⦁ Object   ⦁ symbol   ⦁ bigint
-&ensp;Primitive data types - are the values of which can only be overwritten, but cannot be changed.
+&emsp;Read more about **primitive data types**
+|                     |                     |
+|---------------------|---------------------|
+| [Number & String]() | [Null & Undefine]() | 
+| [Boolean]() | [symbol & bigint]() |
+
+... (_values of which can only be overwritten, but cannot be changed_)
+___
 
 > * &ensp; ``Number.isFinite (constNum);`` <br>
 > > ```javascript
@@ -183,7 +189,7 @@ ___
 4. indirect function call via .call() or .apply();
 ___
 
-&emsp;Read more about 
+&emsp;Read more about... 
 + [ARRAYS](https://github.com/SKindij/JavaScript-reference-book/tree/main/arrays-section)...
 + [FUNCTIONS](https://github.com/SKindij/JavaScript-reference-book/tree/main/function-section)...
 + [DOM & BOM](https://github.com/SKindij/JavaScript-reference-book/tree/main/DOM-BOM-section)...
