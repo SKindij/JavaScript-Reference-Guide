@@ -1,7 +1,7 @@
 'use strict'
-// GET
-const ul = document.getElementById('authors');
-	const url = 'https://randomuser.me/api/?results=10'; 
+    // Fetch uses GET requests by default
+    const ul = document.getElementById('authors');
+	const urlGet = 'https://randomuser.me/api/?results=10'; 
 	
 	function createNode(element) { return document.createElement(element); };
 	function append(parent, el) { return parent.appendChild(el); };
@@ -14,13 +14,13 @@ const ul = document.getElementById('authors');
     };
     function json(response) { return response.json() }
 
-    fetch(url)  
+    fetch(urlGet)  
       .then(status)  
       .then(json)  
       .then(function(data) { console.log('Request succeeded with JSON response', data); })
       .catch(function(error) { console.log('Request failed', error); });  
 	  
-	fetch(url)  
+	fetch(urlGet)  
         .then(status)  
         .then(json)    
 	    .then(function(data) {
@@ -41,16 +41,24 @@ const ul = document.getElementById('authors');
 	    })
         .catch(function(error) { console.log(error); });	  
 
-// POST
 
+// Be sure to add a constant variable that holds a reference to the Random User API.
+const urlPost = 'https://randomuser.me/api';
 
+// before you make a POST request, create the data you want to send to the API
+let data = {
+  name: 'Sauron'
+}
 
+// fetch() can take a second parameter (fetchData), which allows you to control various settings:
+let fetchData = {
+  method: 'POST',
+  body: data,
+  headers: new Headers()
+}
 
-
-
-
-
-
-
-
-
+// then() function will include code that handles the response received from the Random User API server:
+fetch(urlPost, fetchData)
+.then(function() {
+    // Handle response you get from the server
+});
