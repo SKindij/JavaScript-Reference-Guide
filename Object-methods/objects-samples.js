@@ -23,7 +23,15 @@ Car.type = 'sedan';
 console.log(Car); // => {wheels: 4, type: 'sedan'}
 console.log(myFord.type);  // => sedan
 
+// sample 2 <property getters and setters>
+let user = { name: "Takeshi", surname: "Kovacs",
+    get fullName() { return `${this.name} ${this.surname}`; },
+    set fullName(value) { [this.name, this.surname] = value.split(" "); }
+};
 
+user.fullName = "Kristin Ortega";    
+console.log(user.name);        // => Kristin
+console.log(user.surname);       // => Ortega
 
 
 
