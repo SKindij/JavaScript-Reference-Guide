@@ -57,9 +57,11 @@
 # RegExp
 
 &ensp; Regular expressions are a powerful tool for searching and replacing a string. In JS, they are implemented by the RegExp object and integrated into string methods.
+> * "long" syntax: ``regexp = new RegExp("pattern", "flags");``
+> * "short" syntax: ``regexp = /pattern/;``     _// no flags_
+> * "short" syntax: ``regexp = /pattern/gmi;``    _// with gmi flags_
 
-
-
-
+&ensp;  _Slashes are used when we know exactly what the regular expression will be when we write the code - which is most situations._<br>
+_And new RegExp - when we want to create a regular expression "on the fly" from a dynamically generated string._
 
 
