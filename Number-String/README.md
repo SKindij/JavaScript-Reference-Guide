@@ -84,6 +84,20 @@ _And new RegExp - when we want to create a regular expression "on the fly" from 
 
 > **str.replace(regexp, replacement)** replaces matches from regexp in str with replacement _(all if **g** flag is present, otherwise only first)_
 > > ```javascript
-> > console.log( "We will, we will".replace(/we/i, "I") ); /);  // I will, we will
-> > console.log( "We will, we will".replace(/we/ig, "I") );  // I will, I will
+> > console.log( "We will, we will".replace(/we/i, "I") ); /);  // => I will, we will
+> > console.log( "We will, we will".replace(/we/ig, "I") );  // => I will, I will
 > > ```
+
+&ensp; In the **replacement string**, we can use special combinations of characters to insert match fragments:
++ $& inserts all matches found
+  - ``console.log ( "This HTML as well as CSS".replace(/HTML/, "$& and JavaScript") );`` => _This HTML and JavaScript as well as CSS_
++ $` inserts part of the string before the match
+  - ``console.log ( "Here's the HTML as well as CSS".replace(/HTML/, "$` JavaScript") );`` => _Here's the Here's the  JavaScript as well as CSS_
++ $' inserts the part of the string after the match
+  - ``console.log ( "That HTML as well as CSS".replace(/HTML/, "$' JavaScript") );`` => _That  as well as CSS JavaScript as well as CSS_
+
+
+
+
+
+
