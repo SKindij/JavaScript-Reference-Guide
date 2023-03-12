@@ -64,4 +64,14 @@
 &ensp;  _Slashes are used when we know exactly what the regular expression will be when we write the code - which is most situations._<br>
 _And new RegExp - when we want to create a regular expression "on the fly" from a dynamically generated string._
 
+&ensp; Regular expressions can have flags that affect the search.
++ **m** (multiline mode);
++ **u** (includes full Unicode support.);
++ **g** (the search looks for all matches, without it - only the first);
++ **i** (search is case-insensitive: there is no difference between A and a);
++ **s** (enables "dotall" mode, in which the dot . can match the newline character \n);
++ **y** (search mode at a specific position in the text);
+
+
+
 
