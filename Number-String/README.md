@@ -127,4 +127,8 @@ _And new RegExp - when we want to create a regular expression "on the fly" from 
 > > ```
 In multiline mode, **^** and **$** denote the start/end of each line of text.
 
+&ensp; Multiple characters in square brackets **[…]** mean "search for any given character".<br>
+For example, [a-z] corresponds to a character in the range from a to z, or [0-5] to a number from 0 to 5.
+
+
 
