@@ -1,3 +1,5 @@
+# Number()
+
 > * &ensp; ``Number.isFinite (constNum);`` <br>
 > > ```javascript
 > >    Number.isFinite (17); // => true       if a number was passed to it during the call
@@ -26,6 +28,8 @@
 > * &ensp; ``Math.max(num1, num2, ...);`` - _returns the largest integer in the set_
 > * &ensp; ``Math.min(num1, num2, ...);`` - _returns the smallest number in the set_
 
+# String()
+
 &ensp;A tag template is a loggerTag function that allows you to parse a template string.
 > > ```javascript
 > >    let phrase = 'It will be a victorious UA spring!';
@@ -49,3 +53,13 @@
 > >      stringo.charAt(8); // => 'm'
 > >      stringo.slice(8, 23); // => 'man does great '
 > > ```
+
+# RegExp
+
+&ensp; Regular expressions are a powerful tool for searching and replacing a string. In JS, they are implemented by the RegExp object and integrated into string methods.
+
+
+
+
+
+
