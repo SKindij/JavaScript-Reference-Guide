@@ -72,6 +72,18 @@ _And new RegExp - when we want to create a regular expression "on the fly" from 
 + **s** (enables "dotall" mode, in which the dot . can match the newline character \n);
 + **y** (search mode at a specific position in the text);
 
+> The **str.match(regexp)** method for the string returns matches with the regular expression regexp
+> > ```javascript
+> >  let str = "Father, our father!";
+> >  console.log( str.match(/father/gi) );  // => (2) ['Father', 'father']
+> >  console.log( str.match(/parent/gi) );  // => null
+> > ```
 
+> In the absence of matches, not an empty array, but **null** is returned.
+> > ``let matches = "JavaScript".match(/HTML/);``   // => null
 
-
+> **str.replace(regexp, replacement)** replaces matches from regexp in str with replacement _(all if **g** flag is present, otherwise only first)_
+> > ```javascript
+> > console.log( "We will, we will".replace(/we/i, "I") ); /);  // I will, we will
+> > console.log( "We will, we will".replace(/we/ig, "I") );  // I will, I will
+> > ```
