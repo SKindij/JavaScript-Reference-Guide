@@ -116,8 +116,15 @@ _And new RegExp - when we want to create a regular expression "on the fly" from 
 > >  console.log (myNumber.replace(/\D/g, "") ); // => 380627515937
 > > ```
 
-
-
-
+&ensp; The caret **^** and dollar **$** characters have special meanings in regular expressions. They are called "anchors".
++ **^** means match with beginning of text, and **$** - with end;
++ both together **^...$** are often used to check if a string matches a pattern completely;
+> _Let's check that the string is a time in the format 12:34, that is, two numbers, then a colon, then two more numbers._
+> > ```javascript
+> >  let regexp = /^\d\d:\d\d$/;
+> >			console.log ( regexp.test("14:27") );     // => true
+> >			console.log ( regexp.test("14:327") );   // => false
+> > ```
+In multiline mode, **^** and **$** denote the start/end of each line of text.
 
 
