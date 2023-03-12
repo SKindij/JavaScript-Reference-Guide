@@ -90,11 +90,31 @@ _And new RegExp - when we want to create a regular expression "on the fly" from 
 
 &ensp; In the **replacement string**, we can use special combinations of characters to insert match fragments:
 + $& inserts all matches found
-  - ``console.log ( "This HTML as well as CSS".replace(/HTML/, "$& and JavaScript") );`` => _This HTML and JavaScript as well as CSS_
+  - ``console.log ( "! HTML as well as CSS".replace(/HTML/, "$& and JavaScript") );`` => _! HTML and JavaScript as well as CSS_
 + $` inserts part of the string before the match
-  - ``console.log ( "Here's the HTML as well as CSS".replace(/HTML/, "$` JavaScript") );`` => _Here's the Here's the  JavaScript as well as CSS_
+  - ``console.log ( "! HTML as well as CSS".replace(/HTML/, "$` JavaScript") );`` => _! !  JavaScript as well as CSS_
 + $' inserts the part of the string after the match
-  - ``console.log ( "That HTML as well as CSS".replace(/HTML/, "$' JavaScript") );`` => _That  as well as CSS JavaScript as well as CSS_
+  - ``console.log ( "! HTML as well as CSS".replace(/HTML/, "$' JavaScript") );`` => _!  as well as CSS JavaScript as well as CSS_
+
+> The **regexp.test(str)** method checks if there is at least one match, if so, returns true, otherwise false.
+> > ``console.log( /learning/i.test("I'm learning JavaScript") );``  // => true
+
+&ensp; A character class is a special notation that corresponds to any character in a particular set.<br>
++ **\d** = "any single digit"
+> > ```javascript
+> >   let myNumber = '+38-062-751-59-37';
+> >		let regexp = /\d/g;
+> >		console.log (myNumber.match(regexp) );  // => ['3', '8', '0', '6', '2', '7', '5', '1', '5', '9', '3', '7']
+> > ```
++ **\s** = ("space")
++ **\w** = ("word")
++ **.** dot means "any character"
+
+> find non-numeric **\D** characters and remove them from the string:
+> > ```javascript
+> >  let myNumber = '+38-062-751-59-37';
+> >  console.log (myNumber.replace(/\D/g, "") ); // => 380627515937
+> > ```
 
 
 
