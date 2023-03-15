@@ -66,13 +66,17 @@ ___
 > > + ``valuesSet.delete(value);`` - _removes value, returns true if value is present in the set, false otherwise_
 > > + ``valuesSet.clear();`` – _removes all values of Set_
 
-> > > ``someSet.forEach(function(value) { expression +value}  )``
+We can iterate over the contents of the set object both using the for..of method and using forEach:
+> ```javascript
+>  let fruitArr = ["apples", "oranges", "bananas", "apples", "bananas"];
+>  let fruitSet = new Set(fruitArr);
+>    for (let value of fruitSet) => console.log('unique: ', value);
+>    fruitSet.forEach( (value, valueAgain, set) => { console.log('unique: ', value);} );
+>
+>  console.log( fruitSet.entries() ); // => {'apples' => 'apples', 'oranges' => 'oranges', 'bananas' => 'bananas'}
+> ```
 
-
-> ``const uniqueValuesArr = [ ...new Set(nonUnique) ]``
-
-
-
+> ``const uniqueValuesArr = [ ...new Set(nonUniqueArr) ]``
 ___
 
 
