@@ -79,6 +79,21 @@ We can iterate over the contents of the set object both using the for..of method
 > ``const uniqueValuesArr = [ ...new Set(nonUniqueArr) ]``
 ___
 
+## Object oriented programming in JavaScript
+In OOP, an object is a block containing **information** (state/attributes) and **operations** (methods).
+> There are two types of object properties:
+>    + data properties
+>    + properties of accessors
+> > ```javascript
+> >   let obj = {
+> >     get propName() { } // "code executed while getting obj.propName"
+> >     set propName(value) { } // "code executed when setting obj.propName = value"
+> >     // used as wrappers over "real" property values to gain more control over operations with them
+> >   };
+> > ```
+
+
+
 
 
 
