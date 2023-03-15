@@ -132,6 +132,21 @@ ___
 > >    * configurable – if true, the property can be removed and these attributes can be modified, otherwise it cannot be done.
 ___
 
+&emsp; ES6 adds **computed property names** where you can specify an expression enclosed in [ ] as a key-value pair when declaring an object literal:
+> ```javascript
+>  var prefix = "foo";
+>  var myObject = {
+>      [prefix + "bar"]: "hello",
+>      [prefix + "baz"]: "world"
+>  };
+>  myObject["foobar"];          // => hello
+>  myObject["foobaz"];         // =>  world
+> ```
+___
+
+
+
+
 
 
 
