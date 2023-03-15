@@ -144,6 +144,28 @@ ___
 > ```
 ___
 
+&emsp;  **__proto__** is an old and ancient getter/setter for **[[Prototype]]**
+> ```javascript
+>   let Animal = {
+>      typeOfCreature: 'Invertebrates',    // => default value
+>      displayCreatureType: function() { console.log('this: ', this.typeOfCreature); }, 
+>      eats: true, 
+>      walk() { console.log("Animal goes"); }
+>   };
+>   let rabbit = { jumps: true, __proto__: Animal };
+>   let longEar = { earLength: 10, __proto__: rabbit };
+>     longEar.displayCreatureType();        // => this:  Invertebrates
+>     longEar.walk();        // => Animal goes
+>     console.log (longEar.jumps);        // => true 
+>     console.log(Object.keys(longEar));  // => ['earLength']
+>     // for..in loop can also run through inherited properties
+>     for(let prop in longEar) console.log(prop); // => // returns both own and inherited keys
+> ```
+___
+
+
+
+
 
 
 
