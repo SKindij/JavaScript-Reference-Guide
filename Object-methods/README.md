@@ -92,9 +92,18 @@ In OOP, an object is a block containing **information** (state/attributes) and *
 > >   };
 > > ```
 
-
-
-
-
-
+> For example, if we want to disallow names that are too short, we can have **name setter** and store value in separate **_name property**:
+> >  ```javascript
+> >    let user = { 
+> >      get name() { return this._name; },
+> >      set name(value) { 
+> >        if (value.length < 4) { alert("name is too short, at least 4 characters are required"); return; }
+> >        this._name = value; }
+> >    };
+> >    
+> >    user.name = "Pedroso";
+> >   console.log(user.name);      // => Pedroso
+> >    user.name = "Fil";       // alert "..."
+> > ```
+> _There is convention that properties starting with underscore "_" are internal and should not be used from outside object._
 
