@@ -1,4 +1,4 @@
-_All cars have the same properties, but the property values differ from car to car.<br>
+&emsp; _All cars have the same properties, but the property values differ from car to car.<br>
 All cars have the same methods, but the methods are performed at different times._
 
 You can access object properties in two ways:
@@ -43,21 +43,21 @@ There are 3 methods to iterate through the Map collection:
     - ``map.values()``
 > > > They can be sorted by the **for..of** loop.
 
-If we already have an ordinary object, and we would like to create a Map from it, then the built-in method **Object.entries(obj)** will help, which receives the object and returns an array of key-value pairs for it
+&emsp; If we already have an ordinary object, and we would like to create a Map from it, then the built-in method **Object.entries(obj)** will help, which receives the object and returns an array of key-value pairs for it
 > ```javascript
 >  let obj = { name: "Piggy", age: 30 };
 >    let map = new Map(Object.entries(obj));
 >      console.log( map ); //=> Map(2) {'name' => 'Piggy', 'age' => 30}
 > ```
 
-We can use the **Object.fromEntries** method, which will perform the reverse action: transform the received array of [key, value] pairs into an object.
+&emsp; We can use the **Object.fromEntries** method, which will perform the reverse action: transform the received array of [key, value] pairs into an object.
 > ```javascript
 >  let prices = Object.fromEntries([ ['banana', 46], ['orange', 78], ['apple', 24] ]);
 >    console.log( prices ); //=> {banana: 46, orange: 78, apple: 24}
 > ```
 ___
 
-**Set** - collection for storing unique values (without keys) of any type.
+&emsp; **Set** - collection for storing unique values (without keys) of any type.
 (_this is a non-indexed collection, you can put an element there, but you can't get it_)
 > ``let valuesSet = new Set([iterable]);`` - _values of [iterator object] are copied to Set_
 > > + ``valuesSet.add(element);`` - _adds a new value to Set, returns Set_
@@ -80,7 +80,7 @@ We can iterate over the contents of the set object both using the for..of method
 ___
 
 ## Object oriented programming in JavaScript
-In OOP, an object is a block containing **information** (state/attributes) and **operations** (methods).
+&emsp; In OOP, an object is a block containing **information** (state/attributes) and **operations** (methods).
 > There are two types of object properties:
 >    + data properties
 >    + properties of accessors
@@ -107,13 +107,31 @@ In OOP, an object is a block containing **information** (state/attributes) and *
 > > ```
 > _There is convention that properties starting with underscore "_" are internal and should not be used from outside object._
 
-In JavaScript, objects have special hidden property **[[Prototype]]** (_as specified in the language specification_), which can either be **null** or have a **reference to another object**.
+&emsp; In JavaScript, objects have special hidden property **[[Prototype]]** (_as specified in the language specification_), which can either be **null** or have a **reference to another object**.
 > ```javascript
 >  let arr = [1, 2, 3];
 >    alert( arr.__proto__ === Array.prototype );           // => true
 >    alert( arr.__proto__.__proto__ === Object.prototype );        // =>  true
 >    alert( arr.__proto__.__proto__.__proto__ );           // =>  null
 > ```
+
+_The values null and undefined do not have any wrapper objects. And they don't have proper prototypes either._
+
+&emsp; _Prototypes can only be used to read properties. And write/delete operations work only on the object itself. Regardless of where the method was defined: in the object or its prototype, the this keyword always points to the object before the dot._
+___
+
+&emsp; _Until ES5, the language did not allow your code to directly test or describe the difference between property characteristics: for example, whether a property is read-only or not._ <br>
+&emsp; But in ES5, all properties are described using a property descriptor.
+> ```javascript
+> let myObject = { a: 17, b: 42 };
+> Object.getOwnPropertyDescriptor( myObject, "a" ); // => {value: 17, writable: true, enumerable: true, configurable: true}
+> ```
+> > Object properties, in addition to *value, have three special attributes (so-called “flags”):
+> >    * writable – if true, the value can be changed, otherwise it is read-only;
+> >    * enumerable – if true, the property is taken into account in loops, otherwise the loops ignore it;
+> >    * configurable – if true, the property can be removed and these attributes can be modified, otherwise it cannot be done.
+___
+
 
 
 
