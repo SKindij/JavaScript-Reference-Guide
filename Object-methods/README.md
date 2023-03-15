@@ -26,6 +26,7 @@ Methods are actions that can be performed on objects. Methods are stored in prop
 > > ```
 > > > String property names will be listed in the order they were assigned to the object.<br>
 > > > Numerical properties will be listed in ascending order.
+___
 
 **Map** - a collection for storing data of any type in the form of **[key, value]** pairs.
 > ``const map = new Map( [ ['js', 'JavaScript'], ['css', 'Cascading Style Sheets'] ] )``
@@ -54,18 +55,25 @@ We can use the **Object.fromEntries** method, which will perform the reverse act
 >  let prices = Object.fromEntries([ ['banana', 46], ['orange', 78], ['apple', 24] ]);
 >    console.log( prices ); //=> {banana: 46, orange: 78, apple: 24}
 > ```
+___
 
-**Set** - a collection for storing unique values (without keys) of any type.
-(this is a non-indexed collection, you can put an element there, but you can't get it)
-> ``const uniqueValuesArr = [ ...new Set(nonUnique) ]``
-> > + ``uniqueIds.add("…");``
-> > + ``uniqueIds.size;``
-> > + ``uniqueIds.has('…');``
-> > + ``uniqueIds.delete('...');``
+**Set** - collection for storing unique values (without keys) of any type.
+(_this is a non-indexed collection, you can put an element there, but you can't get it_)
+> ``let valuesSet = new Set([iterable]);`` - _values of [iterator object] are copied to Set_
+> > + ``valuesSet.add(element);`` - _adds a new value to Set, returns Set_
+> > + ``valuesSet.size;`` - _returns number of elements in set_
+> > + ``valuesSet.has(value);`` - _returns true if value is present in Set, false otherwise_
+> > + ``valuesSet.delete(value);`` - _removes value, returns true if value is present in the set, false otherwise_
+> > + ``valuesSet.clear();`` – _removes all values of Set_
+
 > > > ``someSet.forEach(function(value) { expression +value}  )``
 
 
+> ``const uniqueValuesArr = [ ...new Set(nonUnique) ]``
 
+
+
+___
 
 
 
