@@ -107,3 +107,15 @@ In OOP, an object is a block containing **information** (state/attributes) and *
 > > ```
 > _There is convention that properties starting with underscore "_" are internal and should not be used from outside object._
 
+In JavaScript, objects have special hidden property **[[Prototype]]** (_as specified in the language specification_), which can either be **null** or have a **reference to another object**.
+> ```javascript
+>  let arr = [1, 2, 3];
+>    alert( arr.__proto__ === Array.prototype );           // => true
+>    alert( arr.__proto__.__proto__ === Object.prototype );        // =>  true
+>    alert( arr.__proto__.__proto__.__proto__ );           // =>  null
+> ```
+
+
+
+
+
