@@ -198,9 +198,12 @@ ___
 > >      } else { console.log(`Inherited: ${prop}`); }
 > >    }
 > > ```
-
-
-
+* ``Object.setPrototypeOf(obj, proto)``
+>    _sets [[Prototype]] value of obj to proto_
+> > ```javascript
+> >    let rabikus = { isFunny: false };
+> >      Object.setPrototypeOf(rabikus, rabbit);  // changes prototype of rabikus object to rabbit
+> > ```
 
 
 
