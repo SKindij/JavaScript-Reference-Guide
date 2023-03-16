@@ -214,7 +214,7 @@ ___
 > >     cloneRabitos.displayCreatureType();     // => this:  Invertebrates   
 > > ```
 
-&emsp;  By combining ``writable:false`` and ``configurable:false`` you can essentially create a constant (cannot be changed, overridden or deleted) as a property of the object, like so:
+&emsp; By combining ``writable:false`` and ``configurable:false`` you can essentially create a constant (cannot be changed, overridden or deleted) as a property of the object, like so:
 > ```javascript
 >    let myObject = {};
 >      Object.defineProperty( myObject, "FAVORITE_NUMBER", {
@@ -222,9 +222,9 @@ ___
 >      // {FAVORITE_NUMBER: 42}
 > ```
 
+&emsp; If you want to prevent new properties from being added to an object, but at the same time leave existing properties intact, use ``Object.preventExtensions(..)``
 
-
-
+&emsp; The ``Object.seal(..)`` method creates "sealed" object - that is, it takes an existing object and essentially applies **Object.preventExtensions(..)** to it, but also marks all properties as **configurable:false**. Therefore, you cannot add properties, nor can you reconfigure or remove existing ones (although you can still change their values).
 
 
 
