@@ -181,9 +181,15 @@ ___
 > > ```javascript
 > >    Object.defineProperty(rabitos, "isFunny", { writable: false });
 > >      Object.getOwnPropertyDescriptors(rabitos);     // => {isFunny: {…}, say: {…}}
+> >          // => isFunny: {value: true, writable: false, enumerable: true, configurable: true}
+> >          // => say: {writable: true, enumerable: true, configurable: true, value: ƒ}
 > > ```
-
-
+* ``Object.getPrototypeOf(obj)``
+>    _returns the [[Prototype]] value of obj_
+> > ```javascript
+> >    console.log(Object.getPrototypeOf(rabitos) === rabbit);  // => true
+> >    console.log( Object.getPrototypeOf(rabitos) );  // => {jumps: true} => [[Prototype]]:Object
+> > ```
 
 
 
