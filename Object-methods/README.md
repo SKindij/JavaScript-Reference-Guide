@@ -221,12 +221,25 @@ ___
 >        value: 42, writable: false, configurable: false } );
 >      // {FAVORITE_NUMBER: 42}
 > ```
+___
 
 &emsp; If you want to prevent new properties from being added to an object, but at the same time leave existing properties intact, use ``Object.preventExtensions(..)``
 
 &emsp; The ``Object.seal(..)`` method creates "sealed" object - that is, it takes an existing object and essentially applies **Object.preventExtensions(..)** to it, but also marks all properties as **configurable:false**. Therefore, you cannot add properties, nor can you reconfigure or remove existing ones (although you can still change their values).
 
 &emsp; The ``Object.freeze(..)`` method creates a frozen object, which means it takes an existing object and essentially applies Object.seal(..) to it, but also sets all properties = writable:false so their values cannot be changed.
+___
+
+&emsp; ``Object.keys(..)`` returns an array of all enumerated properties, while Object.getOwnPropertyNames(..) returns an array of all properties - enumerated or not.
+> ```javascript
+>   Object.defineProperty(rabitos, "age", { value: 41, enumerable: false} );
+>   Object.keys(rabitos);       // ['isFunny', 'say']
+>   Object.getOwnPropertyNames(rabitos);        // ['isFunny', 'say', 'age']
+>   Object.getOwnPropertyDescriptors(rabitos);   // {isFunny: {…}, say: {…}, age: {…}}
+>   			// age: {value: 41, writable: false, enumerable: false, configurable: false}
+>   	  	// isFunny: {value: true, writable: false, enumerable: true, configurable: true}
+> ```
+
 
 
 
