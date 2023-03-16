@@ -240,6 +240,33 @@ ___
 >   	  	// isFunny: {value: true, writable: false, enumerable: true, configurable: true}
 > ```
 
+### Setting and shading properties
+> ```javascript
+>   'use strict'
+>   let grannyObject = { 
+>   grannyLevel: 1,
+>   get name() { return this._name; },
+>   		set name(value) { this._name = value; }
+>   };
+>   	Object.defineProperty(grannyObject, "prop1", { value: 'test1', writable: true, enumerable: true, configurable: true } );
+>   Object.defineProperty(grannyObject, "prop2", { value: 'test2', writable: false, enumerable: true, configurable: true } );
+>   	let parentObject = Object.create(grannyObject, { 
+>     prop3: { value: 'test3', writable: false, enumerable: true, configurable: true } } );
+>   let childObject = { childLevel: 3 };
+>   			Object.setPrototypeOf(childObject, parentObject);
+>   grannyObject.name = 'grandPa';
+>
+>   console.log(grannyObject); // => {grannyLevel: 1, prop1: 'test1', prop2: 'test2', _name: 'grandPa'}
+>   console.log(parentObject);  // => {prop3: 'test3'} => [[Prototype]]: Object
+>   console.log(childObject);   // => {childLevel: 3} => [[Prototype]]: Object
+> ```
+
+
+
+
+
+
+
 
 
 
