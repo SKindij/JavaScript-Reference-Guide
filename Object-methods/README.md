@@ -148,13 +148,13 @@ ___
 > ```javascript
 >   let Animal = {
 >      typeOfCreature: 'Invertebrates',    // => default value
->      displayCreatureType: function() { console.log('this: ', this.typeOfCreature); }, 
+>      displayCreatureType: function() { console.log('this Creature: ', this.typeOfCreature); }, 
 >      eats: true, 
 >      walk() { console.log("Animal goes"); }
 >   };
 >   let rabbit = { jumps: true, __proto__: Animal };
 >   let longEar = { earLength: 10, __proto__: rabbit };
->     longEar.displayCreatureType();        // => this:  Invertebrates
+>     longEar.displayCreatureType();        // => this Creature:  Invertebrates
 >     longEar.walk();        // => Animal goes
 >     console.log (longEar.jumps);        // => true 
 >     console.log(Object.keys(longEar));  // => ['earLength']
@@ -172,7 +172,9 @@ ___
 > >      writable: true, configurable: true, enumerable: true, value: true }
 > >    } );  
 > >    rabitos.say = function() { console.log("I'm a funny bunny and this" is , this.isFunny); };
-> >      rabitos.displayCreatureType(); // =>
+> >      rabitos.displayCreatureType();   // => this Creature:  Invertebrates
+> >      console.log(rabitos.eats);      // => true
+> >      rabitos.say();     // => I'm a funny bunny and this is true
 > > ``
 
 
