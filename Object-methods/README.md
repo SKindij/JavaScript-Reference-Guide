@@ -163,11 +163,17 @@ ___
 > ```
 ___
 
-
-
-
-
-
+&emsp;  JS now suggests using **modern prototype methods** instead of get/set.
+* ``Object.create(proto, [descriptors])``
+>    _creates empty object with [[Prototype]] property referencing passed proto object and optional property descriptors_
+> > ```javascript
+> >    let rabitos = Object.create( rabbit, { // new object with prototype rabbit is created
+> >      isFunny: {  // we can give additional properties to new object
+> >      writable: true, configurable: true, enumerable: true, value: true }
+> >    } );  
+> >    rabitos.say = function() { console.log("I'm a funny bunny and this" is , this.isFunny); };
+> >      rabitos.displayCreatureType(); // =>
+> > ``
 
 
 
