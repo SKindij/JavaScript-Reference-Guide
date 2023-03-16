@@ -175,7 +175,22 @@ ___
 > >      rabitos.displayCreatureType();   // => this Creature:  Invertebrates
 > >      console.log(rabitos.eats);      // => true
 > >      rabitos.say();     // => I'm a funny bunny and this is true
-> > ``
+> > ```
+* ``Object.defineProperty(obj, propertyName, descriptor)``
+>    _we can use this to change the flags_
+> > ```javascript
+> >    Object.defineProperty(rabitos, "isFunny", { writable: false });
+> >      Object.getOwnPropertyDescriptors(rabitos);     // => {isFunny: {…}, say: {…}}
+> > ```
+
+
+
+
+
+
+
+
+
 
 
 
