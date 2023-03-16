@@ -226,5 +226,9 @@ ___
 
 &emsp; The ``Object.seal(..)`` method creates "sealed" object - that is, it takes an existing object and essentially applies **Object.preventExtensions(..)** to it, but also marks all properties as **configurable:false**. Therefore, you cannot add properties, nor can you reconfigure or remove existing ones (although you can still change their values).
 
+&emsp; The ``Object.freeze(..)`` method creates a frozen object, which means it takes an existing object and essentially applies Object.seal(..) to it, but also sets all properties = writable:false so their values cannot be changed.
+
+
+
 
 
