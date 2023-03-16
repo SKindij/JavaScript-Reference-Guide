@@ -204,6 +204,20 @@ ___
 > >    let rabikus = { isFunny: false };
 > >      Object.setPrototypeOf(rabikus, rabbit);  // changes prototype of rabikus object to rabbit
 > > ```
+* ``Object.create()``
+> _below we create true copy of object, including all properties, setters/getters - with correct [[Prototype]] value_
+> > ```javascript
+> >    let cloneRabitos = Object.create(Object.getPrototypeOf(rabitos), Object.getOwnPropertyDescriptors(rabitos));
+> >    	 Object.getOwnPropertyDescriptors(cloneRabitos);       // => {isFunny: {…}, say: {…}}
+> >    								  	// isFunny: {value: true, writable: false, enumerable: true, configurable: true}
+> >    						  	  	// say: {writable: true, enumerable: true, configurable: true, value: ƒ}
+> >     cloneRabitos.displayCreatureType();     // => this:  Invertebrates   
+> > ```
+
+
+
+
+
 
 
 
