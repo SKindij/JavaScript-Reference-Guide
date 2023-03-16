@@ -190,10 +190,14 @@ ___
 > >    console.log(Object.getPrototypeOf(rabitos) === rabbit);  // => true
 > >    console.log( Object.getPrototypeOf(rabitos) );  // => {jumps: true} => [[Prototype]]:Object
 > > ```
-
-
-
-
+* ``obj.hasOwnProperty(key)``
+>    _built-in method that returns true if key is its own (non-inherited) property_
+> > ```javascript
+> >    for(let prop in rabitos) { let isOwn = rabitos.hasOwnProperty(prop);
+> >      if (isOwn) { console.log(`Our: ${prop}`);        
+> >      } else { console.log(`Inherited: ${prop}`); }
+> >    }
+> > ```
 
 
 
