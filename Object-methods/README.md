@@ -209,14 +209,18 @@ ___
 > > ```javascript
 > >    let cloneRabitos = Object.create(Object.getPrototypeOf(rabitos), Object.getOwnPropertyDescriptors(rabitos));
 > >    	 Object.getOwnPropertyDescriptors(cloneRabitos);       // => {isFunny: {…}, say: {…}}
-> >    								  	// isFunny: {value: true, writable: false, enumerable: true, configurable: true}
-> >    						  	  	// say: {writable: true, enumerable: true, configurable: true, value: ƒ}
+> >    			// isFunny: {value: true, writable: false, enumerable: true, configurable: true}
+> >    			// say: {writable: true, enumerable: true, configurable: true, value: ƒ}
 > >     cloneRabitos.displayCreatureType();     // => this:  Invertebrates   
 > > ```
 
-
-
-
+&emsp;  By combining ``writable:false`` and ``configurable:false`` you can essentially create a constant (cannot be changed, overridden or deleted) as a property of the object, like so:
+> ```javascript
+>    let myObject = {};
+>      Object.defineProperty( myObject, "FAVORITE_NUMBER", {
+>        value: 42, writable: false, configurable: false } );
+>      // {FAVORITE_NUMBER: 42}
+> ```
 
 
 
