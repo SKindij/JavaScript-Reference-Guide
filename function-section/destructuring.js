@@ -14,8 +14,9 @@ const highMagistrate = {
 printFullName(mando); // => movie character: Din Djarin
 printFullName(highMagistrate); // => movie character: Greef Karga
 
-
-
-
-
-
+// passing an array as an argument:
+function printFirstAndLastNames([firstName, lastName]) {
+  console.log(`movie character: ${firstName} ${lastName}`);
+}
+const unknown = ['John', 'Doe'];
+printFirstAndLastNames(unknown); // => movie character: John Doe
