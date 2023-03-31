@@ -123,11 +123,12 @@ ___
 
 &emsp; You can also use destructuring to pass arguments to a function, allowing you to pass objects and arrays as arguments without specifying each value individually. 
 > >```javascript
-> >  function myFunc( {ax, ay, az} ) {
+> >  const data = { brand: 'Star Wars', type: 'Mandalorian', value: 16 };
+> >  function myFunc( {brand, type, value} ) {
 > >    console.log('get data using object as argument');
-> >    console.log(ax, ay, az); // => brand type value
+> >    console.log(brand, type, value);
 > >  }
-> >  myFunc(obj);
+> >  myFunc(data); // Star Wars Mandalorian 16
 > >```
 
 
