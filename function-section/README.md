@@ -105,7 +105,8 @@ This **this** is the execution context.
 .bind(thisArg[, arg1[, arg2[, ...]]]) 
 ___
 
-&emsp; **Destructuring** is a feature in JavaScript introduced in **ES6** that allows you to unpack (or destruct) arrays and objects into individual variables. It makes your code more readable and convenient, especially when you have many elements in an array or object and need to work with specific values.
+## Destructuring
+&emsp; It is feature in JavaScript introduced in **ES6** that allows you to unpack (or destruct) arrays and objects into individual variables. It makes your code more readable and convenient, especially when you have many elements in an array or object and need to work with specific values.
 > There are two types: 
 > * array destructuring
 > >```javascript
@@ -116,8 +117,17 @@ ___
 > * object destructuring.
 > >```javascript
 > >  const obj = { ax: 'brand', ay: 'type', az: 'value' };
-> >  const { ax, ay, az } = obj;
+> >  const { ax, ay, az } = obj; // assign value of each object property to variables ax, ay, az
 > >  console.log(ax, ay, az); // => brand type value
+> >```
+
+&emsp; You can also use destructuring to pass arguments to a function, allowing you to pass objects and arrays as arguments without specifying each value individually. 
+> >```javascript
+> >  function myFunc( {ax, ay, az} ) {
+> >    console.log('get data using object as argument');
+> >    console.log(ax, ay, az); // => brand type value
+> >  }
+> >  myFunc(obj);
 > >```
 
 
