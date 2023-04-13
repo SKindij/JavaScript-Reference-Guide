@@ -148,12 +148,26 @@ It determines where a variable can be accessed and modified within a program.
 
 
 
-## Lexical scope (also known as static scope):
+#### Lexical scope (also known as static scope):
 &ensp;It is a concept that determines how **variable names** are resolved at runtime based on their position in the source code during the static phase of code compilation. It is determined by the nesting of functions within other functions or code blocks in the source code, and it remains fixed during the entire runtime of the program.
 
-
-
-
+&ensp;**Lexical scope** plays a role in determining the **variable scope**. Variables declared in a certain scope (_function or a code block_) have access to the surrounding lexical scope, which allows them to access variables from their parent scopes.\
+> In other words, **lexical scope** is determined by the nesting of functions within other functions or code blocks **in the source code**. When a variable is referenced within a function, JS looks for that variable first within the local scope of the function, and if not found, it looks in the next outer scope until it reaches the global scope.
+> > ```javascript
+> >  const globalVar = 'I am global!';
+> >  function outerFunction() {
+> >     const outerVar = 'I am outer!';  
+> >     function innerFunction() {
+> >        const innerVar = 'I am inner!';
+> >        console.log(globalVar); // accesses from global scope
+> >        console.log(outerVar); // accesses from outer scope
+> >        console.log(innerVar); // accesses from local scope
+> >     }
+> >    innerFunction();
+> >  }
+> >  
+> >  outerFunction();
+> > ```
 
 
 
