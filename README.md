@@ -5,8 +5,8 @@ topic :orangutan: a basic set of JavaScript knowledge
 * Variables:
   + declaration
   + assignment
-  + scope
-  + hoisting
+  + var
+  + let & const
   + naming
 * Data types:
   + strings
@@ -16,22 +16,21 @@ topic :orangutan: a basic set of JavaScript knowledge
   + undefined
   + objects
   + symbols
-  + BigInt
+  + BigInt   
+* Variable scope
+  + global 
+  + local 
+  + function
+  + code block  
+* Additionally:
+  + hoisting
+  + Lexical scope
 * Operators:
   + arithmetic
   + comparison
   + logical
   + bitwise
   + assignment
-* Code blocks:
-  + scope
-  + let
-  + const
-  + functions
-* Lexical scope:
-  + global
-  + function
-  + block
 * Literals:
   + string
   + numeric
