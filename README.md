@@ -44,7 +44,7 @@ topic :orangutan: a basic set of JavaScript knowledge
 
 
 
-___
+- - -
 ## Console API reference
 + ``console.log( object [, object, ...] );`` >> _Prints a message to the Console._
 + ``console.dir( {object} );`` >> _Prints a JSON representation of the specified object._
@@ -59,17 +59,28 @@ ___
 + ``console.assert( expression, {object} );`` >> _Writes an error to the console when expression evaluates to false._
 + ``console.error( object [, object, ...] );`` >> _Prints object to the Console, formats it as an error, and includes a stack trace._
 + ``console.clear();`` >> _Clears the console._
-___
+- - -
 
-&emsp;Read more about **primitive data types**
-|                     |
-|---------------------|
-| [Number & String](https://github.com/SKindij/JavaScript-reference-book/tree/main/Number-String) | 
-| [Null & Undefine & Boolean](https://github.com/SKindij/JavaScript-reference-book/tree/main/Null-Undefine-Boolean) | 
-| [symbol & bigint](https://github.com/SKindij/JavaScript-reference-book/tree/main/symbol-bigint) |
+## Control flow
+* [Conditionals:]()
+  + if/else
+  + switch
+  + ternary operator
+* [Loops:]()  
+  + for
+  + while
+  + do..while
+* [Controls:]()
+  + break
+  + continue
+  + return
+* [Exception handling:]()
+  + try..catch
+  + throw
+  + finally
 
-... (_values of which can only be overwritten, but cannot be changed_)
-___
+
+- - -
 
 &ensp;It is recommended to declare variables with ``const`` by default and use ``let`` if you need to change or reassign it later. <br>
 The ``typeof()`` operator is used to get the type of a variable's value.
@@ -159,13 +170,10 @@ ___
 4. indirect function call via .call() or .apply();
 ___
 
-&emsp;Read more about... 
-+ [ARRAYS](https://github.com/SKindij/JavaScript-reference-book/tree/main/arrays-section)...
-+ [FUNCTIONS](https://github.com/SKindij/JavaScript-reference-book/tree/main/function-section)...
-+ [DOM & BOM](https://github.com/SKindij/JavaScript-reference-book/tree/main/DOM-BOM-section)...
-+ [OBJECTS](https://github.com/SKindij/JavaScript-reference-book/tree/main/Object-methods)...
-+ [THIS](https://github.com/SKindij/JavaScript-reference-book/tree/main/this)...
-+ [Web-API](https://github.com/SKindij/JavaScript-reference-book/tree/main/Web-API)...
+## Regular Expressions
+
+
+
 
 
 
