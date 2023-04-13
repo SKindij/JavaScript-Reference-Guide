@@ -1,6 +1,50 @@
 # JavaScript-reference-book
 topic :orangutan: a basic set of JavaScript knowledge
 
+## Syntax
+* Variables:
+  + declaration
+  + assignment
+  + scope
+  + hoisting
+  + naming
+* Data types:
+  + strings
+  + numbers
+  + booleans
+  + null
+  + undefined
+  + objects
+  + symbols
+  + BigInt
+* Operators:
+  + arithmetic
+  + comparison
+  + logical
+  + bitwise
+  + assignment
+* Code blocks:
+  + scope
+  + let
+  + const
+  + functions
+* Lexical scope:
+  + global
+  + function
+  + block
+* Literals:
+  + string
+  + numeric
+  + boolean
+  + object
+
+
+
+
+
+
+
+
 ___
 ## Console API reference
 + ``console.log( object [, object, ...] );`` >> _Prints a message to the Console._
