@@ -1,3 +1,36 @@
+# Syntax
+
+## Variables:
+
+&ensp;In JavaScript, you can **declare a variable** using the `var`, `let`, or `const` keyword.\
+**Assignment** is the process of giving a value to a declared variable.
+> ```javascript
+>  // When you declare variable without initializing it, the variable is automatically assigned value undefined.
+>    var someVariable; let anotherVariable;
+>  // const variables must always be initialized with value, and their value cannot be changed afterward.
+>    const PI = 3.14159; const specificNumber = 10;
+>  // most basic assignment operator is equals sign (=)
+>    someVariable = 'any word';
+>  // There are also compound operators, which perform operation and assign result to variable in single step.  
+>    let sn = 20;
+>      sn += 13; // => 33 - equivalent to sn = sn + 13; 
+>      sn -= 9; // => 24 - equivalent to sn = sn - 9; 
+>      sn *= 2; // => 48 equivalent to sn = sn * 2;
+>      sn /= 6; // => 8 - equivalent to sn = sn / 6;
+>      sn %= 5; // => 3 - equivalent to sn = sn % 5;
+> ```
+
+&ensp;Variables that hold **non-primitive data types** (such as objects and arrays) are assigned by reference, while variables that hold **primitive data types** (such as numbers, strings, and booleans) are assigned by value.  
+> _When a variable is assigned by reference, it stores a reference to the memory location where the value is stored, rather than the value itself. This can have implications when modifying the value of the variable._
+
+
+
+
+
+
+
+
+
 # Number()
 
 > * &ensp; ``Number.isFinite (constNum);`` <br>
