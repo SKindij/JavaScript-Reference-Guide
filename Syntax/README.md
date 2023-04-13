@@ -1,6 +1,6 @@
 # Syntax
 
-## Variables:
+## <a name="variables"></a>Variables:
 
 &ensp;In JavaScript, you can **declare a variable** using the `var`, `let`, or `const` keyword.\
 **Assignment** is the process of giving a value to a declared variable.
@@ -51,7 +51,7 @@ If you try to access a `let` or `const` variable before its declaration, you wil
 - important to avoid using reserved keywords.
 
 
-## Data types:
+## <a name="data-types"></a>Data types:
 
 ### Number()
 
@@ -131,7 +131,7 @@ In JavaScript, null and undefined are special values that represent the absence 
 > > ```
 
 
-## Variable scope:
+## <a name="variable-scope"></a>Variable scope:
 &ensp;It refers to the **accessibility and visibility of a variable** within a certain portion of code during runtime.\
 It determines where a variable can be accessed and modified within a program. 
 * global scope
@@ -147,8 +147,15 @@ It determines where a variable can be accessed and modified within a program.
   - only within the block of code they are declared in, such as a loop or an if statement.
 
 
+## <a name="additionally"></a>Additionally:
 
-#### Lexical scope (also known as static scope):
+### hoisting
+
+
+
+
+
+### Lexical scope (also known as static scope):
 &ensp;It is a concept that determines how **variable names** are resolved at runtime based on their position in the source code during the static phase of code compilation. It is determined by the nesting of functions within other functions or code blocks in the source code, and it remains fixed during the entire runtime of the program.
 
 &ensp;**Lexical scope** plays a role in determining the **variable scope**. Variables declared in a certain scope (_function or a code block_) have access to the surrounding lexical scope, which allows them to access variables from their parent scopes.\
@@ -170,11 +177,18 @@ It determines where a variable can be accessed and modified within a program.
 > > ```
 
 
+## <a name="operators"></a>Operators:
+
+* arithmetic
+* comparison
+* logical
+* bitwise
+* assignment
 
 
-- - -
+## <a name="literals"></a>Literals:
 
-
-
-
-
+* string
+* numeric
+* boolean
+* object
