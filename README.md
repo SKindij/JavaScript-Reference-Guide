@@ -2,13 +2,13 @@
 topic :orangutan: a basic set of JavaScript knowledge
 
 ## Syntax
-* Variables:
+* [Variables:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#variables)
   + declaration
   + assignment
   + var
   + let & const
   + naming
-* Data types:
+* [Data types:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#data-types)
   + strings
   + numbers
   + booleans
@@ -17,21 +17,21 @@ topic :orangutan: a basic set of JavaScript knowledge
   + objects
   + symbols
   + BigInt   
-* Variable scope
+* [Variable scope](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#variable-scope)
   + global 
   + local 
   + function
   + code block  
-* Additionally:
+* [Additionally:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#additionally)
   + hoisting
   + Lexical scope
-* Operators:
+* [Operators:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#operators)
   + arithmetic
   + comparison
   + logical
   + bitwise
   + assignment
-* Literals:
+* [Literals:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#literals)
   + string
   + numeric
   + boolean
