@@ -23,6 +23,25 @@
 &ensp;Variables that hold **non-primitive data types** (such as objects and arrays) are assigned by reference, while variables that hold **primitive data types** (such as numbers, strings, and booleans) are assigned by value.  
 > _When a variable is assigned by reference, it stores a reference to the memory location where the value is stored, rather than the value itself. This can have implications when modifying the value of the variable._
 
+&ensp;In JS, you can declare a variable with the same name multiple times within the same scope using the `var` keyword. However, this is generally considered a **bad practice** and can lead to unexpected behavior. The later declaration will simply override the previous declaration, which can cause confusion and bugs.
+
+&ensp;In contrast, when using `let` or `const` to declare variables, you cannot redeclare a variable with the same name within the same block of code.
+
+&ensp;**Shadowing** occurs when a variable declared within a certain scope has the same name as a variable declared in an outer scope. 
+The inner variable will "shadow" the outer variable, making it inaccessible within that scope.
+> ```javascript
+>  let someDigit = 25;
+>  function foo() {
+>    let someDigit = 30; // inner variable shadows outer variable
+>    console.log(someDigit); // => 30
+>  }
+>  foo();
+>  console.log(someDigit); // => 25 - outer variable is still accessible outside of function
+> ```
+
+&ensp;**Temporal Dead Zone** (TDZ) - behavior in JS that prevents variables from being accessed before they are declared.\
+If you try to access a `let` or `const` variable before its declaration, you will get a `ReferenceError: is not defined`.
+
 &ensp;When naming variables, you should follow certain conventions:
 - variable names are case-sensitive; 
 - can contain letters, numbers, and underscores;
@@ -32,27 +51,9 @@
 - important to avoid using reserved keywords.
 
 
+## Data types:
 
-
-
-
-
-
-
-&ensp;The **scope of a variable** determines where the variable can be accessed and modified in your code. 
-* `var` has function-level scope, meaning they are accessible 
-  - within the function they are declared in 
-  - or globally if declared outside any function;
-* `let` and `const` have block-level scope, meaning they are accessible 
-  - only within the block of code they are declared in, such as a loop or an if statement.
-
-
-
-
-
-- - -
-
-# Number()
+### Number()
 
 > * &ensp; ``Number.isFinite (constNum);`` <br>
 > > ```javascript
@@ -82,7 +83,7 @@
 > * &ensp; ``Math.max(num1, num2, ...);`` - _returns the largest integer in the set_
 > * &ensp; ``Math.min(num1, num2, ...);`` - _returns the smallest number in the set_
 
-# String()
+### String()
 
 &ensp;A tag template is a loggerTag function that allows you to parse a template string.
 > > ```javascript
@@ -109,9 +110,7 @@
 > > ```
 
 
-
-
-#### Null and Undefined: 
+### Null and Undefined: 
 In JavaScript, null and undefined are special values that represent the absence of a value. When you assign null to a variable, you are explicitly setting it to have no value. When a variable is declared but not assigned any value, it is automatically assigned the value undefined.
 
 
@@ -130,6 +129,38 @@ In JavaScript, null and undefined are special values that represent the absence 
 > > // Properties whose keys are symbols are not iterated over by the for..in loop.
 > > let clone = Object.assign({}, usero); // clones all types of object properties;
 > > ```
+
+
+## Variable scope:
+&ensp;It refers to the **accessibility and visibility of a variable** within a certain portion of code during runtime.\
+It determines where a variable can be accessed and modified within a program. 
+* global scope
+* local scope 
+* function scope
+* block scope
+
+ 
+* `var` has function-level scope, meaning they are accessible 
+  - within the function they are declared in 
+  - or globally if declared outside any function;
+* `let` and `const` have block-level scope, meaning they are accessible 
+  - only within the block of code they are declared in, such as a loop or an if statement.
+
+
+
+## Lexical scope (also known as static scope):
+&ensp;It is a concept that determines how **variable names** are resolved at runtime based on their position in the source code during the static phase of code compilation. It is determined by the nesting of functions within other functions or code blocks in the source code, and it remains fixed during the entire runtime of the program.
+
+
+
+
+
+
+
+
+- - -
+
+
 
 
 
