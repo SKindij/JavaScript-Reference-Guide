@@ -53,6 +53,67 @@ If you try to access a `let` or `const` variable before its declaration, you wil
 
 ## <a name="data-types"></a>Data types:
 
+### Strings
+_It is a sequence of characters that represent text, and it is enclosed in either single quotes (' '), double quotes (" "), or backticks ( )._
+
+> concatenate (combine) strings 
+> > ```javascript
+> >  let firstName = "John"; let lastName = "Doe";
+> >  let fullName = firstName + " " + lastName; // => "John Doe"
+> > ```
+> get the length of a string
+> > ```javascript
+> >  let message = "A wonderful spring day!";
+> >  let messageLength = message.length; // => 23
+> > ```
+> access individual characters in a string
+> > ```javascript
+> >  let firstCharacter = message[0]; // => "A"
+> >  let fifthCharacter = message[4]; // => "n"
+> > ```
+
+JavaScript provides many built-in methods for manipulating strings. 
+> > ```javascript
+> >  let phrase = 'It will be a warm Spring!';
+> >
+> >      phrase.toUpperCase(); // => ''IT WILL BE A WARM SPRING!''
+> >      phrase.toLowerCase(); // => ''it will be a warm spring!''
+> >    // check if string contains searchValue and returns boolean 
+> >      phrase.includes("warm"); // => true
+> >      phrase.includes("cold"); // => false
+> >    // check if string starts or ends with searchValue respectively
+> >      phrase.startsWith('It will be'); // => true
+> >      phrase.endsWith('warm spring!'); // => true
+> >    // index of first occurrence of searchValue within string
+> >    // it returns -1 if the value is not found
+> >      phrase.indexOf('be'); // => 8
+> >      phrase.substring(3, 10); // => 'will be'
+> >    // returns character at specified index in string
+> >      let characterAtIndex11 = phrase.charAt(11); // => 'a'
+> > ```
+
+&ensp;A tag template is a loggerTag function that allows you to parse a template string.
+
+
+
+&ensp;Let's consider a few more manipulations with the text.
+> > ```javascript
+> >    let stringo = 'A great man does great things on great days.';
+> >      stringo.replaceAll('great', 'small'); // => 'A small man does small things on small days.'
+> >      
+> >      stringo.slice(8, 23); // => 'man does great '
+> >    const arrPhrase = phrase.split(' '); // => []
+> >    arrPhrase.join(' '); // => ''
+> > ```
+
+
+
+
+
+
+
+
+
 ### Number()
 
 > * &ensp; ``Number.isFinite (constNum);`` <br>
@@ -83,31 +144,6 @@ If you try to access a `let` or `const` variable before its declaration, you wil
 > * &ensp; ``Math.max(num1, num2, ...);`` - _returns the largest integer in the set_
 > * &ensp; ``Math.min(num1, num2, ...);`` - _returns the smallest number in the set_
 
-### String()
-
-&ensp;A tag template is a loggerTag function that allows you to parse a template string.
-> > ```javascript
-> >    let phrase = 'It will be a victorious UA spring!';
-> >      phrase.toUpperCase(); // => 'IT WILL BE A VICTORIOUS UA SPRING!'
-> >      phrase.toLowerCase(); // => 'it will be a victorious ua spring!'
-> >      phrase.length; // => 34
-> >        phrase.includes("UA"); // => true
-> >        phrase.startsWith('It will be'); // => true
-> >        phrase.endsWith('UA spring!'); // => true
-> >        phrase.indexOf('victorious'); // => 13
-> >        phrase.substring(3, 10); // => 'will be'
-> >
-> >    const arrPhrase = phrase.split(' '); // => ['It', 'will', 'be', 'a', 'victorious', 'UA', 'spring!']
-> >    arrPhrase.join(' '); // => 'It will be a victorious UA spring!'
-> > ```
-
-&ensp;Let's consider a few more manipulations with the text.
-> > ```javascript
-> >    let stringo = 'A great man does great things on great days.';
-> >      stringo.replaceAll('great', 'small'); // => 'A small man does small things on small days.'
-> >      stringo.charAt(8); // => 'm'
-> >      stringo.slice(8, 23); // => 'man does great '
-> > ```
 
 
 ### Null and Undefined: 
