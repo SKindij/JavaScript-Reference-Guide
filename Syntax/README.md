@@ -160,14 +160,23 @@ _It is a sequence of characters that represent text, and it is enclosed in eithe
 
 
 ### symbols
-&ensp;It is a unique identifier that is used as the name of properties in objects;
-> * &ensp; ``Symbol.iterator`` - allows in constructions using ``for..of`` and spread syntax ``...``;
-> * &ensp; ``Symbol.for(key)`` — returns the symbol stored by the key;
+&ensp;It is unique data type introduced in ES6 that represents unique identifier that is not equal to any other value, including other Symbol values.
 
-> When creating a symbol, you can give a description (the so-called name), which is mainly used to debug the code:
+&ensp;Here are some common use cases of Symbol in real projects:
+> Symbol values can be used as property keys in JS objects to create non-enumerable properties.\
+> This can be useful for creating **hidden or internal properties** that should not be exposed in certain use cases.
+> > ```javascript 
+> >  const mySymbol = Symbol('mySymbol');
+> >  const myObj = {
+> >    [mySymbol]: 'It is a non-enumerable property',
+> >    foo: 'This is an enumerable property'
+> >  };
+> >  console.log( Object.getOwnPropertySymbols(myObj) ); // => [Symbol(mySymbol)]
+> > ```
+> When creating symbol, you can give a description (so-called name), which is mainly used to debug code:
 > > ```javascript 
 > > let id = Symbol("idento"); 
-> > alert(id.description); // => id
+> > console.log(id.description); // => idento
 > > ```
 > They create "hidden" properties of objects that cannot be accidentally accessed and overwritten from other parts of the program.
 > > ```javascript 
@@ -175,6 +184,9 @@ _It is a sequence of characters that represent text, and it is enclosed in eithe
 > > // Properties whose keys are symbols are not iterated over by the for..in loop.
 > > let clone = Object.assign({}, usero); // clones all types of object properties;
 > > ```
+
+> * &ensp; ``Symbol.iterator`` - allows in constructions using ``for..of`` and spread syntax ``...``;
+> * &ensp; ``Symbol.for(key)`` — returns the symbol stored by the key;
 
 
 ## <a name="variable-scope"></a>Variable scope:
