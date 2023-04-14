@@ -18,21 +18,13 @@ topic :orangutan: a basic set of JavaScript knowledge
 
 ## 📚 Control flow
 * 📖 [Conditionals:]()
-  + if/else
-  + switch
-  + ternary operator
+  &ensp; ► if/else ► switch ► ternary operator
 * 📖 [Loops:]()  
-  + for
-  + while
-  + do..while
+  &ensp; ► for ► while ► do..while
 * 📖 [Controls:]()
-  + break
-  + continue
-  + return
+  &ensp; ► break ► continue ► return
 * 📖 [Exception handling:]()
-  + try..catch
-  + throw
-  + finally
+  &ensp; ► try..catch ► throw ► finally
 
 - - -
 ### Console API reference
@@ -53,75 +45,33 @@ topic :orangutan: a basic set of JavaScript knowledge
 
 ## 📚 Arrays
 * 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#basics)
-  + declaration
-  + initialization
-  + accessing
+  &ensp; ► declaration ► initialization ► accessing
 * 📖 [Methods that do not change initial array](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-not-ch)
-  + .find
-  + .findIndex
-  + .indexOf
-  + .lastIndexOf
-  + .includes
-  + .every
-  + .some
-  + .concat
-  + .join
-  + .filter
-  + .flat
-  + .flatMap
-  + .forEach
-  + .map
-  + .reduce
-  + .reduceRight
-  + .toString
-  + .toLocaleString
+  &ensp; ► .find ► .findIndex ► .indexOf ► .lastIndexOf ► .includes\
+  &ensp; ► .every ► .some ► .concat ► .join ► .filter\
+  &ensp; ► .flat ► .flatMap ► .forEach ► .map ► .reduce ► .reduceRight 
+  &ensp; ► .toString ► .toLocaleString
 * 📖 [Methods that change initial array:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-ch)
-  + .push
-  + .unshift
-  + .pop
-  + .shift
-  + .sort
-  + .reverse
-  + .fill
-  + .copyWithin
+  &ensp; ► .push ► .unshift ► .pop ► .shift ► .sort ► .reverse ► .fill ► .copyWithin
 * 📖 [Other methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#other-methods)
-  + .split
-  + .splice
-  + .slice
-  + Array.isArray
+  &ensp; + .split ► .splice ► .slice ► Array.isArray
 * 📖 [Destructuring:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#destructuring)
-  + syntax
-  + swapping var
+  &ensp; ► syntax ► swapping var
 
 
 ## 📚 Objects
 * 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
-  + obj literals
-  + constructor func
-  + classes
-  + this
-  + prototype chain
-  + destructuring
+  &ensp; ► obj literals ► constructor func ► classes ► this ► prototype chain ► destructuring
 * 📖 [Properties:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
-  + access
-  + assignment
-  + descriptors
-  + computed prop
+  &ensp; ► access ► assignment ► descriptors ► computed prop
 * 📖 [Methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
-  + definitions
-  + this keyword
-  + chaining
+  &ensp; ► definitions ► this keyword ► chaining
 * 📖 [Inheritance:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
-  + patterns
-  + obj composition
+  &ensp; ► patterns ► obj composition
 * 📖 [Encapsulation:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
-  + getters & setters
-  + private variables
-  + closure func
+  &ensp; ► getters & setters ► private variables ► closure func
 * 📖 [Polymorphism:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#) 
-  + overriding
-  + overloading
-  + dynamic dispatch
+  &ensp; ► overriding ► overloading ► dynamic dispatch
 
 - - -
 ### ECMAScript (or ES) is a specification. 
