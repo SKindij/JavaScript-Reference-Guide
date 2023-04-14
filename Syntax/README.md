@@ -72,7 +72,7 @@ _It is a sequence of characters that represent text, and it is enclosed in eithe
 > >  let fifthCharacter = message[4]; // => "n"
 > > ```
 
-JavaScript provides many built-in methods for manipulating strings. 
+&ensp;JS provides many built-in methods for manipulating strings. 
 > > ```javascript
 > >  let phrase = 'It will be a warm Spring!';
 > >
@@ -92,21 +92,30 @@ JavaScript provides many built-in methods for manipulating strings.
 > >      let characterAtIndex11 = phrase.charAt(11); // => 'a'
 > > ```
 
-&ensp;A tag template is a loggerTag function that allows you to parse a template string.
-
-
-
 &ensp;Let's consider a few more manipulations with the text.
+> _Note: It's important to understand that strings in JavaScript are immutable, which means that string methods do not modify the original string, but instead return a new string with the desired changes._
 > > ```javascript
-> >    let stringo = 'A great man does great things on great days.';
-> >      stringo.replaceAll('great', 'small'); // => 'A small man does small things on small days.'
+> >  let stringo = 'A great man does great things on great days.';
+> >
+> >  // split string into array of substrings based on specified separator  
+> >    const arrPhrase = stringo.split(' '); // => ['A', 'great', 'man', 'does', 'great', 'things', 'on', 'great', 'days.']
+> >  // concatenate two or more strings and returns new string  
+> >    let citation = 'Citation:'; 
+> >    let fullPhrase = citation.concat(" ", stringo);
+> >      fullPhrase; // => 'Citation:  A great man does great things on great days.'
 > >      
-> >      stringo.slice(8, 23); // => 'man does great '
-> >    const arrPhrase = phrase.split(' '); // => []
-> >    arrPhrase.join(' '); // => ''
+> >  // searchValue can be string or regExp, and replaceValue can be string or function
+> >    stringo.replaceAll('great', 'small'); // => 'A small man does small things on small days.'
+> >  // startIndex is inclusive, while endIndex is exclusive
+> >    stringo.slice(8, 23); // => 'man does great '
+> >  //  If endIndex is omitted, extraction continues to end of string. 
+> >  // Negative indices: -1 refers to last character, -2 refers to second-to-last character
 > > ```
 
 
+
+
+&ensp;A tag template is a loggerTag function that allows you to parse a template string.
 
 
 
