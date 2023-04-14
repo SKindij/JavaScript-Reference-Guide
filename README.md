@@ -74,11 +74,11 @@ topic :orangutan: a basic set of JavaScript knowledge
 - - -
 
 ## Arrays
-* [Basics:]()
+* [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#basics)
   + declaration
   + initialization
   + accessing
-* [Methods that do not change initial array]()
+* [Methods that do not change initial array](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-not-ch)
   + .find
   + .findIndex
   + .indexOf
@@ -97,19 +97,33 @@ topic :orangutan: a basic set of JavaScript knowledge
   + .reduceRight
   + .toString
   + .toLocaleString
+* [Methods that change initial array:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-ch)
+  + .push
+  + .unshift
+  + .pop
+  + .shift
+  + .sort
+  + .reverse
+  + .fill
+  + .copyWithin
+* [Other methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#other-methods)
+  + .split
+  + .splice
+  + .slice
+  + Array.isArray
+* [Destructuring:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#destructuring)
+  + syntax
+  + swapping var
 
 
+## Objects
+* [Basics:]()
 
 
 
 
 - - -
-
-&ensp;It is recommended to declare variables with ``const`` by default and use ``let`` if you need to change or reassign it later. <br>
-The ``typeof()`` operator is used to get the type of a variable's value.
-___
-
-## ECMAScript (or ES) is a specification. 
+### ECMAScript (or ES) is a specification. 
 That is, a set of rules and guidelines that a language must follow in order to be considered compliant with this specification.
 
 &ensp; **Strict mode** (``'use strict'``) was introduced with the **ECMAScript 5** standard in 2009 because backward compatibility was broken in ES. **strict mode** provides more detailed error checking in the code and facilitates debugging.
