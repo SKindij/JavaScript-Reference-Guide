@@ -2,6 +2,41 @@
 
 ## <a name="basics"></a>Basics:
 
+.find
+
+.findIndex
+
+.indexOf
+
+.lastIndexOf
+
+.includes
+
+.every
+
+.some
+
+.concat
+
+.join
+
+.filter
+
+.flat
+
+.flatMap
+
+.forEach
+
+.map
+
+.reduce
+
+.reduceRight
+
+.toString
+
+.toLocaleString
 
 
 
