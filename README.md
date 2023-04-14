@@ -1,57 +1,35 @@
 # JavaScript-reference-book
 topic :orangutan: a basic set of JavaScript knowledge
 
-## Syntax
-* [Variables:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#variables)
-  + declaration
-  + assignment
-  + var
-  + let & const
-  + naming
-* [Data types:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#data-types)
-  + strings
-  + numbers
-  + booleans
-  + null
-  + undefined
-  + objects
-  + symbols
-  + BigInt   
-* [Variable scope](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#variable-scope)
-  + global 
-  + local 
-  + function
-  + code block  
-* [Additionally:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#additionally)
-  + hoisting
-  + Lexical scope
-* [Operators:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#operators)
-  + arithmetic
-  + comparison
-  + logical
-  + bitwise
-  + assignment
-* [Literals:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#literals)
-  + string
-  + numeric
-  + boolean
-  + object
+## 📚 Syntax
+* 📖 [Variables:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#variables)\
+  &ensp; ► declaration ► assignment ► var ► let & const ► naming
+* 📖 [Data types:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#data-types)\
+  &ensp; ► strings ► numbers ► booleans ► null ► undefined ► objects ► symbols ► BigInt   
+* 📖 [Variable scope](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#variable-scope)\
+  &ensp; ► global ► local ► function ► code block  
+* 📖 [Additionally:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#additionally)\
+  &ensp; ► hoisting ► Lexical scope
+* 📖 [Operators:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#operators)\
+  &ensp; ► arithmetic ► comparison ► logical ► bitwise ► assignment
+* 📖 [Literals:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#literals)\
+  &ensp; ► string ► numeric ► boolean ► object
 
 
-## Control flow
-* [Conditionals:]()
+## 📚 Control flow
+* 📖 [Conditionals:]()
   + if/else
   + switch
   + ternary operator
-* [Loops:]()  
+* 📖 [Loops:]()  
   + for
   + while
   + do..while
-* [Controls:]()
+* 📖 [Controls:]()
   + break
   + continue
   + return
-* [Exception handling:]()
+* 📖 [Exception handling:]()
   + try..catch
   + throw
   + finally
@@ -73,12 +51,12 @@ topic :orangutan: a basic set of JavaScript knowledge
 + ``console.clear();`` >> _Clears the console._
 - - -
 
-## Arrays
-* [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#basics)
+## 📚 Arrays
+* 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#basics)
   + declaration
   + initialization
   + accessing
-* [Methods that do not change initial array](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-not-ch)
+* 📖 [Methods that do not change initial array](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-not-ch)
   + .find
   + .findIndex
   + .indexOf
@@ -97,7 +75,7 @@ topic :orangutan: a basic set of JavaScript knowledge
   + .reduceRight
   + .toString
   + .toLocaleString
-* [Methods that change initial array:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-ch)
+* 📖 [Methods that change initial array:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-ch)
   + .push
   + .unshift
   + .pop
@@ -106,41 +84,41 @@ topic :orangutan: a basic set of JavaScript knowledge
   + .reverse
   + .fill
   + .copyWithin
-* [Other methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#other-methods)
+* 📖 [Other methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#other-methods)
   + .split
   + .splice
   + .slice
   + Array.isArray
-* [Destructuring:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#destructuring)
+* 📖 [Destructuring:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#destructuring)
   + syntax
   + swapping var
 
 
-## Objects
-* [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+## 📚 Objects
+* 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
   + obj literals
   + constructor func
   + classes
   + this
   + prototype chain
   + destructuring
-* [Properties:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+* 📖 [Properties:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
   + access
   + assignment
   + descriptors
   + computed prop
-* [Methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+* 📖 [Methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
   + definitions
   + this keyword
   + chaining
-* [Inheritance:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+* 📖 [Inheritance:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
   + patterns
   + obj composition
-* [Encapsulation:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+* 📖 [Encapsulation:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
   + getters & setters
   + private variables
   + closure func
-* [Polymorphism:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#) 
+* 📖 [Polymorphism:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#) 
   + overriding
   + overloading
   + dynamic dispatch
@@ -230,7 +208,13 @@ ___
 4. indirect function call via .call() or .apply();
 ___
 
-## Regular Expressions
+## 📚 Functions
+
+
+## 📚 Asynchronous
+
+
+## 📚 Regular Expressions
 
 
 
