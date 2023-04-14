@@ -1,4 +1,31 @@
-## Array prototype methods
+# Arrays
+
+## <a name="basics"></a>Basics:
+
+
+
+
+## <a name="methods-not-ch"></a>Methods that do not change initial array:
+
+
+
+
+
+## <a name="methods-ch"></a>Methods that change initial array:
+
+
+
+
+
+
+
+
+## <a name="other-methods"></a>Other methods:
+
+
+
+
+
 
 > ```javascript
 >  let myArray = ["anything"];
