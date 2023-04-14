@@ -115,9 +115,7 @@ _It is a sequence of characters that represent text, and it is enclosed in eithe
 &ensp;A tag template is a `loggerTag` function that allows you to parse a template string.
 
 
-
 ### Numbers
-
 &ensp;There are several commonly used methods in JS for working with numbers. 
 
 > * &ensp; ``Number.isFinite (constNum);``
@@ -149,12 +147,20 @@ _It is a sequence of characters that represent text, and it is enclosed in eithe
 > * &ensp; ``Math.min(num1, num2, ...);`` - _returns the smallest number in the set_
 
 
+### booleans
+&ensp;They are a data type in JavaScript that represent two values: `true` and `false`. They are used to represent **binary logic**, where something can be either true or false. Booleans are often used in conditional statements and comparisons to determine the flow of a program.
+
+&ensp;All values are **truthy** except for a few specific cases that are considered **falsy** `0`, `NaN`, `null`, `undefined`, `false`, and empty strings `('')`.
 
 ### Null and Undefined: 
-In JavaScript, null and undefined are special values that represent the absence of a value. When you assign null to a variable, you are explicitly setting it to have no value. When a variable is declared but not assigned any value, it is automatically assigned the value undefined.
+&ensp;In JS, null and undefined are special values that represent the absence of a value. When you assign `null` to a variable, you are explicitly setting it to have no value. When a variable is declared but not assigned any value, it is automatically assigned the value `undefined`.
+
+&ensp;It's important to note that null and undefined are distinct values in JS, and they are not interchangeable. `null` is a deliberate assignment to indicate the absence of a value, whereas `undefined` typically indicates that a value is missing or has not been assigned.\
+> `null` is of type **object**, whereas `undefined` is of type **undefined**
 
 
-&ensp;``Symbol`` is a unique identifier that is used as the name of properties in objects;
+### symbols
+&ensp;It is a unique identifier that is used as the name of properties in objects;
 > * &ensp; ``Symbol.iterator`` - allows in constructions using ``for..of`` and spread syntax ``...``;
 > * &ensp; ``Symbol.for(key)`` — returns the symbol stored by the key;
 
