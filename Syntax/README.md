@@ -111,21 +111,16 @@ _It is a sequence of characters that represent text, and it is enclosed in eithe
 > >  //  If endIndex is omitted, extraction continues to end of string. 
 > >  // Negative indices: -1 refers to last character, -2 refers to second-to-last character
 > > ```
+> > 
+&ensp;A tag template is a `loggerTag` function that allows you to parse a template string.
 
 
 
+### Numbers
 
-&ensp;A tag template is a loggerTag function that allows you to parse a template string.
+&ensp;There are several commonly used methods in JS for working with numbers. 
 
-
-
-
-
-
-
-### Number()
-
-> * &ensp; ``Number.isFinite (constNum);`` <br>
+> * &ensp; ``Number.isFinite (constNum);``
 > > ```javascript
 > >    Number.isFinite (17); // => true       if a number was passed to it during the call
 > >    Number.isFinite ('17'); // => false       if a special value or non-numeric type is passed
