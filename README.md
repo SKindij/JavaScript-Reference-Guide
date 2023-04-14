@@ -117,10 +117,33 @@ topic :orangutan: a basic set of JavaScript knowledge
 
 
 ## Objects
-* [Basics:]()
-
-
-
+* [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+  + obj literals
+  + constructor func
+  + classes
+  + this
+  + prototype chain
+  + destructuring
+* [Properties:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+  + access
+  + assignment
+  + descriptors
+  + computed prop
+* [Methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+  + definitions
+  + this keyword
+  + chaining
+* [Inheritance:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+  + patterns
+  + obj composition
+* [Encapsulation:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+  + getters & setters
+  + private variables
+  + closure func
+* [Polymorphism:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#) 
+  + overriding
+  + overloading
+  + dynamic dispatch
 
 - - -
 ### ECMAScript (or ES) is a specification. 
