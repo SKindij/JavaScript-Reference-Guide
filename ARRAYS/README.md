@@ -18,19 +18,29 @@
 
 ## <a name="methods-not-ch"></a>Methods that do not change initial array:
 
-► .find
+### Array search methods
+>  ```javascript 
+>  const fruits = ['apple', 'banana', 'orange', 'pear', 'kiwi', 'orange', 'pineapple'];
+>    // searche for specified value and return index of first matching element
+>      console.log( fruits.indexOf('orange') ); // => 2
+>    // returns index of last matching element
+>      console.log( fruits.lastIndexOf('orange') ); // => 5
+>     
+>  let banknotes = [200, 100, 50, 50, 200, 50, 20, 500, 20, 1000, 100];
+>    // return value of first element that satisfies provided testing function or undefined
+>      console.log( banknotes.find(value => value % 250 === 0) ); // => 500
+>    // return index of first element that satisfies provided testing function or -1
+>      console.log( banknotes.findIndex(value => value === 500) ); // => 7
+>    // determine whether array includes certain value among its elements
+>      console.log( banknotes.includes(1000) ); // => true
+>    // determine whether at least one element passes test
+>      console.log( banknotes.some(value => value % 40 === 0) ); // => true
+>    // determine whether all elements pass test 
+>     console.log( banknotes.every(value => value % 40 === 0) ); // => false   
+>  ```
 
-► .findIndex
+>    console.log(); // =>
 
-► .indexOf
-
-► .lastIndexOf
-
-► .includes
-
-► .every
-
-► .some
 
 ► .concat
 
@@ -53,6 +63,15 @@
 .toString
 
 .toLocaleString
+
+
+## 
+
+
+
+
+
+
 
 
 
@@ -138,19 +157,7 @@
 >    ourData.reduce( (acc, value) => (acc > value) ? acc : value ); // => 2023
 > ```
 
-## Array search methods
 
->  ```javascript 
->   let banknotes = [200, 100, 50, 50, 200, 50, 20, 500, 20, 1000, 100];
->     // find something in the array
->     banknotes.indexOf(50); // => 2
->     banknotes.includes(1000); // => true
->       banknotes.find( value => value % 250 === 0 ); // => 500
->       banknotes.findIndex( value => value === 500 ); // => 7
->     // check a certain condition for the array
->     banknotes.every( value => value % 20 === 0); // => false
->     banknotes.some( value => value % 20 === 0); // => true
->  ```
 
 ## Array processing methods
 
