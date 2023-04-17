@@ -294,6 +294,13 @@ It determines where a variable can be accessed and modified within a program.
 ## <a name="operators"></a>Operators:
 
 * arithmetic
+  + Addition: `+`
+  + Subtraction: `-`
+  + Multiplication: `*`
+  + Division: `/`
+  + Modulus (_remainder of a division operation_): `%`
+  + Increment (_adds 1 to a variable_): `++`
+  + Decrement (_subtracts 1 from a variable_): `--`
 * comparison
 * logical
 * bitwise
