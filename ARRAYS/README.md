@@ -2,27 +2,43 @@
 
 ## <a name="basics"></a>Basics:
 
-.find
+> ``` javascript
+>  let emptyArray = []; // declaration
+>  let valuesArray = [11, 12, 13, 14, 15]; // initialization
+>    console.log( valuesArray[2] ); // accessing => 13
+>    console.log( valuesArray.length ); // => 5
+>  // multi-dimensional arrays
+>  let tableLikeArray = [
+>      [1, 2, 3],
+>      [4, 5, 6],
+>      [7, 8, 9]
+>  ];
+>  console.log( tableLikeArray[1][2] ); // => 6
+> ```
 
-.findIndex
+## <a name="methods-not-ch"></a>Methods that do not change initial array:
 
-.indexOf
+► .find
 
-.lastIndexOf
+► .findIndex
 
-.includes
+► .indexOf
 
-.every
+► .lastIndexOf
 
-.some
+► .includes
 
-.concat
+► .every
 
-.join
+► .some
 
-.filter
+► .concat
 
-.flat
+► .join
+
+► .filter
+
+► .flat
 
 .flatMap
 
@@ -40,24 +56,34 @@
 
 
 
-## <a name="methods-not-ch"></a>Methods that do not change initial array:
-
-
-
-
-
 ## <a name="methods-ch"></a>Methods that change initial array:
 
+► .push 
 
+► .unshift 
 
+► .pop 
 
+► .shift 
 
+► .sort 
 
+► .reverse 
+
+► .fill 
+
+► .copyWithin
 
 
 ## <a name="other-methods"></a>Other methods:
 
+► .split 
 
+► .splice 
+
+► .slice 
+
+► Array.isArray
 
 
 
