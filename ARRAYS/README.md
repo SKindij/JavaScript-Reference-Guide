@@ -70,7 +70,6 @@
 >    console.log(formattedPrice); // => 50,99 €, 40,69 €, 70,29 €
 >  ```
 
-
 ## array iteration methods
 > ```javascript
 >  let ourData = [1981, 1984, 2003, 2022];
@@ -95,7 +94,6 @@
 >      console.log( filteredData ); // =>  [2003, 2022]
 >    console.log( ourData ); // => [1981, 1984, 2003, 2022];
 > ```
-
 
 ### array transformation methods
 > ```javascript  
@@ -130,6 +128,7 @@
 >       myArray.shift(); // => 'someUnshift1'
 >       console.log( myArray ); // => ["someUnshift2", "anything", "somePush1"]
 > ```
+
 ### array mutator methods 2
 > ```javascript 
 > let arrayAnimals = ['beaver', 'capybara', 'crane', 'duck', 'heron', 'platypus', 'quail', 'raccoon', 'skunk', 'stork'];
@@ -213,7 +212,6 @@
 >  processData(dataObject);
 > ```
 
-
 ### .forEach()
 > ```javascript
 >  let ourData = [1981, 1984, 2003, 2022];
@@ -227,35 +225,42 @@
 >      console.log( ourData ); // => [43, 40, 21, 1]
 > ```
 
-
-
-### How to copy an array?
-
-> > ```javascript   
-> >  let yourData = ["dataA", "dataB", "dataC"];
-> >  let yourArray = ["anything", ...yourData, "anything"];
-> >    yourArray; // => ['anything', 'dataA', 'dataB', 'dataC', 'anything']
-> >  let yourCopy = Array.from(yourArray);
-> >      yourCopy; // => ['anything', 'dataA', 'dataB', 'dataC']
-> > ```
-
-
-
->  ```javascript  
->  let copiedArray = [...myArray];
->    copiedArray; // => ["someUnshift2", "anything", "somePush1"]
-> ```
-
 - - -
 
+## Array destructuring 
 
+&ensp;It is feature in JS that allows you to extract values from arrays and assign them to variables in single statement. 
+> ```javascript
+> let numbers = [101, 102, 103];
+> // values from `numbers` are extracted and assigned to variables `a`, `b`, and `c`
+>  let [a, b, c] = numbers;
+>    console.log(a); // => 101
+>    console.log(b); // => 102
+>    console.log(c); // => 103
+> // swap values of two variables without need for temporary variable
+>  let a = 41;
+>  let b = 42;
+>    [a, b] = [b, a]; 
+>  console.log(a); // => 42
+>  console.log(b); // => 41
+> ```
 
+## How to copy an array?
 
-
-
-
-
-
-
-
+> > ```javascript   
+> >  let someData = ["data-A", "data-B", "data-C"];  
+> >    let sliceCopy = someData.slice();
+> >      console.log(sliceCopy); // => ["data-A", "data-B", "data-C"]
+> >    // recommend method
+> >    let spreadCopy = [...someData];  
+> >      console.log(spreadCopy); // => ["data-A", "data-B", "data-C"]
+> >    let concatCopy = [].concat(someData); 
+> >      console.log(concatCopy); // => ["data-A", "data-B", "data-C"]
+> >    let fromCopy = Array.from(someData);  
+> >      console.log(fromCopy); // => ["data-A", "data-B", "data-C"]      
+> > // it allows you to create array from string or Set
+> > let str = 'ARRAY';
+> >   let charArray = Array.from(str);
+> >   console.log(charArray); // => ['A', 'R', 'R', 'A', 'Y']
+> > ```
 
