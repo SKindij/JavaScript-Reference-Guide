@@ -17,13 +17,13 @@ topic :orangutan: a basic set of JavaScript knowledge
 
 
 ## 📚 Control flow
-* 📖 [Conditionals:]()
+* 📖 [Conditionals:]()\
   &ensp; ► if/else ► switch ► ternary operator
-* 📖 [Loops:]()  
+* 📖 [Loops:]()\ 
   &ensp; ► for ► while ► do..while
-* 📖 [Controls:]()
+* 📖 [Controls:]()\
   &ensp; ► break ► continue ► return
-* 📖 [Exception handling:]()
+* 📖 [Exception handling:]()\
   &ensp; ► try..catch ► throw ► finally
 
 - - -
@@ -44,33 +44,33 @@ topic :orangutan: a basic set of JavaScript knowledge
 - - -
 
 ## 📚 Arrays
-* 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#basics)
+* 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#basics)\
   &ensp; ► declaration ► initialization ► accessing
-* 📖 [Methods that do not change initial array](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-not-ch)
+* 📖 [Methods that do not change initial array](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-not-ch)\
   &ensp; ► .find ► .findIndex ► .indexOf ► .lastIndexOf ► .includes\
   &ensp; ► .every ► .some ► .concat ► .join ► .filter\
-  &ensp; ► .flat ► .flatMap ► .forEach ► .map ► .reduce ► .reduceRight 
+  &ensp; ► .flat ► .flatMap ► .forEach ► .map ► .reduce ► .reduceRight\
   &ensp; ► .toString ► .toLocaleString
-* 📖 [Methods that change initial array:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-ch)
+* 📖 [Methods that change initial array:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-ch)\
   &ensp; ► .push ► .unshift ► .pop ► .shift ► .sort ► .reverse ► .fill ► .copyWithin
-* 📖 [Other methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#other-methods)
+* 📖 [Other methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#other-methods)\
   &ensp; + .split ► .splice ► .slice ► Array.isArray
-* 📖 [Destructuring:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#destructuring)
+* 📖 [Destructuring:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#destructuring)\
   &ensp; ► syntax ► swapping var
 
 
 ## 📚 Objects
-* 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+* 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
   &ensp; ► obj literals ► constructor func ► classes ► this ► prototype chain ► destructuring
-* 📖 [Properties:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+* 📖 [Properties:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
   &ensp; ► access ► assignment ► descriptors ► computed prop
-* 📖 [Methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+* 📖 [Methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
   &ensp; ► definitions ► this keyword ► chaining
-* 📖 [Inheritance:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+* 📖 [Inheritance:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
   &ensp; ► patterns ► obj composition
-* 📖 [Encapsulation:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)
+* 📖 [Encapsulation:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
   &ensp; ► getters & setters ► private variables ► closure func
-* 📖 [Polymorphism:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#) 
+* 📖 [Polymorphism:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
   &ensp; ► overriding ► overloading ► dynamic dispatch
 
 - - -
@@ -118,7 +118,25 @@ That is, a set of rules and guidelines that a language must follow in order to b
 >    * BigInt; 
 >    * Globalthis;  
 >    * ??; 
-___
+- - -
+
+## 📚 Functions
+
+
+
+
+## 📚 Asynchronous
+
+
+
+
+## 📚 Regular Expressions
+
+
+
+
+
+- - -
 
 ### Statement is a separate command in code that performs a specific action.
 &ensp;In JavaScript, all instructions can be divided into several categories:
@@ -157,18 +175,3 @@ ___
 3. through the constructor function (create new objects of the same type);
 4. indirect function call via .call() or .apply();
 ___
-
-## 📚 Functions
-
-
-## 📚 Asynchronous
-
-
-## 📚 Regular Expressions
-
-
-
-
-
-
-
