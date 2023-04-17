@@ -48,28 +48,27 @@ topic :orangutan: a basic set of JavaScript knowledge
   &ensp; ► declaration ► initialization ► accessing
 * 📖 [Methods that do not change initial array](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-not-ch)
   + array search methods
-    - ► .find ► .findIndex ► .indexOf ► .lastIndexOf  
+    - ► .indexOf ► .lastIndexOf ► .find ► .findIndex   
     - ► .includes ► .some ► .every 
   + array conversion methods
-    - ► .toString ► .toLocaleString
+    - ► .toString ► .join 
+    - ► .concat  ► .toLocaleString 
   + array iteration methods 
     - ► .map ► .reduce ► .reduceRight ► .filter
   + array transformation methods
-    - ► .concat ► .join ► .flat ► .flatMap 
+    - ► ► .slice   ► .flat ► .flatMap 
 * 📖 [Methods that change initial array:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-ch)
   + array mutator methods
     - ► .push ► .unshift ► .pop ► .shift 
-    - ► .fill ► .copyWithin
+    - ► .splice ► .copyWithin ► .fill 
   + array sorting methods
     - ► .reverse ► .sort  
 * 📖 [Other methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#other-methods)
   + ► Array.isArray
-  + ► .forEach
-  + ► .split
-  + ► .splice
-  + ► .slice     
+  + ► .forEach  
 * 📖 [Destructuring:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#destructuring)\
-  &ensp; ► syntax ► swapping var
+  + ► syntax ► swapping var
+* How to copy an array?
 
 
 ## 📚 Objects
