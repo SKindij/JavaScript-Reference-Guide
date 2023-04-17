@@ -98,11 +98,15 @@
 
 
 ### array transformation methods
+> ```javascript  
+>    // .slice(begin, end) returns new array containing copy of part of the original array
+>    arrayAnimals.slice(1, 7);  // => ['crane', 'heron', 'duck', 'capybara', 'beaver', 'raccoon']
+>      
+>  ```
 
 
 
-
-
+► .slice
 .concat
 .join
 .flat
@@ -131,6 +135,23 @@
 >       console.log( myArray ); // => ["someUnshift2", "anything", "somePush1"]
 > ```
 ### array mutator methods 2
+> ```javascript 
+> let arrayAnimals = ['beaver', 'capybara', 'crane', 'duck', 'heron', 'platypus', 'quail', 'raccoon', 'skunk', 'stork'];
+>   // add several elements to array: .splice(position, 0, new_element_1, new_element_2, ...)
+>    arrayAnimals.splice( 3, 0, 'quail', 'platypus');
+>      arrayAnimals; // => ['beaver', 'capybara', 'crane', 'quail', 'platypus', 'duck', 'heron', 'platypus', 'quail', 'raccoon', 'skunk', 'stork']
+>   // remove 2 elements from array and replace them
+>     arrayAnimals.splice(2, 2, 'cat', 'dog'); // => ['crane', 'quail']
+>      arrayAnimals; // => ['beaver', 'capybara', 'cat', 'dog', 'platypus', 'duck', 'heron', 'platypus', 'quail', 'raccoon', 'skunk', 'stork']
+>  
+>  const seaFish = ["salmon", "tuna", "cod", "halibut", "swordfish"];
+>   // copy sequence of elements (targetIndex, startIndex, endIndex)
+>     seaFish.copyWithin(3, 0, 2); // => ['salmon', 'tuna', 'cod', 'salmon', 'tuna']
+>     seaFish.copyWithin(0, 3, 5); // => ['halibut', 'swordfish', 'cod', 'halibut', 'swordfish']
+>   // .fill() method is used to fill all elements of array with static value
+>     seaFish.fill("mackerel"); // => ['mackerel', 'mackerel', 'mackerel', 'mackerel', 'mackerel']
+>  ```
+
 
 
 ► .fill 
@@ -184,17 +205,7 @@
 
 
 
-
-### .slice() and .splice()
-> > ```javascript  
-> >    // .slice(begin, end) returns new array containing copy of part of the original array without changing it 
-> >    arrayAnimals.slice(1, 7);  // => ['crane', 'heron', 'duck', 'capybara', 'beaver', 'raccoon']
-> >    // to add several elements to the array: .splice(position, 0, new_element_1, new_element_2, ...)
-> >    arrayAnimals.splice( 3, 0, 'quail', 'platypus');
-> >      arrayAnimals; // => ['stork', 'crane', 'heron', 'quail', 'platypus', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk']
-> >      
-> >  ```
-
+### How to copy an array?
 
 > > ```javascript   
 > >  let yourData = ["dataA", "dataB", "dataC"];
@@ -214,22 +225,20 @@
 > > > ```
 
 
-► .split 
-► .splice 
-► .slice 
-► Array.isArray
+>  ```javascript  
+>  let copiedArray = [...myArray];
+>    copiedArray; // => ["someUnshift2", "anything", "somePush1"]
+> ```
+
 - - -
 
 
 
 
-### How to copy an array?
 
 
->  ```javascript  
->  let copiedArray = [...myArray];
->    copiedArray; // => ["someUnshift2", "anything", "somePush1"]
-> ```
+
+
 
 
 
