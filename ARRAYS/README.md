@@ -43,15 +43,32 @@
 
 ### array conversion methods
 >  ```javascript
-
-
-
-
+> const fruits = ['apple', 'banana', 'orange', 'pear', 'kiwi', 'orange', 'pineapple'];
+>  // convert array to string, with each element separated by comma
+>    const fruitString1 = fruits.toString();
+>    console.log(fruitString1); // => 'apple,banana,orange,pear,kiwi,orange,pineapple'
+>  // allows you to specify custom separator
+>    const fruitString2 = fruits.join(' | ');
+>    console.log(fruitString2); // => 'apple | banana | orange | pear | kiwi | orange | pineapple'
+> 
+>  let stringBirds = 'stork, crane, heron, duck', stringMammals = 'capybara, beaver, raccoon, skunk';
+>  let arrayBirds = stringBirds.split(", "), arrayMammals = stringMammals.split(", ");
+>    // combines two or more arrays into new array
+>      let arrayAnimals = arrayBirds.concat( arrayMammals );
+>      console.log(arrayAnimals); // => ['stork', 'crane', 'heron', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk']
+>  
+> // `.toLocaleString()` method takes two optional parameters
+> // - locale or array of locales for which to format numbers
+> // - formatting options: currency code and number of decimal places
+>  // display prices of products in local currency of customer
+>    const productPrice = 50.99;
+>    const customerLocale = 'de-DE'; // Germany
+>    const formattedPrice = productPrice.toLocaleString(customerLocale, {
+>      style: 'currency',
+>      currency: 'EUR'
+>    });
+>    console.log(formattedPrice); // => 50,99 €
 >  ```
-
-
-.toString
-.toLocaleString
 
 
 ## array iteration methods
@@ -166,13 +183,7 @@
 > ```
 
 
-### .split()
->  ```javascript 
->  let stringBirds = 'stork, crane, heron, duck', stringMammals = 'capybara, beaver, raccoon, skunk';
->  let arrayBirds = stringBirds.split(", "), arrayMammals = stringMammals.split(", ");
->    let arrayAnimals = arrayBirds.concat( arrayMammals );
->      arrayAnimals; // => ['stork', 'crane', 'heron', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk']
-> ``` 
+
 
 ### .slice() and .splice()
 > > ```javascript  
