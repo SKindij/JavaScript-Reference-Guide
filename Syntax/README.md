@@ -237,15 +237,36 @@ It determines where a variable can be accessed and modified within a program.
 >  console.log(blockVariable); // Output: Uncaught ReferenceError: blockVariable is not defined
 >  console.log(anotherBlockVariable); // Output: Uncaught ReferenceError: anotherBlockVariable is not defined
 >  console.log(innerVariable); // Output: Uncaught ReferenceError: innerVariable is not defined
-```
+> ```
 
 
 ## <a name="additionally"></a>Additionally:
 
 ### hoisting
+&ensp;It is behavior in JS where variable and function declarations are moved to top of their respective scopes, regardless of where they are actually declared in code.\
+&ensp;In other words, even if you declare variable or function after you use it in your code, JS will still treat declaration as if it had been made at beginning of current scope. This can sometimes lead to unexpected behavior in your code.
 
+> _`var` keyword are hoisted to top of their respective scopes, but initial value of the variable is set to `undefined`._
+> > ``` javascript
+> >  console.log(x); // Output: undefined
+> >    var x = 10;
+> > ```
 
+> _`var function expression` are hoisted, but their values are not set until code is executed._
+> > ``` javascript
+> >  myFunction(); // Output: Uncaught TypeError: myFunction is not a function
+> >    var myFunction = function() {
+> >      console.log("Hello, world!");
+> >    }
+> > ```
 
+> _`myFunction()` still works because `function declaration` is hoisted to top of current scope_
+> > ``` javascript
+> >  myFunction(); // Output: "I am function declared in code below."
+> >    function myFunction() {
+> >      console.log("I am function declared in code below.");
+> >    }
+> > ```
 
 
 ### Lexical scope (also known as static scope):
@@ -259,9 +280,9 @@ It determines where a variable can be accessed and modified within a program.
 > >     const outerVar = 'I am outer!';  
 > >     function innerFunction() {
 > >        const innerVar = 'I am inner!';
-> >        console.log(globalVar); // accesses from global scope
-> >        console.log(outerVar); // accesses from outer scope
-> >        console.log(innerVar); // accesses from local scope
+> >          console.log(globalVar); // accesses from global scope
+> >          console.log(outerVar); // accesses from outer scope
+> >          console.log(innerVar); // accesses from local scope
 > >     }
 > >    innerFunction();
 > >  }
