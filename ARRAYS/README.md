@@ -16,6 +16,7 @@
 >  console.log( tableLikeArray[1][2] ); // => 6
 > ```
 
+- - -
 ## <a name="methods-not-ch"></a>Methods that do not change initial array:
 
 ### Array search methods
@@ -39,36 +40,48 @@
 >     console.log( banknotes.every(value => value % 40 === 0) ); // => false   
 >  ```
 
+### Array Conversion Methods
+>  ```javascript
+
+
+
+
+>  ```
+
 >    console.log(); // =>
 
 
-
-
-
-► .concat
-
-► .join
-
-► .filter
-
-► .flat
-
-.flatMap
-
-.forEach
-
-.map
-
-.reduce
-
-.reduceRight
-
 .toString
-
 .toLocaleString
 
 
-## 
+## Array iteration methods
+> ```javascript
+>  let ourData = [1981, 1984, 2003, 2022];
+>    // return new updated array 
+>    const updatedData = ourData.map( value => value + 50 );
+>      console.log( updatedData ); // => [2031, 2034, 2053, 2072]         
+>    // Final result of running reducer across all elements of array is single value.
+>    const sumYears = ourData.reduce( (accumulator, currentValue) => accumulator + currentValue, 0 ); 
+>      console.log( sumYears ); // => 7990
+>    const multiYears = ourData.reduce( (accumulator, currentValue) => accumulator * currentValue, 1 );
+>      console.log( multiYears ); // => 15917990600064
+>    const totalYears = ourData.reduce( (accumulator, currentValue) => {
+>      return accumulator + (2024 - currentValue);
+>    }, 0 );
+>      console.log( totalYears ); // => 106
+>    // find maximum value in array
+>    const maxYear = ourData.reduce( (acc, value) => (acc > value) ? acc : value ); 
+>      console.log( maxYear ); // => 2022
+>  // reduceRight() is useful when you want to apply function to array from right-to-left    
+>    // callback returns true for elements that should be included in new array
+>    const filteredData = ourData.filter( value => value > 2000 );
+>      console.log( filteredData ); // =>  [2003, 2022]
+>    console.log( ourData ); // => [1981, 1984, 2003, 2022];
+> ```
+
+
+### Array Transformation Methods
 
 
 
@@ -76,8 +89,16 @@
 
 
 
+.concat
+.join
+.flat
+.flatMap
+.map
 
 
+
+
+- - -
 ## <a name="methods-ch"></a>Methods that change initial array:
 
 ### Array Mutator Methods
@@ -96,83 +117,48 @@
 >       console.log( myArray ); // => ["someUnshift2", "anything", "somePush1"]
 > ```
 
-
-
-
+### Array sorting methods.
+>  ```javascript 
+>  // The ourArray.reverse() method reverses the order of the elements in the array.
+> // This method modifies the array on which it was called and returns a reference to it.
+>  let arrayAnimals = ['stork', 'crane', 'heron', 'quail', 'platypus', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk'];
+>  arrayAnimals.reverse(); // => ['skunk', 'raccoon', 'beaver', 'capybara', 'duck', 'platypus', 'quail', 'heron', 'crane', 'stork']
+>    ```
+> > ```javascript
+> >  arrayAnimals.sort(); // => ['beaver', 'capybara', 'crane', 'duck', 'heron', 'platypus', 'quail', 'raccoon', 'skunk', 'stork']
+> >    // for example, let's sort the animals by the length of their name
+> >    arrayAnimals.sort( function(first, second) {
+> >      return first.length - second.length; } ); // => ['duck', 'crane', 'heron', 'quail', 'skunk', 'stork', 'beaver', 'raccoon', 'capybara', 'platypus']
+> >    // for example, let's sort bills from larger to smaller  
+> >    let banknotes = [200, 100, 50, 50, 200, 50, 20, 500, 20, 1000, 100];
+> >    banknotes.sort( function(first, second) {
+> >      return second - first; } ); // => [1000, 500, 200, 200, 100, 100, 50, 50, 50, 20, 20]
+> > ```
 
 
 ► .sort 
-
 ► .reverse 
-
 ► .fill 
-
 ► .copyWithin
-
-
-
-
-
-
-
 
 
 ## <a name="other-methods"></a>Other methods:
 
-► .split 
-
-► .splice 
-
-► .slice 
-
-► Array.isArray
-
-
-
-
-
-
-
-> > ```javascript   
-> >  let yourData = ["dataA", "dataB", "dataC"];
-> >  let yourArray = ["anything", ...yourData, "anything"];
-> >    yourArray; // => ['anything', 'dataA', 'dataB', 'dataC', 'anything']
-> >  let yourCopy = Array.from(yourArray);
-> >    yourCopy.length = 4;
-> >      yourCopy; // => ['anything', 'dataA', 'dataB', 'dataC']
-> > ```
-> > > ```javascript 
-> > >  // To check if a value is an array, there is an Array.isArray() method.
-> > >  Array.isArray(yourData); // => true
-> > >    // to return the string from the specified array
-> > >    yourData.join(); // => 'dataA,dataB,dataC'
-> > >    yourData.join(" "); // => 'dataA dataB dataC'
-> > >    yourData.join("-"); // => 'dataA-dataB-dataC'
-> > > ```
-
-## Array iteration methods
-
+### .forEach()
 > ```javascript
->  let ourData = [1981, 1984, 2003, 2023];
->    // calculate the sum of all array elements
->    let ourSum = 0;
->    ourData.forEach( value => {ourSum += value;} );
->       ourSum; // => 7991
->    // to modify an array by changing each of its elements
->    ourData.forEach( function(value, index, array) {array[index] = 2024 - value;} );
->      ourData; // => [43, 40, 21, 1]
->    // the following method returns a new array without modifying the original array
->    ourData.map( value => value + 10 ); // => [53, 50, 31, 11]
->    // Final result of running the reducer across all elements of the array is a single value.
->    ourData.reduce( (accumulator, currentValue) => accumulator + currentValue, 0 ); // => 7991
->    ourData.reduce( (accumulator, currentValue) => accumulator * currentValue, 1 ); // => 15925862998976
->    ourData.reduce( (acc, value) => (acc > value) ? acc : value ); // => 2023
+>  let ourData = [1981, 1984, 2003, 2022];
+>    // calculate sum of all array elements
+>      let ourSum = 0;
+>      ourData.forEach( value => {ourSum += value;} );
+>        console.log( ourData ); // => [1981, 1984, 2003, 2022];
+>        console.log( ourSum ); // => 7991
+>    // modify array by changing each of its elements
+>      ourData.forEach( function(value, index, array) {array[index] = 2024 - value;} );
+>      console.log( ourData ); // => [43, 40, 21, 1]
 > ```
 
 
-
-## Array processing methods
-
+### Array processing methods
 >  ```javascript 
 >  let banknotes = [200, 100, undefined, 50, 50, 200, 50, 20, 500, 20, null, 1000, 100];
 >    banknotes.filter( item => item !== undefined && item !== null ); // => [200, 100, 50, 50, 200, 50, 20, 500, 20, 1000, 100]
@@ -193,24 +179,35 @@
 > >      
 > >  ```
 
-## Array sorting methods.
 
->  ```javascript 
->  // The ourArray.reverse() method reverses the order of the elements in the array.
-> // This method modifies the array on which it was called and returns a reference to it.
->  let arrayAnimals = ['stork', 'crane', 'heron', 'quail', 'platypus', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk'];
->  arrayAnimals.reverse(); // => ['skunk', 'raccoon', 'beaver', 'capybara', 'duck', 'platypus', 'quail', 'heron', 'crane', 'stork']
->    ```
-> > ```javascript
-> >  arrayAnimals.sort(); // => ['beaver', 'capybara', 'crane', 'duck', 'heron', 'platypus', 'quail', 'raccoon', 'skunk', 'stork']
-> >    // for example, let's sort the animals by the length of their name
-> >    arrayAnimals.sort( function(first, second) {
-> >      return first.length - second.length; } ); // => ['duck', 'crane', 'heron', 'quail', 'skunk', 'stork', 'beaver', 'raccoon', 'capybara', 'platypus']
-> >    // for example, let's sort bills from larger to smaller  
-> >    let banknotes = [200, 100, 50, 50, 200, 50, 20, 500, 20, 1000, 100];
-> >    banknotes.sort( function(first, second) {
-> >      return second - first; } ); // => [1000, 500, 200, 200, 100, 100, 50, 50, 50, 20, 20]
+> > ```javascript   
+> >  let yourData = ["dataA", "dataB", "dataC"];
+> >  let yourArray = ["anything", ...yourData, "anything"];
+> >    yourArray; // => ['anything', 'dataA', 'dataB', 'dataC', 'anything']
+> >  let yourCopy = Array.from(yourArray);
+> >    yourCopy.length = 4;
+> >      yourCopy; // => ['anything', 'dataA', 'dataB', 'dataC']
 > > ```
+> > > ```javascript 
+> > >  // To check if a value is an array, there is an Array.isArray() method.
+> > >  Array.isArray(yourData); // => true
+> > >    // to return the string from the specified array
+> > >    yourData.join(); // => 'dataA,dataB,dataC'
+> > >    yourData.join(" "); // => 'dataA dataB dataC'
+> > >    yourData.join("-"); // => 'dataA-dataB-dataC'
+> > > ```
+
+
+► .split 
+► .splice 
+► .slice 
+► Array.isArray
+
+
+
+
+
+### How to copy an array?
 
 
 >  ```javascript  
