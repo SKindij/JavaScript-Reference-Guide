@@ -11,7 +11,7 @@ topic :orangutan: a basic set of JavaScript knowledge
 * 📖 [Additionally:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#additionally)\
   &ensp; ► hoisting ► Lexical scope
 * 📖 [Operators:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#operators)\
-  &ensp; ► arithmetic ► comparison ► logical ► bitwise ► assignment
+  &ensp; ► arithmetic ► comparison ► logical ► bitwise
 * 📖 [Literals:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Syntax#literals)\
   &ensp; ► string ► numeric ► boolean ► object
 
@@ -19,7 +19,7 @@ topic :orangutan: a basic set of JavaScript knowledge
 ## 📚 Control flow
 * 📖 [Conditionals:]()\
   &ensp; ► if/else ► switch ► ternary operator
-* 📖 [Loops:]()\ 
+* 📖 [Loops:]()\
   &ensp; ► for ► while ► do..while
 * 📖 [Controls:]()\
   &ensp; ► break ► continue ► return
