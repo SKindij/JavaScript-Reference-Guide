@@ -46,15 +46,28 @@ topic :orangutan: a basic set of JavaScript knowledge
 ## 📚 Arrays
 * 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#basics)\
   &ensp; ► declaration ► initialization ► accessing
-* 📖 [Methods that do not change initial array](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-not-ch)\
-  &ensp; ► .find ► .findIndex ► .indexOf ► .lastIndexOf ► .includes\
-  &ensp; ► .every ► .some ► .concat ► .join ► .filter\
-  &ensp; ► .flat ► .flatMap ► .forEach ► .map ► .reduce ► .reduceRight\
-  &ensp; ► .toString ► .toLocaleString
-* 📖 [Methods that change initial array:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-ch)\
-  &ensp; ► .push ► .unshift ► .pop ► .shift ► .sort ► .reverse ► .fill ► .copyWithin
-* 📖 [Other methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#other-methods)\
-  &ensp; + .split ► .splice ► .slice ► Array.isArray
+* 📖 [Methods that do not change initial array](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-not-ch)
+  + array search methods
+    - ► .find ► .findIndex ► .indexOf ► .lastIndexOf  
+    - ► .includes ► .some ► .every 
+  + array conversion methods
+    - ► .toString ► .toLocaleString
+  + array iteration methods 
+    - ► .map ► .reduce ► .reduceRight ► .filter
+  + array transformation methods
+    - ► .concat ► .join ► .flat ► .flatMap 
+* 📖 [Methods that change initial array:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#methods-ch)
+  + array mutator methods
+    - ► .push ► .unshift ► .pop ► .shift 
+    - ► .fill ► .copyWithin
+  + Array sorting methods
+    - ► .reverse ► .sort  
+* 📖 [Other methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#other-methods)
+  + ► Array.isArray
+  + ► .forEach
+  + ► .split
+  + ► .splice
+  + ► .slice     
 * 📖 [Destructuring:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#destructuring)\
   &ensp; ► syntax ► swapping var
 
