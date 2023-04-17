@@ -17,9 +17,10 @@
 > ```
 
 - - -
+
 ## <a name="methods-not-ch"></a>Methods that do not change initial array:
 
-### Array search methods
+### array search methods
 >  ```javascript 
 >  const fruits = ['apple', 'banana', 'orange', 'pear', 'kiwi', 'orange', 'pineapple'];
 >    // searche for specified value and return index of first matching element
@@ -40,7 +41,7 @@
 >     console.log( banknotes.every(value => value % 40 === 0) ); // => false   
 >  ```
 
-### Array Conversion Methods
+### array conversion methods
 >  ```javascript
 
 
@@ -53,7 +54,7 @@
 .toLocaleString
 
 
-## Array iteration methods
+## array iteration methods
 > ```javascript
 >  let ourData = [1981, 1984, 2003, 2022];
 >    // return new updated array 
@@ -79,9 +80,7 @@
 > ```
 
 
-### Array Transformation Methods
-
-
+### array transformation methods
 
 
 
@@ -91,15 +90,15 @@
 .join
 .flat
 .flatMap
-.map
 
 
 
 
 - - -
+
 ## <a name="methods-ch"></a>Methods that change initial array:
 
-### Array Mutator Methods
+### array mutator methods 1
 > ```javascript
 >  let myArray = ["anything"];
 >    // adding data to end of array & return new length
@@ -114,8 +113,14 @@
 >       myArray.shift(); // => 'someUnshift1'
 >       console.log( myArray ); // => ["someUnshift2", "anything", "somePush1"]
 > ```
+### array mutator methods 2
 
-### Array sorting methods
+
+► .fill 
+► .copyWithin
+
+
+### array sorting methods
 >  ```javascript 
 >  let arrayAnimals = ['stork', 'crane', 'heron', 'quail', 'platypus', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk'];
 >  
@@ -139,15 +144,13 @@
 >    console.log(banknotes)  // => [1000, 500, 200, 200, 100, 100, 50, 50, 50, 20, 20]
 > > ```
 
-
-
-
-► .fill 
-► .copyWithin
-
-
 - - -
+
 ## <a name="other-methods"></a>Other methods:
+
+### Array.isArray()
+
+
 
 ### .forEach()
 > ```javascript
@@ -163,18 +166,15 @@
 > ```
 
 
-### Array processing methods
+### .split()
 >  ```javascript 
->  let banknotes = [200, 100, undefined, 50, 50, 200, 50, 20, 500, 20, null, 1000, 100];
->    banknotes.filter( item => item !== undefined && item !== null ); // => [200, 100, 50, 50, 200, 50, 20, 500, 20, 1000, 100]
->    banknotes.filter( item => item >= 100 ); // => [200, 100, 200, 500, 1000, 100]
->      banknotes; // => [200, 100, undefined, 50, 50, 200, 50, 20, 500, 20, null, 1000, 100]
->
 >  let stringBirds = 'stork, crane, heron, duck', stringMammals = 'capybara, beaver, raccoon, skunk';
 >  let arrayBirds = stringBirds.split(", "), arrayMammals = stringMammals.split(", ");
 >    let arrayAnimals = arrayBirds.concat( arrayMammals );
 >      arrayAnimals; // => ['stork', 'crane', 'heron', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk']
 > ``` 
+
+### .slice() and .splice()
 > > ```javascript  
 > >    // .slice(begin, end) returns new array containing copy of part of the original array without changing it 
 > >    arrayAnimals.slice(1, 7);  // => ['crane', 'heron', 'duck', 'capybara', 'beaver', 'raccoon']
