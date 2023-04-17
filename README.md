@@ -60,7 +60,7 @@ topic :orangutan: a basic set of JavaScript knowledge
   + array mutator methods
     - ► .push ► .unshift ► .pop ► .shift 
     - ► .fill ► .copyWithin
-  + Array sorting methods
+  + array sorting methods
     - ► .reverse ► .sort  
 * 📖 [Other methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/ARRAYS#other-methods)
   + ► Array.isArray
