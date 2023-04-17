@@ -48,8 +48,6 @@
 
 >  ```
 
->    console.log(); // =>
-
 
 .toString
 .toLocaleString
@@ -117,31 +115,38 @@
 >       console.log( myArray ); // => ["someUnshift2", "anything", "somePush1"]
 > ```
 
-### Array sorting methods.
+### Array sorting methods
 >  ```javascript 
->  // The ourArray.reverse() method reverses the order of the elements in the array.
-> // This method modifies the array on which it was called and returns a reference to it.
 >  let arrayAnimals = ['stork', 'crane', 'heron', 'quail', 'platypus', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk'];
->  arrayAnimals.reverse(); // => ['skunk', 'raccoon', 'beaver', 'capybara', 'duck', 'platypus', 'quail', 'heron', 'crane', 'stork']
->    ```
-> > ```javascript
-> >  arrayAnimals.sort(); // => ['beaver', 'capybara', 'crane', 'duck', 'heron', 'platypus', 'quail', 'raccoon', 'skunk', 'stork']
-> >    // for example, let's sort the animals by the length of their name
-> >    arrayAnimals.sort( function(first, second) {
-> >      return first.length - second.length; } ); // => ['duck', 'crane', 'heron', 'quail', 'skunk', 'stork', 'beaver', 'raccoon', 'capybara', 'platypus']
-> >    // for example, let's sort bills from larger to smaller  
-> >    let banknotes = [200, 100, 50, 50, 200, 50, 20, 500, 20, 1000, 100];
-> >    banknotes.sort( function(first, second) {
-> >      return second - first; } ); // => [1000, 500, 200, 200, 100, 100, 50, 50, 50, 20, 20]
+>  
+>    // reverse order of elements in array.
+>    arrayAnimals.reverse(); 
+>    console.log(arrayAnimals); // => ['skunk', 'raccoon', 'beaver', 'capybara', 'duck', 'platypus', 'quail', 'heron', 'crane', 'stork']
+>
+>    // by default, sorts elements alphabetically
+>    arrayAnimals.sort(); 
+>    console.log(arrayAnimals); // => ['beaver', 'capybara', 'crane', 'duck', 'heron', 'platypus', 'quail', 'raccoon', 'skunk', 'stork']
+>    
+>    // sort animals by length of their name
+>    arrayAnimals.sort( function(first, second) {
+>      return first.length - second.length; } ); 
+>    console.log(arrayAnimals); // => ['duck', 'crane', 'heron', 'quail', 'skunk', 'stork', 'beaver', 'raccoon', 'capybara', 'platypus']
+>    
+>    // let's sort bills from larger to smaller  
+>    let banknotes = [200, 100, 50, 50, 200, 50, 20, 500, 20, 1000, 100];
+>    banknotes.sort( function(first, second) {
+>      return second - first; } ); 
+>    console.log(banknotes)  // => [1000, 500, 200, 200, 100, 100, 50, 50, 50, 20, 20]
 > > ```
 
 
-► .sort 
-► .reverse 
+
+
 ► .fill 
 ► .copyWithin
 
 
+- - -
 ## <a name="other-methods"></a>Other methods:
 
 ### .forEach()
@@ -202,7 +207,7 @@
 ► .splice 
 ► .slice 
 ► Array.isArray
-
+- - -
 
 
 
