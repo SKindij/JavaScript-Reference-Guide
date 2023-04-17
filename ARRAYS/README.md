@@ -61,13 +61,13 @@
 > // - locale or array of locales for which to format numbers
 > // - formatting options: currency code and number of decimal places
 >  // display prices of products in local currency of customer
->    const productPrice = 50.99;
+>    const productPrice = [50.99, 40.69, 70.29];
 >    const customerLocale = 'de-DE'; // Germany
 >    const formattedPrice = productPrice.toLocaleString(customerLocale, {
 >      style: 'currency',
 >      currency: 'EUR'
 >    });
->    console.log(formattedPrice); // => 50,99 €
+>    console.log(formattedPrice); // => 50,99 €, 40,69 €, 70,29 €
 >  ```
 
 
@@ -99,21 +99,17 @@
 
 ### array transformation methods
 > ```javascript  
->    // .slice(begin, end) returns new array containing copy of part of the original array
->    arrayAnimals.slice(1, 7);  // => ['crane', 'heron', 'duck', 'capybara', 'beaver', 'raccoon']
->      
+> const seaFish = ["salmon", "tuna", "cod", "halibut", "swordfish"];
+>   // (begin, end) returns new array containing copy of part of the original array
+>    seaFish.slice(1, 4);  // => ['tuna', 'cod', 'halibut']
+>
+> const seaFish = ["salmon", ["tuna", "cod"], "halibut", ["swordfish"]];
+>   // new array with all sub-array elements concatenated recursively up to specified depth
+>   const flattenedFish = seaFish.flat();
+>   console.log(flattenedFish); // => ['salmon', 'tuna', 'cod', 'halibut', 'swordfish']
+>
+>  // .flatMap()
 >  ```
-
-
-
-► .slice
-.concat
-.join
-.flat
-.flatMap
-
-
-
 
 - - -
 
@@ -152,12 +148,6 @@
 >     seaFish.fill("mackerel"); // => ['mackerel', 'mackerel', 'mackerel', 'mackerel', 'mackerel']
 >  ```
 
-
-
-► .fill 
-► .copyWithin
-
-
 ### array sorting methods
 >  ```javascript 
 >  let arrayAnimals = ['stork', 'crane', 'heron', 'quail', 'platypus', 'duck', 'capybara', 'beaver', 'raccoon', 'skunk'];
@@ -187,7 +177,41 @@
 ## <a name="other-methods"></a>Other methods:
 
 ### Array.isArray()
-
+> ```javascript 
+> let yourData = ["dataA", "dataB", "dataC"];
+>  // check if value is an array
+>  Array.isArray(yourData); // => true
+> 
+> // suppose you have API that can return either single object or array of objects, 
+> // and you want to process data consistently regardless of response format
+>  function processData(data) {
+>    if (Array.isArray(data)) {
+>      // data is an array of objects
+>      console.log("Processing array of objects...");
+>      // Process each object in the array
+>      data.forEach(obj => {
+>        // do something with each object
+>        console.log(obj);
+>      });
+>    } else {
+>      // data is a single object
+>      console.log("Processing single object...");
+>      // do something with the object
+>      console.log(data);
+>    }
+>  }
+>  
+>  // example usage with an array of objects
+>  const dataArray = [
+>    { name: "Object A", value: 1 },
+>    { name: "Object B", value: 2 },
+>  ];
+>  processData(dataArray);
+>  
+>  // example usage with a single object
+>  const dataObject = { name: "Object C", value: 3 };
+>  processData(dataObject);
+> ```
 
 
 ### .forEach()
@@ -212,17 +236,9 @@
 > >  let yourArray = ["anything", ...yourData, "anything"];
 > >    yourArray; // => ['anything', 'dataA', 'dataB', 'dataC', 'anything']
 > >  let yourCopy = Array.from(yourArray);
-> >    yourCopy.length = 4;
 > >      yourCopy; // => ['anything', 'dataA', 'dataB', 'dataC']
 > > ```
-> > > ```javascript 
-> > >  // To check if a value is an array, there is an Array.isArray() method.
-> > >  Array.isArray(yourData); // => true
-> > >    // to return the string from the specified array
-> > >    yourData.join(); // => 'dataA,dataB,dataC'
-> > >    yourData.join(" "); // => 'dataA dataB dataC'
-> > >    yourData.join("-"); // => 'dataA-dataB-dataC'
-> > > ```
+
 
 
 >  ```javascript  
