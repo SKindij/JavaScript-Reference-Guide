@@ -294,17 +294,36 @@ It determines where a variable can be accessed and modified within a program.
 ## <a name="operators"></a>Operators:
 
 * arithmetic
-  + Addition: `+`
-  + Subtraction: `-`
-  + Multiplication: `*`
-  + Division: `/`
-  + Modulus (_remainder of a division operation_): `%`
-  + Increment (_adds 1 to a variable_): `++`
-  + Decrement (_subtracts 1 from a variable_): `--`
+  + addition: `+`
+  + subtraction: `-`
+  + multiplication: `*`
+  + division: `/`
+  + modulus (_remainder of division operation_): `%`
+  + increment (_adds 1 to variable_): `++`
+  + decrement (_subtracts 1 from variable_): `--`
+  > ```javascript
+  >  let initialValue = 20;
+  >  let firstIncrement = initialValue++;
+  >    console.log(firstIncrement); // => 20
+  >    console.log(initialValue); // => 21
+  >  let firstDecrement = initialValue--;
+  >    console.log(firstDecrement); // => 21
+  >    console.log(initialValue); // => 20
+  > ```
 * comparison
+  + equal to: `==`
+  + not equal to: `!=`
+  + strict equal to (_checks both value and data type_): `===`
+  + strict not equal to: `!==`
+  + greater than: `>`
+  + less than: `<`
+  + greater than or equal to: `>=`
+  + less than or equal to: `<=`
 * logical
+  + AND: `&&`
+  + OR: `||`
+  + NOT: `!`
 * bitwise
-* assignment
 
 
 ## <a name="literals"></a>Literals:
