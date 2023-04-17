@@ -42,6 +42,9 @@
 >    console.log(); // =>
 
 
+
+
+
 ► .concat
 
 ► .join
@@ -77,13 +80,26 @@
 
 ## <a name="methods-ch"></a>Methods that change initial array:
 
-► .push 
+### Array Mutator Methods
+> ```javascript
+>  let myArray = ["anything"];
+>    // adding data to end of array & return new length
+>      myArray.push("somePush1", "somePush2"); // => 3
+>      console.log( myArray ); // => ['anything', 'somePush1', 'somePush2']
+>    // adding data to begin of array & return new length
+>      myArray.unshift("someUnshift1", "someUnshift2"); // => 5
+>      console.log( myArray ); // => ['someUnshift1', 'someUnshift2', 'anything', 'somePush1', 'somePush2']
+>     // remove element from end of array and return it   
+>       myArray.pop(); // => 'somePush2'
+>     // remove element from begin of array and return it
+>       myArray.shift(); // => 'someUnshift1'
+>       console.log( myArray ); // => ["someUnshift2", "anything", "somePush1"]
+> ```
 
-► .unshift 
 
-► .pop 
 
-► .shift 
+
+
 
 ► .sort 
 
@@ -92,6 +108,13 @@
 ► .fill 
 
 ► .copyWithin
+
+
+
+
+
+
+
 
 
 ## <a name="other-methods"></a>Other methods:
@@ -107,20 +130,9 @@
 
 
 
-> ```javascript
->  let myArray = ["anything"];
->  myArray.push("somePush1", "somePush2"); // => 3 (returned new length) & adding data to the end of the array
->    myArray; // => ['anything', 'somePush1', 'somePush2']
->  myArray.unshift("someUnshift1", "someUnshift2"); // => 5 (returned new length) & adding data to the begin of the array
->    myArray; // => ['someUnshift1', 'someUnshift2', 'anything', 'somePush1', 'somePush2']
->    
->  myArray.pop();  // => 'somePush2' - removes element from end of array and returns it
->  myArray.shift(); // => 'someUnshift1' - removes element from begin of array and returns it
->    myArray; // => ["someUnshift2", "anything", "somePush1"]
->    
->  let copiedArray = [...myArray];
->    copiedArray; // => ["someUnshift2", "anything", "somePush1"]
-> ```
+
+
+
 > > ```javascript   
 > >  let yourData = ["dataA", "dataB", "dataC"];
 > >  let yourArray = ["anything", ...yourData, "anything"];
@@ -201,7 +213,10 @@
 > > ```
 
 
-
+>  ```javascript  
+>  let copiedArray = [...myArray];
+>    copiedArray; // => ["someUnshift2", "anything", "somePush1"]
+> ```
 
 
 
