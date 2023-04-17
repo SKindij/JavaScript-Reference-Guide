@@ -192,17 +192,52 @@ _It is a sequence of characters that represent text, and it is enclosed in eithe
 ## <a name="variable-scope"></a>Variable scope:
 &ensp;It refers to the **accessibility and visibility of a variable** within a certain portion of code during runtime.\
 It determines where a variable can be accessed and modified within a program. 
-* global scope
-* local scope 
-* function scope
-* block scope
+* **global scope**
+  + variables declared outside of any function or block;
+  + can be accessed from anywhere within the program;
+  + should be used with caution as they can be modified by any part of program;
+* **local scope** 
+  + variables declared inside a function;
+  + can only be accessed from within function in which they are declared;
+  + allow to store temporary values that are only needed within particular function;
+* **function scope**
+  + is similar to local scope, but it includes nested functions;
+* **block scope**
+  + variables declared inside a block, such as loop or if statement;
+  + can only be accessed within block in which they are declared;
+  + was introduced in ES6 with let and const keywords;
 
- 
-* `var` has function-level scope, meaning they are accessible 
-  - within the function they are declared in 
-  - or globally if declared outside any function;
-* `let` and `const` have block-level scope, meaning they are accessible 
-  - only within the block of code they are declared in, such as a loop or an if statement.
+> ``` javascript
+>  const globalVariable = "I'm a global variable";
+>  
+>  function outerFunction() {
+>    const outerVariable = "I'm an outer variable";
+>  
+>    if (true) {
+>      let blockVariable = "I'm a block variable";
+>      const anotherBlockVariable = "I'm another block variable";
+>        console.log(blockVariable); // Output: "I'm a block variable"
+>        console.log(anotherBlockVariable); // Output: "I'm another block variable"
+>    }
+>  
+>    function innerFunction() {
+>      let innerVariable = "I'm an inner variable";
+>        console.log(globalVariable); // Output: "I'm a global variable"
+>        console.log(outerVariable); // Output: "I'm an outer variable"
+>        console.log(innerVariable); // Output: "I'm an inner variable"
+>    }
+>  
+>    innerFunction();
+>  }
+>  
+>  outerFunction();
+>  
+>  console.log(globalVariable); // Output: "I'm a global variable"
+>  console.log(outerVariable); // Output: Uncaught ReferenceError: outerVariable is not defined
+>  console.log(blockVariable); // Output: Uncaught ReferenceError: blockVariable is not defined
+>  console.log(anotherBlockVariable); // Output: Uncaught ReferenceError: anotherBlockVariable is not defined
+>  console.log(innerVariable); // Output: Uncaught ReferenceError: innerVariable is not defined
+```
 
 
 ## <a name="additionally"></a>Additionally:
