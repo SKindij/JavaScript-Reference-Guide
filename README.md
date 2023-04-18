@@ -23,7 +23,7 @@ topic :orangutan: a basic set of JavaScript knowledge
   &ensp; ► for ► while ► do..while
 * 📖 [Controls:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Control-flow#controls)\
   &ensp; ► break ► continue ► return
-* 📖 [Exception handling:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Control-flow#exception)\
+* 📖 [Exception handling:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Control-flow#exceptions)\
   &ensp; ► try..catch ► throw ► finally
 
 - - -
@@ -73,7 +73,7 @@ topic :orangutan: a basic set of JavaScript knowledge
 
 ## 📚 Objects
 * 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
-  &ensp; ► obj literals ► constructor func ► classes ► this ► prototype chain ► destructuring
+  &ensp; ► obj literals ► constructor func ► classes ► [this](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/this) ► prototype chain ► destructuring
 * 📖 [Properties:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
   &ensp; ► access ► assignment ► descriptors ► computed prop
 * 📖 [Methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
