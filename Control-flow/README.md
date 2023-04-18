@@ -35,7 +35,7 @@
 > > ```
 
 
-## <a name="loops"></a📖 Loops:
+## <a name="loops"></a>📖 Loops:
 &ensp; They are used to repeat a block of code multiple times.
 
 > **for loop:**
@@ -60,8 +60,47 @@
 > > ```
 
 
+## <a name="conditionals"></a>📖 Controls:
+&ensp; Statements that allow you to modify the flow of your code.
 
+> **break:**\
+> _When `break` is encountered inside loop or switch statement, they immediately terminated
+> and the program continues executing from the next statement._
+> > ```javascript
+> >  for (let i = 11; i <= 30; i++) {
+> >    if (i === 17) {
+> >      break;
+> >    }
+> >    console.log(i);
+> >  }
+> > ```
 
+> **continue:**\
+> _When `continue` is encountered inside loop, current iteration of loop is skipped
+> and loop continues with next iteration._
+> > ```javascript
+> >  for (let i = 11; i <= 30; i++) {
+> >    if (i % 2 === 0) {
+> >      continue;
+> >    }
+> >    console.log(i);
+> >  }
+> > ```
+
+> **return:**\
+> _When `return` is encountered inside function, it is immediately terminated 
+> and program continues executing from next statement._\
+> _If value is provided after return keyword, that value is returned as result of function._
+> > ```javascript
+> >  function addNumbers(num1, num2) {
+> >    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+> >      return 'Error: both arguments must be numbers';
+> >    }
+> >    return num1 + num2;
+> >  }
+> >  console.log(addNumbers(2, 3)); // => 5
+> >  console.log(addNumbers('2', 3)); // => Error: both arguments must be numbers
+> > ```
 
 
 
