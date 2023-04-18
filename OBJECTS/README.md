@@ -69,10 +69,23 @@ unless it is in strict mode, in which case this is undefined.
 
 &emsp;Every object in JS has **prototype object**, which is used as fallback for properties and methods that are not defined on object itself.
 > **prototype chain** is mechanism for sharing properties and methods between objects. 
+> > ```javascript
+> >  function Hero(name, universe) {
+> >    this.name = name; this.universe = universe;
+> >  };
+> >  Hero.prototype.sayAbout = function() {
+> >    console.log(`Name: ${this.name},  universe: ${this.universe}.`);
+> >  };
+> >  const carnage = new Hero('Carnage', 'Marvel');  
+> >    carnage.sayAbout(); // => 'Name: Carnage,  universe: Marvel.'
+> > ```
 
-
-
-
+&emsp;**Destructuring** is way of extracting values from objects into variables. It's shorthand syntax that can make code more concise and readable.
+> _Here's example of using destructuring from our johnNY object:_
+> ```javascript
+> const { name, age, address: { city } } = johnNY;
+> console.log(name, age, city); // 'John' 30 'New York'
+> ```
 
 - - -
 
@@ -104,7 +117,16 @@ You can access object properties in two ways:
 > > > Numerical properties will be listed in ascending order.
 
 
-
+&emsp; ES6 adds **computed property names** where you can specify an expression enclosed in [ ] as a key-value pair when declaring an object literal:
+> ```javascript
+>  var prefix = "foo";
+>  var myObject = {
+>      [prefix + "bar"]: "hello",
+>      [prefix + "baz"]: "world"
+>  };
+>  myObject["foobar"];          // => hello
+>  myObject["foobaz"];         // =>  world
+> ```
 
 
 ## <a name="methods"></a>📖 Methods:
@@ -223,19 +245,8 @@ ___
 > >    * writable – if true, the value can be changed, otherwise it is read-only;
 > >    * enumerable – if true, the property is taken into account in loops, otherwise the loops ignore it;
 > >    * configurable – if true, the property can be removed and these attributes can be modified, otherwise it cannot be done.
-___
 
-&emsp; ES6 adds **computed property names** where you can specify an expression enclosed in [ ] as a key-value pair when declaring an object literal:
-> ```javascript
->  var prefix = "foo";
->  var myObject = {
->      [prefix + "bar"]: "hello",
->      [prefix + "baz"]: "world"
->  };
->  myObject["foobar"];          // => hello
->  myObject["foobaz"];         // =>  world
-> ```
-___
+- - -
 
 &emsp;  **__proto__** is an old and ancient getter/setter for **[[Prototype]]**
 > ```javascript
