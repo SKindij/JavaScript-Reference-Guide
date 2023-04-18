@@ -17,13 +17,13 @@ topic :orangutan: a basic set of JavaScript knowledge
 
 
 ## 📚 Control flow
-* 📖 [Conditionals:]()\
+* 📖 [Conditionals:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Control-flow#conditionals)\
   &ensp; ► if/else ► switch ► ternary operator
-* 📖 [Loops:]()\
+* 📖 [Loops:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Control-flow#loops)\
   &ensp; ► for ► while ► do..while
-* 📖 [Controls:]()\
+* 📖 [Controls:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Control-flow#controls)\
   &ensp; ► break ► continue ► return
-* 📖 [Exception handling:]()\
+* 📖 [Exception handling:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Control-flow#exception)\
   &ensp; ► try..catch ► throw ► finally
 
 - - -
