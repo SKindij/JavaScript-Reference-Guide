@@ -60,8 +60,12 @@ but they provide a cleaner and more familiar syntax for many developers.
 > ```
 > _To create object use `new` keyword_
 
-
-
+&emsp;**this** keyword in JS refers to object that current code is being executed in. 
++ In method of object, `this` refers to object itself.
++ In constructor func or class constructor, this refers to new object being created. 
++ In function that is not method or constructor, this refers to the global object (window in browser, global in Node.js) 
+unless it is in strict mode, in which case this is undefined.
+> _Read more about `this` [here](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/this)._
 
 
 
