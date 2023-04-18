@@ -104,10 +104,34 @@
 
 
 ## <a name="exceptions"></a>📖 Exception handling:
+&ensp; JS provides a way to handle errors and unexpected situations using `try..catch` blocks.
 
+> _It allows you to handle errors that may occur inside block of code._
+> > ```javascript
+> >  try {
+> >    // some code that may throw an error
+> >    console.log('Executing try block');
+> >  } catch (error) {
+> >    console.log('An error occurred:', error.message);
+> >  } finally {
+> >    console.log('Executing finally block');
+> >  }
+> > ```
 
-
-
-
+> _It allows you to explicitly `throw` an error. _
+> > ```javascript
+> >  function divide(a, b) {
+> >    if (b === 0) {
+> >      throw new Error('Cannot divide by zero');
+> >    }
+> >    return a / b;
+> >  }
+> >  
+> >  try {
+> >    console.log(divide(10, 0));
+> >  } catch (error) {
+> >    console.log('An error occurred:', error.message);
+> >  }
+> > ```
 
 
