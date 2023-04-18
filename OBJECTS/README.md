@@ -2,45 +2,78 @@
 
 ## Basics:
 
+&emsp;**Object literal** can contain one or more **key-value pairs**, where the key is a string or symbol (in ES6+) and the value can be any valid JavaScript expression, including other objects, arrays, functions, and primitives.
+> _Here's an example of creating an object literal:_
+> ```javascript
+> const johnNY = {
+>   name: 'John', age: 30,
+>   hobbies: ['reading', 'music', 'traveling'],
+>   address: {
+>     street: '123 Main St',
+>     city: 'New York', state: 'NY',
+>   },
+>   introduceYourself() {
+>     console.log(`Hello, I am ${this.name} from ${this.address.city}.`);
+>   }
+> };
+> johnNY.introduceYourself(); // => 'Hello, I am John from New York.'
+> ```
+
+&emsp;**Constructor functions** are a way of creating a template for creating new objects with similar properties and methods.
+> _Here's an example of creating a constructor function:_
+> ```javascript
+> function Person(name, age, hobbies, address) {
+>   this.name = name; this.age = age;
+>   this.hobbies = hobbies;
+>   this.address = address;
+>   this.introduceYourself = function() {
+>     console.log(`Hello, I am ${this.name} from ${this.address.city}.`);
+>   }
+> };
+> ```
+> _To create object use `new` keyword._
+> ```javascript
+> const johnNY = new Person('John', 30, ['reading', 'music', 'traveling'], {
+>   street: '123 Main St',
+>   city: 'New York',
+>   state: 'NY',
+>   zip: '10001'
+> });
+> johnNY.introduceYourself(); // => 'Hello, I am John from New York.'
+> console.log(johnNY.hobbies); // => ['reading', 'music', 'traveling']
+> ```
+
+&emsp;**Classes** are actually just syntactic sugar over constructor functions and the prototype chain, 
+but they provide a cleaner and more familiar syntax for many developers.
+> _Here's an example of creating a class:_
+> ```javascript
+> class Person {
+>   constructor(name, age, hobbies, address) {
+>     this.name = name; this.age = age;
+>     this.hobbies = hobbies;
+>     this.address = address;
+>   }
+>   introduceYourself() {
+>     console.log(`Hello, I am ${this.name} from ${this.address.city}.`);
+>   }
+> }
+> ```
+> _To create object use `new` keyword_
 
 
 
+
+
+
+
+
+> > _All cars have the same properties, but the property values differ from car to car._<br>
+> > _All cars have the same methods, but the methods are performed at different times._
 
 ## Properties:
-
-
-
-
-
-## Methods:
-
-
-
-## Inheritance
-
-
-
-
-
-## Encapsulation:
-
-
-
-
-## Polymorphism: 
-
-
-
-
-&emsp; _All cars have the same properties, but the property values differ from car to car.<br>
-All cars have the same methods, but the methods are performed at different times._
-
 You can access object properties in two ways:
   + objectName.propertyName;
   + objectName["propertyName"];
-
-Methods are actions that can be performed on objects. Methods are stored in properties as function definitions.
-  + objectName.methodName();
 
 > To check if an object property exists, use the ``in`` operator:
 > > ```javascript
@@ -60,7 +93,22 @@ Methods are actions that can be performed on objects. Methods are stored in prop
 > > ```
 > > > String property names will be listed in the order they were assigned to the object.<br>
 > > > Numerical properties will be listed in ascending order.
-___
+
+
+
+
+
+## Methods:
+Methods are actions that can be performed on objects. Methods are stored in properties as function definitions.
+  + objectName.methodName();
+
+
+
+
+
+
+- - -
+
 
 **Map** - a collection for storing data of any type in the form of **[key, value]** pairs.
 > ``const map = new Map( [ ['js', 'JavaScript'], ['css', 'Cascading Style Sheets'] ] )``
@@ -295,14 +343,19 @@ ___
 >   console.log(childObject);   // => {childLevel: 3} => [[Prototype]]: Object
 > ```
 
+- - -
+
+## Inheritance
 
 
 
 
 
+## Encapsulation:
 
 
 
 
+## Polymorphism: 
 
 
