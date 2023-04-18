@@ -72,17 +72,21 @@ topic :orangutan: a basic set of JavaScript knowledge
 
 
 ## 📚 Objects
-* 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
+* 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#basics)\
   &ensp; ► obj literals ► constructor func ► classes ► [this](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/this) ► prototype chain ► destructuring
-* 📖 [Properties:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
+* 📖 [Properties:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#properties)\
   &ensp; ► access ► assignment ► descriptors ► computed prop
-* 📖 [Methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
+* 📖 [Methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#methods)\
   &ensp; ► definitions ► this keyword ► chaining
-* 📖 [Inheritance:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
+* 📖 ["Collection" objects](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#collection)\
+  &ensp; ► Map ► Set
+  + 
+* OOP [object oriented programming](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#oop) in JS
+  + 📖 [Inheritance:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
   &ensp; ► patterns ► obj composition
-* 📖 [Encapsulation:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
+  + 📖 [Encapsulation:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
   &ensp; ► getters & setters ► private variables ► closure func
-* 📖 [Polymorphism:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
+  + 📖 [Polymorphism:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
   &ensp; ► overriding ► overloading ► dynamic dispatch
 
 - - -
