@@ -60,7 +60,7 @@
 > > ```
 
 
-## <a name="conditionals"></a>📖 Controls:
+## <a name="controls"></a>📖 Controls:
 &ensp; Statements that allow you to modify the flow of your code.
 
 > **break:**\
@@ -101,6 +101,13 @@
 > >  console.log(addNumbers(2, 3)); // => 5
 > >  console.log(addNumbers('2', 3)); // => Error: both arguments must be numbers
 > > ```
+
+
+## <a name="exceptions"></a>📖 Exception handling:
+
+
+
+
 
 
 
