@@ -1,6 +1,6 @@
 # Objects
 
-## Basics:
+## <a name="basics"></a>📖 Basics:
 
 &emsp;**Object literal** can contain one or more **key-value pairs**, where the key is a string or symbol (in ES6+) and the value can be any valid JavaScript expression, including other objects, arrays, functions, and primitives.
 > _Here's an example of creating an object literal:_
@@ -67,14 +67,19 @@ but they provide a cleaner and more familiar syntax for many developers.
 unless it is in strict mode, in which case this is undefined.
 > _Read more about `this` [here](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/this)._
 
+&emsp;Every object in JS has **prototype object**, which is used as fallback for properties and methods that are not defined on object itself.
+> **prototype chain** is mechanism for sharing properties and methods between objects. 
 
 
 
+
+
+- - -
 
 > > _All cars have the same properties, but the property values differ from car to car._<br>
 > > _All cars have the same methods, but the methods are performed at different times._
 
-## Properties:
+## <a name="properties"></a>📖 Properties:
 You can access object properties in two ways:
   + objectName.propertyName;
   + objectName["propertyName"];
@@ -102,7 +107,7 @@ You can access object properties in two ways:
 
 
 
-## Methods:
+## <a name="methods"></a>📖 Methods:
 Methods are actions that can be performed on objects. Methods are stored in properties as function definitions.
   + objectName.methodName();
 
@@ -113,6 +118,8 @@ Methods are actions that can be performed on objects. Methods are stored in prop
 
 - - -
 
+## <a name="collection"></a>📖 Collection objects
+Map and Set are both data structures in JS that are used for storing collections of values. They are both part of the group of "built-in" or "native" JavaScript objects, along with other data structures such as Array, Object, and Date.
 
 **Map** - a collection for storing data of any type in the form of **[key, value]** pairs.
 > ``const map = new Map( [ ['js', 'JavaScript'], ['css', 'Cascading Style Sheets'] ] )``
@@ -141,7 +148,6 @@ There are 3 methods to iterate through the Map collection:
 >  let prices = Object.fromEntries([ ['banana', 46], ['orange', 78], ['apple', 24] ]);
 >    console.log( prices ); //=> {banana: 46, orange: 78, apple: 24}
 > ```
-___
 
 &emsp; **Set** - collection for storing unique values (without keys) of any type.
 (_this is a non-indexed collection, you can put an element there, but you can't get it_)
@@ -163,9 +169,10 @@ We can iterate over the contents of the set object both using the for..of method
 > ```
 
 > ``const uniqueValuesArr = [ ...new Set(nonUniqueArr) ]``
-___
 
-## Object oriented programming in JavaScript
+- - -
+
+## <a name="oop"></a>📖 Object oriented programming in JS
 &emsp; In OOP, an object is a block containing **information** (state/attributes) and **operations** (methods).
 > There are two types of object properties:
 >    + data properties
