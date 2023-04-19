@@ -148,10 +148,42 @@ Methods are actions that can be performed on objects. Methods are stored in prop
 > > ```
 >  `objectName.methodName();`
 
-
-
-
-
+&emsp; It's common to **chain methods** together. This means that you call one method on an object, and then call another method on the result of the first method, and so on. 
+> _Imagine you have an e-commerce website that sells products. You might have a Cart object that represents a user's shopping cart, and it could have several methods that allow the user to interact with the cart._
+> > ```javascript
+> >  const Cart = {
+> >    items: [],
+> >    addItem(item) {
+> >      this.items.push(item);
+> >      return this;
+> >    },
+> >    removeItem(item) {
+> >      const index = this.items.indexOf(item);
+> >      if (index !== -1) {
+> >        this.items.splice(index, 1);
+> >      }
+> >      return this;
+> >    },
+> >    clear() {
+> >      this.items = [];
+> >      return this;
+> >    },
+> >    checkout() {
+> >      // code to process payment and complete checkout
+> >    }
+> >  };
+> > ```
+> _Notice that each method returns this, which allows you to chain methods together._
+> > ```javascript
+> >  const myCart = Object.create(Cart);
+> >  myCart.addItem('Product A')
+> >        .addItem('Product B')
+> >        .removeItem('Product A')
+> >        .clear()
+> >        .addItem('Product C')
+> >        .checkout();
+> > ```
+> _In this example, the myCart object is created using Object.create(Cart), which creates a new object that inherits from the Cart object. This allows you to use the methods defined in the Cart object._
 
 - - -
 
