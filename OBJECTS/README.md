@@ -131,7 +131,22 @@ You can access object properties in two ways:
 
 ## <a name="methods"></a>📖 Methods:
 Methods are actions that can be performed on objects. Methods are stored in properties as function definitions.
-  + objectName.methodName();
+
+> Methods are defined in the same way as other properties of an object, but their value is a function.\
+> `This` allows method to access other properties and methods of object. 
+> _Here's an example:_
+> > ```javascript
+> >  const myObject = {
+> >    myProperty: 'I am property',
+> >    myMethod: function() {
+> >      console.log('Hello from myMethod!');
+> >      console.log(this.myProperty);
+> >    }
+> >  };
+> >  // To call method on object, you simply use dot notation:
+> >  myObject.myMethod();
+> > ```
+>  `objectName.methodName();`
 
 
 
