@@ -116,6 +116,16 @@ You can access object properties in two ways:
 > > > String property names will be listed in the order they were assigned to the object.<br>
 > > > Numerical properties will be listed in ascending order.
 
+&emsp; _Until ES5, the language did not allow your code to directly test or describe the difference between property characteristics: for example, whether a property is read-only or not._ <br>
+&emsp; But in ES5, all properties are described using a property descriptor.
+> ```javascript
+> let myObject = { a: 17, b: 42 };
+> Object.getOwnPropertyDescriptor( myObject, "a" ); // => {value: 17, writable: true, enumerable: true, configurable: true}
+> ```
+> > Object properties, in addition to *value, have three special attributes (so-called “flags”):
+> >    * writable – if true, the value can be changed, otherwise it is read-only;
+> >    * enumerable – if true, the property is taken into account in loops, otherwise the loops ignore it;
+> >    * configurable – if true, the property can be removed and these attributes can be modified, otherwise it cannot be done.
 
 &emsp; ES6 adds **computed property names** where you can specify an expression enclosed in [ ] as a key-value pair when declaring an object literal:
 > ```javascript
@@ -280,18 +290,6 @@ We can iterate over the contents of the set object both using the for..of method
 _The values null and undefined do not have any wrapper objects. And they don't have proper prototypes either._
 
 &emsp; _Prototypes can only be used to read properties. And write/delete operations work only on the object itself. Regardless of where the method was defined: in the object or its prototype, the this keyword always points to the object before the dot._
-___
-
-&emsp; _Until ES5, the language did not allow your code to directly test or describe the difference between property characteristics: for example, whether a property is read-only or not._ <br>
-&emsp; But in ES5, all properties are described using a property descriptor.
-> ```javascript
-> let myObject = { a: 17, b: 42 };
-> Object.getOwnPropertyDescriptor( myObject, "a" ); // => {value: 17, writable: true, enumerable: true, configurable: true}
-> ```
-> > Object properties, in addition to *value, have three special attributes (so-called “flags”):
-> >    * writable – if true, the value can be changed, otherwise it is read-only;
-> >    * enumerable – if true, the property is taken into account in loops, otherwise the loops ignore it;
-> >    * configurable – if true, the property can be removed and these attributes can be modified, otherwise it cannot be done.
 
 - - -
 
