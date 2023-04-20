@@ -261,7 +261,8 @@ We can iterate over the contents of the set object both using the for..of method
 - - -
 
 ## <a name="oop"></a>📖 Object oriented programming in JS
-&emsp; In OOP, an object is a block containing **information** (state/attributes) and **operations** (methods).
+&emsp; OOP is a programming paradigm that emphasizes the use of objects and classes to organize and structure code.\
+Object is a block containing **information** (state/attributes) and **operations** (methods).
 > There are two types of object properties:
 >    + data properties
 >    + properties of accessors
@@ -459,17 +460,28 @@ ___
 
 - - -
 
-## Inheritance
+### <a name="inheritance"></a>📖 Inheritance
+&emsp; JavaScript, being a prototype-based language, implements OOP through prototypal inheritance.
+> _There are two common ways to implement inheritance in JS: using patterns and using object composition._
+
+#### Inheritance patterns in JavaScript:
+1. **Constructor pattern**
+
+
+2. **Prototype pattern**
+
+
+
+3. **Class pattern**
 
 
 
 
-
-## Encapsulation:
-
+### Encapsulation:
 
 
 
-## Polymorphism: 
+
+### Polymorphism: 
 
 
