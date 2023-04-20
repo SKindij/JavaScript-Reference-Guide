@@ -382,10 +382,48 @@ ___
 ___
 
 &emsp; If you want to prevent new properties from being added to an object, but at the same time leave existing properties intact, use ``Object.preventExtensions(..)``
+> _For example, you might have an object that represents a configuration for a piece of software,
+> and you want to make sure that the configuration is not changed by any other part of the program._
+> > ```javascript
+> >  const config = { 
+> >    username: 'user1', 
+> >    password: 'password1' 
+> >  };
+> >  Object.preventExtensions(config);
+> >  // Now, any attempt to add new property to config object will fail:
+> >  config.newProperty = 'new value'; // => throws an error
+> > ```
 
 &emsp; The ``Object.seal(..)`` method creates "sealed" object - that is, it takes an existing object and essentially applies **Object.preventExtensions(..)** to it, but also marks all properties as **configurable:false**. Therefore, you cannot add properties, nor can you reconfigure or remove existing ones (although you can still change their values).
+> _For example, you might have an object that represents a customer's order,
+> and you want to make sure that the order is not modified after it has been processed._
+> > ```javascript
+> >  const order = { 
+> >    orderId: 1234, 
+> >    customerId: 5678, 
+> >    products: ['product1', 'product2'] 
+> >  };
+> >  Object.seal(order);
+> >  // Now, any attempt to add new property to order object or delete an existing property will fail:
+> >  order.newProperty = 'new value'; // throws an error
+> >  delete order.customerId; // throws an error
+> > ```
 
 &emsp; The ``Object.freeze(..)`` method creates a frozen object, which means it takes an existing object and essentially applies Object.seal(..) to it, but also sets all properties = writable:false so their values cannot be changed.
+> _For example, you might have an object that represents a configuration for a piece of hardware,
+> and you want to make sure that the configuration cannot be changed in any way._
+> > ```javascript
+> >  const hardwareConfig = Object.freeze({ 
+> >    voltage: 120, 
+> >    frequency: 60, 
+> >    maxPower: 1000 
+> >  });
+> >  // Now, any attempt to add new property to object, delete existing property, or modify an existing property will fail:
+> >  hardwareConfig.newProperty = 'new value'; // throws an error
+> >  delete hardwareConfig.voltage; // throws an error
+> >  hardwareConfig.maxPower = 1500; // throws an error
+> > ```
+
 ___
 
 &emsp; ``Object.keys(..)`` returns an array of all enumerated properties, while Object.getOwnPropertyNames(..) returns an array of all properties - enumerated or not.
