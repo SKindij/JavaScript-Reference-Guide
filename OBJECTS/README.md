@@ -464,24 +464,43 @@ ___
 &emsp; JavaScript, being a prototype-based language, implements OOP through prototypal inheritance.
 > _There are two common ways to implement inheritance in JS: using patterns and using object composition._
 
-#### Inheritance patterns in JavaScript:
+#### Inheritance patterns in JS:
 1. **Constructor pattern**
-
-
+> _Constructor function is defined, and then new objects are created by calling constructor with the `new` keyword.\
+> It typically sets up the object's properties and methods using the this keyword._
 2. **Prototype pattern**
-
-
-
+> _Object is used as a prototype to create new objects.\
+> Properties and methods of prototype object are shared by all objects created using it as prototype._
 3. **Class pattern**
+> _Introduced in ES6, it provides more familiar syntax for defining classes and creating objects with inheritance._
+
+#### Object composition in JS:
+&emsp;It is an alternative to inheritance that involves creating objects by composing them from smaller, simpler objects. 
+> _This is often done using the Object.assign() method._
+> ```javascript
+> let speaker = {
+>   speak: function() { console.log(`${this.name} is speaking`); }
+> }
+> let mover = {
+>   move: function() { console.log(`${this.name} is moving`); }
+> }
+> let person = { name: "John" }
+> 
+> Object.assign(person, speaker, mover);
+>   person.speak(); // logs "John is speaking"
+>   person.move(); // logs "John is moving"
+> ```
+In object composition, objects are not bound to a specific inheritance hierarchy, making it more flexible than inheritance. 
+Additionally, object composition can reduce code duplication by allowing you to reuse smaller objects in different contexts.
+
+### <a name="encapsulation"></a>📖 Encapsulation:
 
 
 
 
-### Encapsulation:
+
+### <a name="polymorphism"></a>📖 Polymorphism: 
 
 
-
-
-### Polymorphism: 
 
 
