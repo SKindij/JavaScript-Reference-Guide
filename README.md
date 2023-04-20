@@ -82,11 +82,11 @@ topic :orangutan: a basic set of JavaScript knowledge
   &ensp; ► Map ► Set
   + 
 * OOP [object oriented programming](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#oop) in JS
-  + 📖 [Inheritance:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
+  + 📖 [Inheritance:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#inheritance)\
   &ensp; ► patterns ► obj composition
-  + 📖 [Encapsulation:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
+  + 📖 [Encapsulation:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#encapsulation)\
   &ensp; ► getters & setters ► private variables ► closure func
-  + 📖 [Polymorphism:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#)\
+  + 📖 [Polymorphism:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#polymorphism)\
   &ensp; ► overriding ► overloading ► dynamic dispatch
 
 - - -
