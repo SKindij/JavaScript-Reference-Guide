@@ -490,14 +490,74 @@ ___
 >   person.speak(); // logs "John is speaking"
 >   person.move(); // logs "John is moving"
 > ```
-In object composition, objects are not bound to a specific inheritance hierarchy, making it more flexible than inheritance. 
+&emsp;In object composition, objects are not bound to a specific inheritance hierarchy, making it more flexible than inheritance. 
 Additionally, object composition can reduce code duplication by allowing you to reuse smaller objects in different contexts.
 
 ### <a name="encapsulation"></a>📖 Encapsulation:
+&emsp;It is a fundamental concept in OOP that refers to the practice of bundling data and methods together in a single unit, or object, and restricting access to that object's internal state from outside code. This is done in order to create more modular, maintainable code that is less prone to errors or unexpected behavior.\
+&emsp;Getters and setters are methods that are used to access and modify the values of an object's properties, respectively.\
+It can help you enforce certain constraints or business logic.
+> _Let's say you have an object representing a bank account:_
+> > ```javascript 
+> >  const account = {
+> >    balance: 1000,
+> >    deposit(amount) {
+> >      this.balance += amount;
+> >    },
+> >    withdraw(amount) {
+> >      if (amount > this.balance) {
+> >        console.log("Insufficient funds!");
+> >      } else {
+> >        this.balance -= amount;
+> >      }
+> >    }
+> >  };
+> > ```
+> _In this case, the balance property is accessible and modifiable from outside code, which could potentially lead to errors or unexpected behavior.\
+> _To encapsulate this property and restrict access to it, you could use getters and setters:_
+> > ```javascript 
+> >  const account = {
+> >    _balance: 1000,
+> >    get balance() {
+> >      return this._balance;
+> >    },
+> >    deposit(amount) {
+> >      this._balance += amount;
+> >    },
+> >    withdraw(amount) {
+> >      if (amount > this._balance) {
+> >        console.log("Insufficient funds!");
+> >      } else {
+> >        this._balance -= amount;
+> >      }
+> >    }
+> >  };
+> > ```
 
-
-
-
+&emsp;Another way to achieve encapsulation in JS is through the use of **closure functions**. It is a function that has access to the variables in its outer (enclosing) function, even after that function has returned. This allows you to create "private" variables that are accessible only to certain functions or methods within an object, and not from outside code.
+> _Creating a private cache:_
+> > ```javascript 
+> >  function createCache() {
+> >    const cache = {};
+> >    return {
+> >      put(key, value) {
+> >        cache[key] = value;
+> >      },
+> >      get(key) {
+> >        return cache[key];
+> >      }
+> >    };
+> >  }
+> >  
+> >  const cache = createCache();
+> >    cache.put('key1', 'value1');
+> >    cache.put('key2', 'value2');
+> >  
+> >  console.log(cache.get('key1')); // => "value1"
+> >  console.log(cache.get('key2')); // => "value2"
+> > ```
+> _In this example, createCache function returns an object with two public methods: put and get.\
+> The cache variable is defined inside the createCache function and is not accessible from outside the function._
 
 ### <a name="polymorphism"></a>📖 Polymorphism: 
 
