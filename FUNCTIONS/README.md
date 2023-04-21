@@ -54,6 +54,26 @@ Arguments correspond to the parameters in the function declaration and supply th
   + _These allow you to specify default value for parameter in case caller does not provide one._
 * Rest parameters: 
   + These allow you to capture an indefinite number of arguments as an array.
+> _Let's say you have function that calculates total cost based on product price and quantity of items ordered.\
+> However, you also want to be able to apply discount to order, which can vary depending on customer._
+> > ```javascript
+> >  function calculateOrderCost(price, quantity, ...discounts) {
+> >    let totalCost = price * quantity;
+> >    for (let discount of discounts) {
+> >      totalCost *= (1 - discount);
+> >    }
+> >    return totalCost;
+> >  }
+> > ```
+> _you can call the function with different numbers of arguments_
+> > ```javascript
+> >  let orderCost1 = calculateOrderCost(120, 5);
+> >    console.log(orderCost1); // => 600
+> >  let orderCost2 = calculateOrderCost(120, 5, 0.15);
+> >    console.log(orderCost2); // => 510
+> >  let orderCost3 = calculateOrderCost(120, 5, 0.15, 0.05);
+> >    console.log(orderCost3); // => 484.5
+> > ```
 * arguments object: 
   + This is an array-like object that contains all the arguments passed to a function.
 > ```javascript
@@ -63,7 +83,7 @@ Arguments correspond to the parameters in the function declaration and supply th
 >    }
 >  }
 >  greetAll('Alice', 'Bob', 'Charlie');
-> > ```
+> ```
 * Destructuring: 
   + This allows you to unpack (or destruct) arrays and objects into individual variables. 
 > _There are two types:_
