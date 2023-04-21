@@ -611,10 +611,26 @@ It can help you enforce certain constraints or business logic.
 > ```
 
 #### ► Overloading 
-&emsp;It is a mechanism where a function or method is defined with the same name but different parameters. The appropriate function or method is chosen based on the number and types of arguments passed.
-
-
-
-
-
+&emsp;It is a mechanism where a function or method is defined with the same name but different parameters. 
+The appropriate function or method is chosen based on the number of arguments passed.\
+_Unfortunately, JavaScript does not support method overloading natively, but we can simulate it with some workarounds._
+> _Here's example with method that takes either two or three arguments
+> > ```javascript 
+> >  class ShoppingCart {
+> >    calculateAmount(price, quantity, discount = 0) {
+> >      const total = price * quantity;
+> >      // discount is optional with default value of 0
+> >      const discountAmount = total * discount;
+> >      const amount = total - discountAmount;
+> >      return amount;
+> >    }
+> >  };
+> >  
+> >  const cart = new ShoppingCart();
+> >    // calculate amount without discount
+> >    console.log(cart.calculateAmount(18, 3)); // => 54
+> >    
+> >    // calculate amount with discount
+> >    console.log(cart.calculateAmount(18, 3, 0.2)); // => 43.2
+> > ```
 
