@@ -610,7 +610,7 @@ It can help you enforce certain constraints or business logic.
 >    cat.makeSound(); // "Meow"
 > ```
 
-#### ► Overloading 
+#### Overloading 
 &emsp;It is a mechanism where a function or method is defined with the same name but different parameters. 
 The appropriate function or method is chosen based on the number of arguments passed.\
 _Unfortunately, JavaScript does not support method overloading natively, but we can simulate it with some workarounds._
@@ -634,3 +634,7 @@ _Unfortunately, JavaScript does not support method overloading natively, but we 
 > >    console.log(cart.calculateAmount(18, 3, 0.2)); // => 43.2
 > > ```
 
+#### Dynamic dispatch
+&emsp;It refers to the ability of the runtime environment to determine which implementation of a method to call based on the type of object that the method is called on. Meaning that the decision about which implementation of the method to use is made at runtime.
+
+_An interesting [example](https://github.com/SKindij/JavaScript-Reference-Guide/blob/main/OBJECTS/e-commerce.js) can be found in e-commerce.js._
