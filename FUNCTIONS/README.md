@@ -1,5 +1,6 @@
 # about Functions
 
+## <a name="basics"></a>📖 Basics:
 &emsp;A function is a block of various commands that serves to organize and structure the program code.
 * function declaration
   + named: ``function namedFunc(arguments) { do something }``
@@ -7,10 +8,7 @@
 * function expression
   + ``const namedFunc = function(argument) { code to be executed }``
 
-&emsp;Technically, a function is a JavaScript object that has an internal ``Call()`` method that adds the ability to call the function.
-The ``return`` statement is used to pass a value from the function body to external code.
-
-## Conversion to arrow function
+#### Conversion to arrow function
 > ```javascript
 >  // for example, we want to get a new array based on a certain array
 >  let familyMembers = ['father', 'mother', 'son'];
@@ -24,6 +22,13 @@ The ``return`` statement is used to pass a value from the function body to exter
 > > >  let wonderfulFamily = familyMembers.map( member => `${member} is wonderful`);
 > > >    wonderfulFamily; // => ['father is wonderful', 'mother is wonderful', 'son is wonderful']
 > > > ```
+
+&emsp;Technically, a function is a JavaScript object that has an internal ``Call()`` method that adds the ability to call the function.
+The ``return`` statement is used to pass a value from the function body to external code.
+
+
+
+
 
 ## Recursion
 &emsp;A recursion is a structure in which a function calls itself.<br>
