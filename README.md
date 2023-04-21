@@ -137,8 +137,20 @@ That is, a set of rules and guidelines that a language must follow in order to b
 - - -
 
 ## 📚 Functions
-
-
+* 📖 [Basics:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/FUNCTIONS#)\
+  &ensp; ► declaration ► expression ► arrow func ► anonymous func
+* 📖 [Parameters:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/FUNCTIONS#)\
+  &ensp; ► positional ► default ► rest
+* 📖 [Arguments:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/FUNCTIONS#)\
+  &ensp; ► arg object ► destructuring ► spreading arg
+* 📖 [Return:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/FUNCTIONS#)\
+  &ensp; ► statement ► values ► implicit
+* 📖 [Recursion:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/FUNCTIONS#)\
+  &ensp; ► recursive func ► base cases
+* 📖 [Closure:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/FUNCTIONS#)\
+  &ensp; ► lexical scope ► closure func
+* 📖 [Callbacks:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/FUNCTIONS#)\
+  &ensp; ► higher-order func ► callback func
 
 
 ## 📚 Asynchronous
