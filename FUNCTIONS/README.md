@@ -29,7 +29,8 @@
 > They are useful when you need to pass function as argument to another function._
 
 &emsp;Technically, a function is a JavaScript object that has an internal ``Call()`` method that adds the ability to call the function.
-The ``return`` statement is used to pass a value from the function body to external code.
+The ``return`` statement is used to pass a value from the function body to external code.\
+&emsp;**Immediately Invoked Function Expression** &emsp; ``(function foo(){ ... })()``
 
 - - -
 
@@ -127,6 +128,8 @@ Arguments correspond to the parameters in the function declaration and supply th
 
 
 
+- - -
+
 ## <a name="recursion"></a>📖 Recursion
 &emsp;A recursion is a structure in which a function calls itself.<br>
 Recursion is a pattern that is useful in situations where a task can be divided into several tasks of the same kind, but simpler. Or when a task can be simplified to a simple action plus a simpler version of the same task.
@@ -149,13 +152,6 @@ Recursion is a pattern that is useful in situations where a task can be divided 
 > > ```javascript
 > >  function pow(x, n) { return (n == 1) ? x : (x * pow(x, n - 1)); }
 > > ```
-
-## Callbacks
-&emsp;It is a function that is an argument to another function and that is run after a certain action is completed.<br>
-Read more about this subject in a separate [article](https://github.com/SKindij/Asynchronous-JS-Nodejs/tree/main/codeApplication).
-
-## IIFE
-&emsp;Immediately Invoked Function Expression &emsp; ``(function foo(){ ... })()``
 
 
 ## <a name="closure"></a>📖 Closures
@@ -194,19 +190,7 @@ Read more about this subject in a separate [article](https://github.com/SKindij/
 > ```
 
 
-## this
-&emsp;``this`` is a reference to a specific object whose properties can be accessed inside a function call.
-This **this** is the execution context.
-
-.call(thisArg, arg1, arg2, ...) 
-
-.apply(thisArg, [args]) 
-
-.bind(thisArg[, arg1[, arg2[, ...]]]) 
-
-- - -
-
 ## <a name="callbacks"></a>📖 Callbacks:
-
-
+&emsp;It is a function that is an argument to another function and that is run after a certain action is completed.<br>
+Read more about this subject in a separate [article](https://github.com/SKindij/Asynchronous-JS-Nodejs/tree/main/codeApplication).
 
