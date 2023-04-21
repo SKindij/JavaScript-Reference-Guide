@@ -560,6 +560,32 @@ It can help you enforce certain constraints or business logic.
 > The cache variable is defined inside the createCache function and is not accessible from outside the function._
 
 ### <a name="polymorphism"></a>📖 Polymorphism: 
+&emsp;It refers to the ability of objects to take on multiple forms or behaviors. In JS polymorphism can be achieved through various mechanisms, including overriding, overloading, and dynamic dispatch.
+
+#### Overriding 
+&emsp;It is a mechanism where a subclass provides a different implementation of a method that is already defined in its superclass. When a method is called on an object of the subclass, the overridden method in the subclass is executed instead of the method in the superclass.
+> ```javascript
+>  class Animal {
+>    makeSound() {
+>      console.log("The animal makes a sound");
+>    }
+>  }
+>  class Cat extends Animal {
+>    makeSound() {
+>      console.log("Meow");
+>    }
+>  }
+>
+>  let animal = new Animal();
+>  let cat = new Cat();
+>    animal.makeSound(); // "The animal makes a sound"
+>    cat.makeSound(); // "Meow"
+> ```
+
+#### ► Overloading 
+&emsp;It is a mechanism where a function or method is defined with the same name but different parameters. The appropriate function or method is chosen based on the number and types of arguments passed.
+
+
 
 
 
