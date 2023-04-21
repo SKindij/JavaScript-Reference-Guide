@@ -46,6 +46,9 @@ const cart = new ShoppingCart();
   cart.addItem(new Product('radio receiver', 'RC205', 27));
   cart.addItem(new Product('radio remote', 'RR105', 12));
   cart.addItem(new DiscountedProduct('photocells', 'IR33', 18, 6));
+console.log(cart.calculateTotalCost()); // => 51
 
-console.log(cart.calculateTotalCost()); // => 
-
+const garageMotor = new DiscountedProduct('garage motor', 'GM800', 150, 31);
+  console.log(garageMotor instanceof DiscountedProduct); // => true
+  cart.addItem(garageMotor);
+console.log(cart.calculateTotalCost()); // => 170
