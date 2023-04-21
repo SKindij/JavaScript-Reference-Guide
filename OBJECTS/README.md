@@ -473,6 +473,34 @@ ___
 > Properties and methods of prototype object are shared by all objects created using it as prototype._
 3. **Class pattern**
 > _Introduced in ES6, it provides more familiar syntax for defining classes and creating objects with inheritance._
+> > ```javascript
+> >  class Person {
+> >    constructor(name, city) {
+> >      this.name = name;
+> >      this.city = city;
+> >    }
+> >    sayHello() {
+> >      console.log(`Hello, my name is ${this.name} and I am from ${this.city}.`);
+> >    }
+> >  }
+> > ```
+> _An object can inherit properties and methods from another object, which becomes its prototype._
+> > ```javascript
+> >  class Employee extends Person {
+> >    constructor(name, city, jobTitle, yearsOfService) {
+> >      super(name, city);
+> >      this.jobTitle = jobTitle;
+> >      this.yearsOfService = yearsOfService;
+> >    }
+> >    getEmployeeInfo() {
+> >      console.log(`I work as a ${this.jobTitle} for ${this.yearsOfService} years.`);
+> >    }
+> >  }
+> >  
+> >  let jane = new Employee("Jane", "Nurnberg", "Software Engineer", 3);
+> >    jane.sayHello(); // => Hello, my name is Jane and I am from Nurnberg.
+> >    jane.getEmployeeInfo(); // => I work as a Software Engineer for 3 years.
+> > ```
 
 #### Object composition in JS:
 &emsp;It is an alternative to inheritance that involves creating objects by composing them from smaller, simpler objects. 
