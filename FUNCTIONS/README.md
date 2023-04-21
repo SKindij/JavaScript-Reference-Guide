@@ -3,15 +3,15 @@
 ## <a name="basics"></a>📖 Basics:
 &emsp;A function is a block of various commands that serves to organize and structure the program code.
 * function declaration
-  + named: ``function namedFunc(arguments) { do something }``
+  + ``function namedFunc(arguments) { do something }``
 > _This is useful when you need to define func that will be used multiple times throughout codebase._
-  + anonymous: ``function(arguments) { do something }``
 * function expression
   + ``const namedFunc = function(argument) { code to be executed }``
-
-#### Conversion to arrow function
+> _It is created by assigning a function to a variable.\
+> They are useful when you want to create a function that will be used only once or as a callback function._
+* arrow function
 > ```javascript
->  // for example, we want to get a new array based on a certain array
+>  // for example, we want to get new array based on certain array
 >  let familyMembers = ['father', 'mother', 'son'];
 >    let coolFamily = familyMembers.map( function (member) { return `${member} is cool`; } );
 >    coolFamily; // => ['father is cool', 'mother is cool', 'son is cool']
@@ -23,6 +23,12 @@
 > > >  let wonderfulFamily = familyMembers.map( member => `${member} is wonderful`);
 > > >    wonderfulFamily; // => ['father is wonderful', 'mother is wonderful', 'son is wonderful']
 > > > ```
+* anonymous function
+  + ``function(arguments) { do something }``
+> _It can be created using function expressions or arrow functions.\
+> They are useful when you need to pass function as argument to another function._
+
+
 
 &emsp;Technically, a function is a JavaScript object that has an internal ``Call()`` method that adds the ability to call the function.
 The ``return`` statement is used to pass a value from the function body to external code.
