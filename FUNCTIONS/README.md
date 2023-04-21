@@ -28,11 +28,16 @@
 > _It can be created using function expressions or arrow functions.\
 > They are useful when you need to pass function as argument to another function._
 
-
-
 &emsp;Technically, a function is a JavaScript object that has an internal ``Call()`` method that adds the ability to call the function.
 The ``return`` statement is used to pass a value from the function body to external code.
 
+
+## <a name="parameters"></a>📖 Parameters:
+
+
+
+
+## <a name="arguments:"></a>📖 Arguments::
 
 
 
