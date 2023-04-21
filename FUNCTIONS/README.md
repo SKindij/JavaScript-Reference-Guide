@@ -4,6 +4,7 @@
 &emsp;A function is a block of various commands that serves to organize and structure the program code.
 * function declaration
   + named: ``function namedFunc(arguments) { do something }``
+> _This is useful when you need to define func that will be used multiple times throughout codebase._
   + anonymous: ``function(arguments) { do something }``
 * function expression
   + ``const namedFunc = function(argument) { code to be executed }``
