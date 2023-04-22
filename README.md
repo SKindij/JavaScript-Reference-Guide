@@ -172,10 +172,13 @@ That is set of rules and guidelines that language must follow in order to be con
 
 
 ## 📚 Regular Expressions
-
-
-
-
+  &ensp; ► regExp syntax ► literals ► constructor
+* 📖 [RegExp methods:]()\
+  &ensp; ► test() ► match() ► search() ► replace() ► split() ► exec()
+* 📖 [RegExp patterns:]()\
+  &ensp; ► char classes ► quantifiers ► alternation ► grouping ► flags
+* 📖 [Meta-characters:]()\
+  &ensp; ► dot, caret, dollar ► brackets
 
 - - -
 
