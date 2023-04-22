@@ -124,9 +124,33 @@ Arguments correspond to the parameters in the function declaration and supply th
 - - -
 
 ## <a name="return"></a>📖 Return:
+&emsp;One of the key features of functions is the ability to return a value after they have executed.\
+_When a function returns a value, it can be used in a variety of ways. For example, you might store the value in a variable, pass it as an argument to another function, or use it in a conditional statement._
 
+&emsp;Functions can return any valid JavaScript data type, including numbers, strings, arrays, objects, and even other functions. This means you can use functions to encapsulate complex operations and then reuse them throughout your code.
 
+&emsp;A function can have multiple return statements, but only one of them will be executed. When a return statement is executed, it immediately stops the function's execution and returns the specified value.
+> ```javascript
+>  function absoluteValue(num) {
+>    if (num < 0) {
+>      return -num;
+>    } else {
+>      return num;
+>    }
+>  }
+> ```
 
+&emsp;If a function does not explicitly return a value using the return statement or an implicit return, the function will return undefined. This is important to keep in mind when using functions in conditional statements or assigning their return value to a variable.
+
+&emsp;In some cases, you may want to explicitly indicate that a function does not return a value. To do this, you can use the ``void`` operator before the function's return statement or implicit return.
+> ```javascript
+>  function logMessage(message) {
+>    console.log(message);
+>    return void 0;
+>  }
+>  logMessage("Hello!"); // Outputs "Hello!"
+> ```
+> _This can be useful in situations where you want to indicate that function is intended to have side effects rather than return value._
 
 - - -
 
