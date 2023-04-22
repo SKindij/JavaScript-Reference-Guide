@@ -158,8 +158,17 @@ That is set of rules and guidelines that language must follow in order to be con
 
 
 ## 📚 Asynchronous
-
-
+* 📖 [Event loop:]()\
+  &ensp; ► call stack ► microtasks ► macrotasks
+* 📖 [Event loop:]()\
+  &ensp; ► process.nextTick ► setTimeout(c, 0) ► setTimeout(c, n) ► setInterval\
+  &ensp; ► setImmediate ► Promise.then  ► async function
+* 📖 [Promises:]()\
+  &ensp; ► syntax ► chaining ► promise.all ► error handling
+* 📖 [Async/await:]()\
+  &ensp; ► syntax ► error handling ► async generators
+* 📖 [Browser APIs:]()\
+  &ensp; ► DOM ► events ► XMLHttpRequest ► fetch API ► Web Workers
 
 
 ## 📚 Regular Expressions
