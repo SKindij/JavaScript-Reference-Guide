@@ -90,50 +90,55 @@ topic :orangutan: a basic set of JavaScript knowledge
   &ensp; ► overriding ► overloading ► dynamic dispatch
 
 - - -
-### ECMAScript (or ES) is a specification. 
-That is, a set of rules and guidelines that a language must follow in order to be considered compliant with this specification.
+### ECMAScript (or ES) specification. 
+That is set of rules and guidelines that language must follow in order to be considered compliant with this specification.
 
-&ensp; **Strict mode** (``'use strict'``) was introduced with the **ECMAScript 5** standard in 2009 because backward compatibility was broken in ES. **strict mode** provides more detailed error checking in the code and facilitates debugging.
-> * you cannot use variables without a declaration;
-> * function parameters cannot have the same names;
-> * this will not reference a global object by default;
-> * does not allow using the with construction in the code;
-> * cleans up variables created with eval;
+#### 2009-2011 **ES5** standard  
+* **Strict mode** (``'use strict'``) provides more detailed error checking in code and facilitates debugging.
+> - _you cannot use variables without a declaration;_
+> - _function parameters cannot have the same names;_
+> - _this will not reference a global object by default;_
+> - _does not allow using the with construction in the code;_
+> - _cleans up variables created with eval;_
+* ``Object.keys()``, ``filter()``, ``map()``, ``reduce()``, 
+* ``JSON`` support.
 
-&ensp; 2009-2011 **ES5** added: ``Object.keys()``, ``filter()``, ``map()``, ``reduce()``, ``JSON`` support, etc.
+#### 2015 **ES6** version
+* ``let`` and ``const`` variables appeared, replacing outdated ``var``;
+* arrow functions that preserve context;
+* syntactic sugar in the form of classes;
+* default function arguments;
+* promises;
+* destruction of objects;
+* **ES-modules**
+> - keyword ``export`` is used for export;
+> - keyword``import`` is used for import; 
+> - they can be perceived as parts of constructor from which program is assembled;
+> - modules are always ``"use strict"`` -  ``this`` is not window, but undefined.
 
-&ensp; The ``let`` and ``const`` variables appeared in the 2015 **ES6** version, replacing the outdated ``var``.
-> * arrow functions that preserve the context;
-> * syntactic sugar in the form of classes;
-> * default function arguments;
-> * promises;
-> * destruction of objects;
+#### **ES2016**:
+* destruction of arrays;
+* ``includes``;
+* exponentiation through ``**``;
 
-&ensp; In **ES-modules** (ES2015), the keyword ``export`` is used for export, and ``import`` is used for import. They can be perceived as parts of the constructor from which the program is assembled. (modules are always ``"use strict"`` / this is not window, but undefined)
+#### **ES2017**:   
+* Object.values, 
+* Object.entries;    
+* async/await;
 
-&ensp; **ES2016**:
->    * destruction of arrays;
->    * includes;
->    * exponentiation through **;
+#### **ES2018**:
+* finally for promises;
+* update in regular expressions;
+* spread operator for objects;
 
-&ensp; **ES2017**:   
->    * Object.values, 
->    * Object.entries;    
->    * async/await;
+#### **ES2019**:
+* ``flat, flatMap`` for arrays;
+* ``fromEntries`` for objects;
 
-&ensp; **ES2018**:
->    * finally for promises;
->    * update in regular expressions;
->    * spread operator for objects;
-
-&ensp; **ES2019**:
->    * flat, flatMap for arrays;
->    * fromEntries for objects;
-
-&ensp; **ES2020**: 
->    * BigInt; 
->    * Globalthis;  
->    * ??; 
+#### **ES2020**: 
+* BigInt; 
+* Globalthis;  
+* ``??``; 
 - - -
 
 ## 📚 Functions
