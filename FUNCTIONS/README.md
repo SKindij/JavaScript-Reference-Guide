@@ -155,8 +155,8 @@ _When a function returns a value, it can be used in a variety of ways. For examp
 - - -
 
 ## <a name="recursion"></a>📖 Recursion
-&emsp;A recursion is a structure in which a function calls itself.<br>
-Recursion is a pattern that is useful in situations where a task can be divided into several tasks of the same kind, but simpler. Or when a task can be simplified to a simple action plus a simpler version of the same task.
+&emsp;Recursion is technique in programming where function calls itself repeatedly until it reaches base case, which is a condition that stops the recursion.
+_Recursion is pattern that is useful in situations where task can be divided into several tasks of same kind, but simpler. Or when task can be simplified to simple action plus simpler version of same task._
 
 > let's write a **function pow(x, n)** that brings x to the natural power of n
 > > ```javascript
@@ -172,10 +172,47 @@ Recursion is a pattern that is useful in situations where a task can be divided 
 > >    } else { return x * pow(x, n - 1); } 
 > >  }
 > > ```
-> In mathematics, you can write xn = x * xn-1. This is called a recursive step: we turn the task into a simpler action.
+> In mathematics, you can write xn = x * xn-1. _This is called recursive step: we turn the task into simpler action._
 > > ```javascript
 > >  function pow(x, n) { return (n == 1) ? x : (x * pow(x, n - 1)); }
 > > ```
+
+&emsp;The key to writing a successful recursive function is to identify the base case, which provides the condition that stops the recursion. Without a base case, the function would keep calling itself indefinitely, resulting in an infinite loop.
+
+> _Here's another example of recursive function that calculates factorial of a number:_
+> > ```javascript
+> >  function factorial(n) {
+> >    if (n === 0) {
+> >      return 1; // base case
+> >    } else {
+> >      return n * factorial(n - 1); // recursive case
+> >    }
+> >  }
+> >  console.log(factorial(5)); // => 120 (i.e., 5 * 4 * 3 * 2 * 1)
+> > ```
+
+&emsp;Another important consideration when using recursion is to make sure that the recursive function doesn't consume too much memory. This can be a problem with recursive functions that have a deep recursion depth, as each recursive call adds a new stack frame to the call stack. To avoid this, you can use tail recursion or convert the recursive function to an iterative one.\
+&emsp;Recursion can be a powerful tool for solving certain problems, such as traversing trees or graphs, and can lead to elegant and concise code. 
+
+> _Suppose you need to display hierarchical category structure for your products.\
+> Each category can have subcategories, which can in turn have their own subcategories, and so on._\
+> _You can represent this structure as tree, where each node represents category, and its children represent its subcategories._
+> > ```javascript
+> >  // 
+> >  function generateCategoryHTML(category) {
+> >    let html = '<ul>';
+> >    html += '<li>' + category.name + '</li>';
+> >    if (category.children && category.children.length > 0) {
+> >      for (let i = 0; i < category.children.length; i++) {
+> >        html += '<li>' + generateCategoryHTML(category.children[i]) + '</li>';
+> >      }
+> >    }
+> >    html += '</ul>';
+> >    return html;
+> >  }
+> > ```
+
+&emspIn general, if you're working on a business or industrial enterprise application, you should consider the tradeoffs between using recursion and other techniques, such as iteration or memoization, to solve the problem at hand. You should also consider the requirements of your application, such as performance, scalability, and maintainability, and choose the solution that best meets those requirements.
 
 
 ## <a name="closure"></a>📖 Closures
