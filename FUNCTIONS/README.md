@@ -198,10 +198,11 @@ _Recursion is pattern that is useful in situations where task can be divided int
 > Each category can have subcategories, which can in turn have their own subcategories, and so on._\
 > _You can represent this structure as tree, where each node represents category, and its children represent its subcategories._
 > > ```javascript
-> >  // 
+> >  // func takes category object as input and generates HTML code for that category and its subcategories
 > >  function generateCategoryHTML(category) {
 > >    let html = '<ul>';
 > >    html += '<li>' + category.name + '</li>';
+> > //  If category has children, func recursively calls itself for each child, generating HTML code for each subcategory and its children.
 > >    if (category.children && category.children.length > 0) {
 > >      for (let i = 0; i < category.children.length; i++) {
 > >        html += '<li>' + generateCategoryHTML(category.children[i]) + '</li>';
@@ -212,11 +213,11 @@ _Recursion is pattern that is useful in situations where task can be divided int
 > >  }
 > > ```
 
-&emspIn general, if you're working on a business or industrial enterprise application, you should consider the tradeoffs between using recursion and other techniques, such as iteration or memoization, to solve the problem at hand. You should also consider the requirements of your application, such as performance, scalability, and maintainability, and choose the solution that best meets those requirements.
+&emspIn general, if you're working on business or industrial enterprise application, you should consider the tradeoffs between using recursion and other techniques, such as iteration or memoization, to solve the problem at hand. You should also consider the requirements of your application, such as performance, scalability, and maintainability, and choose the solution that best meets those requirements.
 
 
 ## <a name="closure"></a>📖 Closures
-&emsp;To use a closure, simply define a function inside another function. Closure is when a function knows how to remember and has access to its lexical scope even when that function is executed outside its lexical scope.
+&emsp;To use closure, simply define function inside another function. Closure is when function knows how to remember and has access to its lexical scope even when that function is executed outside its lexical scope.
 >  ```javascript
 >  function foo() {
 >    let a = 17, b = 18;
@@ -237,7 +238,7 @@ _Recursion is pattern that is useful in situations where task can be divided int
 >	      function doAnother() { console.log( another.join( " !! " ) );	}
 >	        return {
 >		        doSomething: doSomething,
->		       doAnother: doAnother
+>		        doAnother: doAnother
 >	        };
 >  };
 > let firstMod = ClosureModule();
@@ -250,6 +251,41 @@ _Recursion is pattern that is useful in situations where task can be divided int
 >   firstMod.doAnother(); // 1 !! 2 !! 3
 > ```
 
+&emsp;Closures are very powerful because they allow you to create functions with persistent state. The inner function retains a reference to its enclosing scope, even after the outer function has finished executing. This makes closures useful for implementing things like private variables and memoization.
+
+> _Here's example of how closures could be used in web app that tracks inventory for manufacturing company:_
+> > ```javascript
+> >  function createInventoryTracker(initialQuantity) {
+> >    // func creates closure around quantity variable
+> >    let quantity = initialQuantity;
+> >    //  func returns object with three methods
+> >    return {
+> >      getQuantity: function() {
+> >        return quantity;
+> >      },
+> >      increaseQuantity: function(amount) {
+> >        quantity += amount;
+> >      },
+> >      decreaseQuantity: function(amount) {
+> >        if (quantity - amount < 0) {
+> >          throw new Error("Not enough inventory!");
+> >        }
+> >        quantity -= amount;
+> >      }
+> >    };
+> >  }
+> >  
+> >  const tracker = createInventoryTracker(100);
+> >    console.log(tracker.getQuantity()); // 100
+> >  
+> >  tracker.increaseQuantity(50);
+> >    console.log(tracker.getQuantity()); // 150
+> >  
+> >  tracker.decreaseQuantity(25);
+> >    console.log(tracker.getQuantity()); // 125
+> > ```
+> _By creating closure around `quantity`, we've effectively created private variable that can only be accessed and modified through methods provided by 
+> `createInventoryTracker` function. This is useful for encapsulating `state of inventory` and preventing it from being modified in unexpected ways._
 
 ## <a name="callbacks"></a>📖 Callbacks:
 &emsp;It is a function that is an argument to another function and that is run after a certain action is completed.<br>
