@@ -289,5 +289,28 @@ _Recursion is pattern that is useful in situations where task can be divided int
 
 ## <a name="callbacks"></a>📖 Callbacks:
 &emsp;It is a function that is an argument to another function and that is run after a certain action is completed.<br>
+In JS **higher-order function** is a function that takes one or more functions as arguments, and/or returns a function as its result. Higher-order functions are useful because they allow you to create reusable abstractions that can be applied to a variety of different use cases.
+> _For example, here's simple higher-order func that takes function as its argument:_
+> > ```javascript
+> >   function applyOperation(operation, x, y) {
+> >    return operation(x, y);
+> >   }
+> > ```
+> _Now, let's say we have two functions that perform different operations:_
+> > ```javascript
+> >   function add(x, y) {
+> >    return x + y;
+> >  }
+> >  
+> >  function subtract(x, y) {
+> >    return x - y;
+> >  }
+> > ```
+> _We can use `applyOperation` func to apply these operations to different values:_
+> > ```javascript
+> >  console.log(applyOperation(add, 2, 3)); // 5
+> >  console.log(applyOperation(subtract, 5, 2)); // 3
+> > ```
+
 Read more about this subject in a separate [article](https://github.com/SKindij/Asynchronous-JS-Nodejs/tree/main/codeApplication).
 
