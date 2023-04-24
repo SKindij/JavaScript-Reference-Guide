@@ -158,16 +158,17 @@ That is set of rules and guidelines that language must follow in order to be con
 
 
 ## 📚 Asynchronous
-* 📖 [Event loop:](https://github.com/SKindij/Asynchronous-Programming-Node.js#eventLoop)\
-  &ensp; ► call stack ► microtasks ► macrotasks
-* 📖 [Event loop:](https://github.com/SKindij/Asynchronous-Programming-Node.js#)\
-  &ensp; ► process.nextTick ► setTimeout(c, 0) ► setTimeout(c, n) ► setInterval\
-  &ensp; ► setImmediate ► Promise.then  ► async function
-* 📖 [Promises:](https://github.com/SKindij/Asynchronous-Programming-Node.js#)\
+* 📖 [Event loop:](https://github.com/SKindij/Asynchronous-Programming-Node.js#eventLoop)
+  + call stack
+  + microtasks\
+    &ensp; ► process.nextTick ► Promise.then  ► async function 
+  + macrotasks
+    &ensp;  ► setTimeout(c, 0) ► setImmediate ► setTimeout(c, n) ► setInterval  
+* 📖 [Promises:](https://github.com/SKindij/Asynchronous-Programming-Node.js#promises)\
   &ensp; ► syntax ► chaining ► promise.all ► error handling
-* 📖 [Async/await:](https://github.com/SKindij/Asynchronous-Programming-Node.js#)\
+* 📖 [Async/await:](https://github.com/SKindij/Asynchronous-Programming-Node.js#asyncAwait)\
   &ensp; ► syntax ► error handling ► async generators
-* 📖 [Browser APIs:](https://github.com/SKindij/Asynchronous-Programming-Node.js#)\
+* 📖 [Browser APIs:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Web-API)\
   &ensp; ► DOM ► events ► XMLHttpRequest ► fetch API ► Web Workers
 
 
