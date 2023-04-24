@@ -159,10 +159,11 @@ That is set of rules and guidelines that language must follow in order to be con
 
 ## 📚 Asynchronous
 * 📖 [Event loop:](https://github.com/SKindij/Asynchronous-Programming-Node.js#eventLoop)
-  + call stack
+  + call stack\
+    &ensp; ► any function that's called synchronously
   + microtasks\
     &ensp; ► process.nextTick ► Promise.then  ► async function 
-  + macrotasks
+  + macrotasks\
     &ensp;  ► setTimeout(c, 0) ► setImmediate ► setTimeout(c, n) ► setInterval  
 * 📖 [Promises:](https://github.com/SKindij/Asynchronous-Programming-Node.js#promises)\
   &ensp; ► syntax ► chaining ► promise.all ► error handling
