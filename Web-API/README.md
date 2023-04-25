@@ -5,7 +5,7 @@
 
 ### Document Object Model
 > _DOM is interface that allows JS to access and manipulate structure and content of HTML or XML document._
-> _DOM is a hierarchical tree-like structure that represents web page, with each element in tree representing different part of page, such as headings, paragraphs, images, and links. Developers can use DOM to access and modify properties and attributes of these elements, such as their text content, styles, and event handlers._
+> _DOM is hierarchical tree-like structure that represents web page, with each element representing different part of page, such as headings, paragraphs, images, and links. Developers use DOM to access and modify properties and attributes of these elements, such as their text content, styles, and event handlers._
 * Fetching
   + index.html
 * Parsing
@@ -41,39 +41,39 @@
 * **NodeList**
   + stores any nodes (including comments and text);
   + can be both a "live" collection (``getElementsByName`` and ``childNodes``) and a static one (``querySelectorAll``);
-    - ```javascript
-        let myElement = document.querySelector("#foo > div.bar"); 
-        //If there are no required elements, null will be returned.
-        const myChildElement = myElement.querySelector('input[type="submit"]');
-      ``` 
+  > ```javascript
+  >  let myElement = document.querySelector("#foo > div.bar"); 
+  >  //If there are no required elements, null will be returned.
+  >  const myChildElement = myElement.querySelector('input[type="submit"]');
+  > ``` 
   + method ``.querySelectorAll()`` returns an array-like static NodeList collection of found elements;
-    - ```javascript
-        let myElements = document.querySelectorAll("div>p");
-      ``` 
-    - to search for all elements in general, you need to pass string ``'*'``, which is called a **wildcard**, as an argument.  
+  > ```javascript
+  >  let myElements = document.querySelectorAll("div>p");
+  > ``` 
+  > > to search for all elements in general, you need to pass string ``'*'``, which is called a **wildcard**, as an argument;  
 
 To work with a collection of elements, we must convert the list to an array or "borrow" the array methods from the Array prototype.
-> > > ```javascript
-> > >  Array.from(myElements).forEach(doSomethingWithEachElement);
-> > >    Array.from(myElements).forEach((item) => {  item.classList.add('foo'); });
-> > >  Array.prototype.forEach.call(myElements, doSomethingWithEachElement); 
-> > > ```
+  > > ```javascript
+  > >  Array.from(myElements).forEach(doSomethingWithEachElement);
+  > >    Array.from(myElements).forEach((item) => {  item.classList.add('foo'); });
+  > >  Array.prototype.forEach.call(myElements, doSomethingWithEachElement); 
+  > > ```
 
 * HTMLCollection
   + save only HTML element nodes;
   + always remains relevant — JS will update it when new element appears;
   + method ``.getElementById('idName')`` is only in document object (_good for unique elements: title, form_);
-    - ```javascript
-         let divAll = document.getElementsByTagName("div");
-           const newElement = document.createElement('div'); //creates new element with given tag
-             document.body.appendChild(newElement);
-         let myElement = document.querySelector("div");    
-           const myNewTextNode = document.createTextNode('some text'); // creates new text node with given text
-            myElement.appendChild(myNewTextNode);
-      ```
+  > ```javascript
+  >  let divAll = document.getElementsByTagName("div");
+  >  const newElement = document.createElement('div'); //creates new element with given tag
+  >    document.body.appendChild(newElement);
+  >  let myElement = document.querySelector("div");    
+  >  const myNewTextNode = document.createTextNode('some text'); // creates new text node with given text
+  >    myElement.appendChild(myNewTextNode);
+  > ```
   + method ``.getElementsByClassName('class1 class2')`` defined for any HTML-Element of page;
 
-Take your time writing loops over HTMLCollection. Because the cycle can become infinite in those cases when searchable elements are added and removed from the page.
+Take your time writing loops over HTMLCollection. Because cycle can become infinite in those cases when searchable elements are added and removed from page.
 
 - - -
 
