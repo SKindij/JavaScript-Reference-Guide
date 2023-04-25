@@ -79,8 +79,7 @@ topic :orangutan: a basic set of JavaScript knowledge
 * 📖 [Methods:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#methods)\
   &ensp; ► definitions ► this keyword ► chaining
 * 📖 ["Collection" objects](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#collection)\
-  &ensp; ► Map ► Set
-  + 
+  &ensp; ► Map ► Set 
 * OOP [object oriented programming](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#oop) in JS
   + 📖 [Inheritance:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/OBJECTS#inheritance)\
   &ensp; ► patterns ► obj composition
@@ -169,8 +168,15 @@ That is set of rules and guidelines that language must follow in order to be con
   &ensp; ► syntax ► chaining ► promise.all ► error handling
 * 📖 [Async/await:](https://github.com/SKindij/Asynchronous-Programming-Node.js#asyncAwait)\
   &ensp; ► syntax ► error handling ► async generators
-* 📖 [Browser APIs:](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Web-API)\
-  &ensp; ► DOM ► events ► XMLHttpRequest ► fetch API ► Web Workers
+  
+
+## 📚 Browser API
+* 📖 [DOM-BOM](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Web-API#domBom)\
+  &ensp; ► DOM manipulation ► Web Storage ► events
+* 📖 [Web API](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Web-API#webApi)\
+  &ensp; ► XMLHttpRequest ► fetch API
+* 📖 [Web Workers](https://github.com/SKindij/JavaScript-Reference-Guide/tree/main/Web-API#webWorkers)\
+  &ensp; ► 
 
 
 ## 📚 Regular Expressions
