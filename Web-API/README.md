@@ -1,8 +1,11 @@
 # 📚 Browser API
+&emsp; It is a set of interfaces and methods that allow developers to interact with web browsers. The Browser API is what makes it possible for developers to create dynamic and interactive web applications.
 
 ## <a name="domBom"></a>📖 DOM-BOM
 
-### DOM (Document Object Model).
+### Document Object Model
+> _DOM is interface that allows JS to access and manipulate structure and content of HTML or XML document._
+> _DOM is a hierarchical tree-like structure that represents web page, with each element in tree representing different part of page, such as headings, paragraphs, images, and links. Developers can use DOM to access and modify properties and attributes of these elements, such as their text content, styles, and event handlers._
 * Fetching
   + index.html
 * Parsing
@@ -14,7 +17,9 @@
   + background-color;   >>  background-image;   >>   border;   >>   children;   >>   outline;
 * Compositing
 
-### BOM (Browser Object Model)
+### Browser Object Model
+> _BOM, on the other hand, provides JS with access to browser window and its components, such as location bar, history, and navigation buttons._
+> _BOM also provides interfaces for working with cookies, timers, and browser's user interface._
 * navigator
   + User-Agent Client Hints
 * screen
@@ -30,7 +35,6 @@
 * clientX/clientY 
   + clientXOffset
   + clientYOffset
-
 
 ### Basics of DOM Manipulation in Vanilla JavaScript   
 
