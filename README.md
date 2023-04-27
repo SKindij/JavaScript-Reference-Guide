@@ -133,6 +133,7 @@ That is set of rules and guidelines that language must follow in order to be con
 #### **ES2019**:
 * ``flat, flatMap`` for arrays;
 * ``fromEntries`` for objects;
+* ``queueMicrotask()`` for event-loop
 
 #### **ES2020**: 
 * BigInt; 
