@@ -37,6 +37,24 @@
   + clientYOffset
 
 ### Basics of DOM Manipulation in Vanilla JavaScript   
+&emsp;There are several ways to manipulate the DOM using JavaScript.
+1. Accessing DOM elements:\
+  _using document object and one of its methods_\
+  _getElementById(), getElementsByClassName(), getElementsByTagName(), or querySelector();_
+2. Modifying element content:\
+  _using its properties_\
+  _textContent, innerHTML, or outerHTML;_
+3. Modifying element attributes:\
+  _using its setAttribute() method;_
+4. Modifying element styles:\
+  _using its style property_
+5. Creating new elements:\
+  _using createElement() and appendChild() methods;_
+6. Removing elements:\
+  _using its remove() method;_
+
+
+
 
 * **NodeList**
   + stores any nodes (including comments and text);
