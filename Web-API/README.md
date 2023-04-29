@@ -299,4 +299,13 @@ Result of the fetch call will be a **Promise** (a wrapper object for asynchronou
 - - -
 
 ## <a name="webWorkers"></a>📖 Web Workers
+&emsp;Web Workers are a type of browser API that allow web applications to run scripts in the background on a separate thread, independent of the main execution thread. This can be useful for tasks that are CPU-intensive or time-consuming, such as large computations or complex data processing.\
+&emsp;Web Workers operate in a separate context from the main execution thread, and communicate with the main thread via a messaging system. This messaging system allows the main thread to pass data to the worker thread, and vice versa.\
+&emsp;Web Workers are instantiated using the Worker constructor, and are terminated using the terminate() method. When a worker is terminated, all its resources are released and its memory is freed.\
+&emsp;One important thing to note about Web Workers is that they have limited access to the browser's APIs. For example, a worker cannot directly access the DOM or make network requests. However, a worker can communicate with the main thread to request this information.
 
+Web Workers can be used for a variety of tasks, such as:
++ Processing large datasets or performing complex calculations without blocking the main thread
++ Parsing and validating large amounts of data
++ Running tasks in the background while the user interacts with the application
++ Creating multiplayer games or real-time applications that require synchronization between multiple clients
